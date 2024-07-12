@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Defs>
+
+  <!-- 通用 -->
+  <SoundDef>
+    <defName>DMS_VehicleEnter</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>DMS_Vehicle/Vehicle_Enter</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>40~40</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!-- 鱷龜 -->
+  <SoundDef>
+    <defName>DMS_MBTVehicleStart</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>DMS_Vehicle/TurboEngine_Start</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>40~40</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>DMS_MBTVehicleStop</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>DMS_Vehicle/TurboEngine_Stop</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>40~40</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!-- 鱷龜主砲 -->
+  <SoundDef>
+    <defName>DMS_Shot_MBTCannonSound</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>DMS_Vehicle/MainCannon_Shot</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>60~60</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>DMS_Reload_MBTCannonSound</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>DMS_Vehicle/MainCannon_Reload</clipPath>
+          </li>
+        </grains>
+        <volumeRange>10~10</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <!-- 變色龍主砲 Mechanized Tank Destroyer -->
+  <SoundDef>
+    <defName>DMS_Shot_MTDCannonSound</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>DMS_Vehicle/RailCannon_Shot</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>60~60</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>DMS_Reload_MTDCannonSound</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>DMS_Vehicle/MainCannon_Reload</clipPath>
+          </li>
+        </grains>
+        <volumeRange>10~10</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!-- 14.5機砲 -->
+  <SoundDef>
+    <defName>DMS_Shot_MachineGunSound</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>DMS_Vehicle/MachineGun_Shot</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>50~50</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>DMS_Reload_MachineGunSound</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>DMS_Vehicle/MachineGun_Reload</clipPath>
+          </li>
+        </grains>
+        <volumeRange>5~5</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!-- 軍馬/騾子 -->
+  <SoundDef>
+    <defName>DMS_WheeledVehicleStart</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>DMS_Vehicle/WheeledEngine_Start</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>40~40</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>DMS_WheeledVehicleStop</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>DMS_Vehicle/WheeledEngine_Stop</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>40~40</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!-- 輔助裝備 -->
+  <SoundDef>
+    <defName>DMS_Shot_GuidedMissile</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>2</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>DMS_Vehicle/GuidedMissile_Shot</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>40~40</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>DMS_Shot_SmokeLauncherSound</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>3</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>DMS_Vehicle/SmokeLauncher_Shot</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>40~40</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+</Defs>

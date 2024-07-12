@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: army steed APC -->
+  <DMS_ArmySteed_APC.label>軍馬</DMS_ArmySteed_APC.label>
+  <!-- EN: An unmanned armored personnel carrier for armed transport, it's operated by an on-board computer and has the capability to carry more than 6 personal and cargos. -->
+  <DMS_ArmySteed_APC.description>一種無人駕駛的輪式裝甲運輸車，被殖民艦隊的機械化機兵營與殖民地的武裝押運隊廣泛使用於各種環境中，由車載的濕件計算核心進行駕駛與武器控制，可以乘載6名乘員與攜帶貨物。</DMS_ArmySteed_APC.description>
+  <!-- EN: Engine -->
+  <DMS_ArmySteed_APC.components.0.label>引擎</DMS_ArmySteed_APC.components.0.label>
+  <!-- EN: fuel tank -->
+  <DMS_ArmySteed_APC.components.1.label>油箱</DMS_ArmySteed_APC.components.1.label>
+  <!-- EN: transmission shaft -->
+  <DMS_ArmySteed_APC.components.3.label>傳動軸</DMS_ArmySteed_APC.components.3.label>
+  <!-- EN: left front Suspension -->
+  <DMS_ArmySteed_APC.components.4.label>左前懸掛</DMS_ArmySteed_APC.components.4.label>
+  <!-- EN: right front suspension -->
+  <DMS_ArmySteed_APC.components.5.label>右前懸掛</DMS_ArmySteed_APC.components.5.label>
+  <!-- EN: left rear suspensions -->
+  <DMS_ArmySteed_APC.components.6.label>左後懸掛組</DMS_ArmySteed_APC.components.6.label>
+  <!-- EN: right rear suspensions -->
+  <DMS_ArmySteed_APC.components.7.label>右後懸掛組</DMS_ArmySteed_APC.components.7.label>
+  <!-- EN: left front Wheel -->
+  <DMS_ArmySteed_APC.components.8.label>左前輪</DMS_ArmySteed_APC.components.8.label>
+  <!-- EN: right front Wheel -->
+  <DMS_ArmySteed_APC.components.9.label>右前輪</DMS_ArmySteed_APC.components.9.label>
+  <!-- EN: left rear wheels -->
+  <DMS_ArmySteed_APC.components.10.label>左後輪組</DMS_ArmySteed_APC.components.10.label>
+  <!-- EN: right rear Wheels -->
+  <DMS_ArmySteed_APC.components.11.label>右後輪組</DMS_ArmySteed_APC.components.11.label>
+  <!-- EN: front armor Plating -->
+  <DMS_ArmySteed_APC.components.12.label>正面裝甲</DMS_ArmySteed_APC.components.12.label>
+  <!-- EN: left armor plating -->
+  <DMS_ArmySteed_APC.components.13.label>左側裝甲</DMS_ArmySteed_APC.components.13.label>
+  <!-- EN: right armor plating -->
+  <DMS_ArmySteed_APC.components.14.label>右側裝甲</DMS_ArmySteed_APC.components.14.label>
+  <!-- EN: roof armor plating -->
+  <DMS_ArmySteed_APC.components.15.label>頂部裝甲</DMS_ArmySteed_APC.components.15.label>
+  <!-- EN: rear armor plating -->
+  <DMS_ArmySteed_APC.components.16.label>後方裝甲</DMS_ArmySteed_APC.components.16.label>
+  <!-- EN: Main Turret -->
+  <DMS_ArmySteed_APC.comps.CompVehicleTurrets.turrets.0.gizmoLabel>車載機砲</DMS_ArmySteed_APC.comps.CompVehicleTurrets.turrets.0.gizmoLabel>
+  
+  <!-- EN: army steed APC -->
+  <DMS_ArmySteed_APC_Blueprint.label>軍馬</DMS_ArmySteed_APC_Blueprint.label>
+  <!-- EN: An unmanned armored personnel carrier for armed transport, it's operated by an on-board computer and has the capability to carry more than 6 personal and cargos. -->
+  <DMS_ArmySteed_APC_Blueprint.description>一種無人駕駛的輪式裝甲運輸車，被殖民艦隊的機械化機兵營與殖民地的武裝押運隊廣泛使用於各種環境中，由車載的濕件計算核心進行駕駛與武器控制，可以乘載6名乘員與攜帶貨物。</DMS_ArmySteed_APC_Blueprint.description>
+  
+</LanguageData>

@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- 同軸 -->
+  <Vehicles.VehicleTurretDef ParentName="DMS_BaseTurret">
+    <defName>DMS_Chelydridae_MGTurret</defName>
+    <label>coaxial MG</label>
+    <!-- 砲塔的渲染顯示 -->
+    <graphicData>
+      <texPath>Things/Vehicles/Chelydridae/topgun</texPath>
+      <drawSize>3</drawSize>
+    </graphicData>
+    <!-- 彈藥與裝填容量相關 -->
+    <reloadTimer>5</reloadTimer>
+    <magazineCapacity>80</magazineCapacity>
+    <chargePerAmmoCount>1</chargePerAmmoCount>
+    <genericAmmo>true</genericAmmo>
+    <projectile>DMS_Bullet_Kord</projectile>
+    <!-- 射程與射界相關 -->
+    <rotationSpeed>0.9</rotationSpeed>
+    <!-- 射擊相關 -->
+    <warmUpTimer>1.5</warmUpTimer>
+    <projectileOffset>0</projectileOffset>
+    <shotSound>DMS_Shot_MachineGunSound</shotSound>
+    <reloadSound>DMS_Reload_MachineGunSound</reloadSound>
+    <!-- 出膛前後偏移，主要是能讓子彈能從炮口飛出去 -->
+    <projectileShifting>
+      <li>0</li>
+    </projectileShifting>
+    <autoSnapTargeting>true</autoSnapTargeting>
+    <ammunition Inherit="false">
+      <thingDefs>
+        <li>Steel</li>
+      </thingDefs>
+    </ammunition>
+    <recoil>
+      <distanceTotal>0.15</distanceTotal>
+      <distancePerTick>0.05</distancePerTick>
+      <speedMultiplierPostRecoil>0.1</speedMultiplierPostRecoil>
+    </recoil>
+    <fireModes>
+      <li>
+        <shotsPerBurst>6</shotsPerBurst>
+        <ticksBetweenShots>8</ticksBetweenShots>
+        <ticksBetweenBursts>60</ticksBetweenBursts>
+			  <spreadRadius>4</spreadRadius>
+        <label>Auto</label>
+        <texPath>UI/Gizmos/FireRate_Auto</texPath>
+      </li>
+      <li>
+        <shotsPerBurst>3</shotsPerBurst>
+        <ticksBetweenShots>8</ticksBetweenShots>
+        <ticksBetweenBursts>60</ticksBetweenBursts>
+			  <spreadRadius>2</spreadRadius>
+        <label>Burst</label>
+        <texPath>UI/Gizmos/FireRate_Burst</texPath>
+      </li>
+      <li>
+        <shotsPerBurst>1</shotsPerBurst>
+        <ticksBetweenShots>8</ticksBetweenShots>
+        <ticksBetweenBursts>60</ticksBetweenBursts>
+			  <spreadRadius>1</spreadRadius>
+        <label>Single</label>
+        <texPath>UI/Gizmos/FireRate_Single</texPath>
+      </li>
+    </fireModes>
+  </Vehicles.VehicleTurretDef>
+
+  <Vehicles.VehicleTurretDef ParentName="DMS_BaseTurret" Name="DMS_BaseKord">
+    <defName>DMS_turret_Kord</defName>
+    <label>heavy machinegun turret</label>
+    <!-- 砲塔的渲染顯示 -->
+    <gizmoIconTexPath>Things/Vehicles/Chelydridae/DMS_Gun_Kord</gizmoIconTexPath>
+    <graphicData>
+      <texPath>Things/Vehicles/Chelydridae/DMS_Gun_Kord</texPath>
+      <drawSize>3</drawSize>
+    </graphicData>
+    <!-- 彈藥與裝填容量相關 -->
+    <reloadTimer>5</reloadTimer>
+    <autoSnapTargeting>true</autoSnapTargeting>
+    <magazineCapacity>80</magazineCapacity>
+    <chargePerAmmoCount>1</chargePerAmmoCount>
+    <genericAmmo>true</genericAmmo>
+    <projectile>DMS_Bullet_Kord</projectile>
+    <!-- 射程與射界相關 -->
+    <rotationSpeed>0.9</rotationSpeed>
+    <!-- 射擊相關 -->
+    <warmUpTimer>1.5</warmUpTimer>
+    <projectileOffset>1.7</projectileOffset>
+    <!-- 出膛前後偏移，主要是能讓子彈能從炮口飛出去 -->
+    <projectileShifting>
+      <!-- 出膛左右偏移，多砲管可以根據list來回切 -->
+      <li>0</li>
+    </projectileShifting>
+    <ammunition Inherit="false">
+      <thingDefs>
+        <li>Steel</li>
+      </thingDefs>
+    </ammunition>
+    <shotSound>DMS_Shot_MachineGunSound</shotSound>
+    <reloadSound>DMS_Reload_MachineGunSound</reloadSound>
+    <recoil>
+      <distanceTotal>0.15</distanceTotal>
+      <distancePerTick>0.05</distancePerTick>
+      <speedMultiplierPostRecoil>0.1</speedMultiplierPostRecoil>
+    </recoil>
+    <fireModes>
+      <li>
+        <shotsPerBurst>6</shotsPerBurst>
+        <ticksBetweenShots>8</ticksBetweenShots>
+        <ticksBetweenBursts>60</ticksBetweenBursts>
+        <spreadRadius>4</spreadRadius>
+        <label>Auto</label>
+        <texPath>UI/Gizmos/FireRate_Auto</texPath>
+      </li>
+      <li>
+        <shotsPerBurst>3</shotsPerBurst>
+        <ticksBetweenShots>8</ticksBetweenShots>
+        <ticksBetweenBursts>60</ticksBetweenBursts>
+        <spreadRadius>2</spreadRadius>
+        <label>Burst</label>
+        <texPath>UI/Gizmos/FireRate_Burst</texPath>
+      </li>
+      <li>
+        <shotsPerBurst>1</shotsPerBurst>
+        <ticksBetweenShots>8</ticksBetweenShots>
+        <ticksBetweenBursts>60</ticksBetweenBursts>
+        <spreadRadius>1</spreadRadius>
+        <label>Single</label>
+        <texPath>UI/Gizmos/FireRate_Single</texPath>
+      </li>
+    </fireModes>
+  </Vehicles.VehicleTurretDef>
+
+  <Vehicles.VehicleTurretDef ParentName="VehicleTurretBase" Name="DMS_BaseLauncher">
+		<defName>DMS_GrenadeLauncher</defName>
+		<label>Smoke grenade launcher</label>
+		<turretType>Static</turretType>
+		<shotSound>Shot_IncendiaryLauncher</shotSound>
+		<projectile>Bullet_SmokeLauncher</projectile>
+		<reloadTimer>10</reloadTimer>
+		<autoRefuelProportion>1</autoRefuelProportion>
+		<warmUpTimer>0</warmUpTimer>
+		<magazineCapacity>3</magazineCapacity>
+		<chargePerAmmoCount>15</chargePerAmmoCount>
+		<genericAmmo>true</genericAmmo>
+		<hitFlags>IntendedTarget</hitFlags>
+		<maxRange>15</maxRange>
+		<fireModes>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenShots>1</ticksBetweenShots>
+				<ticksBetweenBursts>4</ticksBetweenBursts>
+				<spreadRadius>2</spreadRadius>
+				<label>Single</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>4</shotsPerBurst>
+				<ticksBetweenShots>1</ticksBetweenShots>
+				<ticksBetweenBursts>4</ticksBetweenBursts>
+				<spreadRadius>12</spreadRadius>
+				<label>Burst</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
+			</li>
+		</fireModes>
+		<gizmoIconTexPath>Things/Vehicles/DMS_Smoke</gizmoIconTexPath>
+		<gizmoIconScale>1.25</gizmoIconScale>
+		<ammunition>
+			<thingDefs>
+				<li>Chemfuel</li>
+			</thingDefs>
+		</ammunition>
+	</Vehicles.VehicleTurretDef>
+</Defs>

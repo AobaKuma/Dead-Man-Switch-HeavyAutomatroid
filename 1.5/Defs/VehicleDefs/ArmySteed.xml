@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <Vehicles.VehicleBuildDef ParentName="DMS_BaseVehicleBuild"><!-- 建築型態的載具，基本上與BuildingDef相同-->
+		<defName>DMS_ArmySteed_APC_Blueprint</defName>
+		<label>army steed APC</label>
+		<description>An unmanned armored personnel carrier for armed transport, it's operated by an on-board computer and has the capability to carry more than 6 personal and cargos.</description>
+		<graphicData>
+			<texPath>Things/Vehicles/ArmySteed/vehicle</texPath>
+			<drawSize>5.5</drawSize>
+		</graphicData>	
+		<statBases> 		
+			<MaxHitPoints>500</MaxHitPoints>
+			<WorkToBuild>20000</WorkToBuild>
+			<Flammability>0.05</Flammability>
+		</statBases>
+		<size>(2,5)</size>
+		<researchPrerequisites>
+			<li>DMS_Hypothesis</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>	
+		<costList>
+			<EngineMedium MayRequireAnyOf="aoba.motorization.engine,rimthunder.core">1</EngineMedium>
+			<Neurocomputer>1</Neurocomputer>
+			<ComponentStamped>7</ComponentStamped>
+			<ComponentIndustrial>12</ComponentIndustrial>
+			<Tungsteel>75</Tungsteel>
+			<Polyester>100</Polyester>
+			<DMS_Ceramics>125</DMS_Ceramics>
+			<Chemfuel>180</Chemfuel>
+			<Steel>250</Steel>
+		</costList>
+		<thingToSpawn>DMS_ArmySteed_APC</thingToSpawn>	<!-- 建造後生成的載具Kind,這是與建築唯一不一樣的-->
+	</Vehicles.VehicleBuildDef>
+
+	<!-- 載具本體 -->
+	<Vehicles.VehicleDef ParentName="DMS_BaseVehicle">
+		<defName>DMS_ArmySteed_APC</defName>
+		<label>army steed APC</label>
+		<description>An unmanned armored personnel carrier for armed transport, it's operated by an on-board computer and has the capability to carry more than 6 personal and cargos.</description>
+		<buildDef>DMS_ArmySteed_APC_Blueprint</buildDef>
+		<graphicData>
+			<texPath>Things/Vehicles/ArmySteed/vehicle</texPath>
+			<drawSize>5.5</drawSize>
+		</graphicData>
+		<size>(2,5)</size>
+		<fillPercent>0.9</fillPercent>
+		<vehicleCategory>Transport</vehicleCategory>
+		<vehicleMovementPermissions>NoDriverNeeded</vehicleMovementPermissions>
+		<statBases>
+			<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+			<Flammability>0</Flammability>
+			<MarketValue>2240</MarketValue>
+		</statBases>
+		<vehicleStats>
+			<Mass>800</Mass>
+			<MoveSpeed>10</MoveSpeed>
+			<CargoCapacity>750</CargoCapacity>
+			<RepairRate>0.75</RepairRate>
+		</vehicleStats>
+		<soundOneShotsOnEvent Inherit = "False">
+			<li>
+				<key>PawnEntered</key>
+				<value>DMS_VehicleEnter</value>
+			</li>
+			<li>
+				<key>PawnExited</key>
+				<value>DMS_VehicleEnter</value>
+			</li>
+			<li>
+				<key>IgnitionOn</key>
+				<value>DMS_WheeledVehicleStart</value>
+			</li>
+			<li>
+				<key>IgnitionOff</key>
+				<value>DMS_WheeledVehicleStop</value>
+			</li>
+		</soundOneShotsOnEvent>
+		<soundSustainersOnEvent Inherit="false"> 
+			<li>
+				<start>IgnitionOn</start>
+				<stop>IgnitionOff</stop>
+				<value>DMS_Engine_WheeledVehicle</value>
+			</li>
+		</soundSustainersOnEvent>
+		<race>
+			<baseBodySize>4</baseBodySize>
+		</race>	
+		<properties>	<!-- 座位與功能 -->
+			<customRoadCosts AssignDefaults = "0.4"/>
+			<worldSpeedMultiplier>1.0</worldSpeedMultiplier>
+			<winterCostMultiplier>1.2</winterCostMultiplier>
+			<restrictToFactions>
+				<li>DMS_Army</li>
+			</restrictToFactions>
+			<customHillinessCosts>
+				<SmallHills>0.2</SmallHills>
+				<LargeHills>0.8</LargeHills>
+				<Mountainous>1.5</Mountainous>
+			</customHillinessCosts>
+			<customRiverCosts AssignDefaults = "0.4"/>	
+			<customTerrainCosts AllowTerrainWithTag = "Water" PathCost = "1">
+				<li>
+					<key>Mud</key>
+					<value>1</value>
+				</li>
+			</customTerrainCosts> 
+			<customBiomeCosts>
+				<li>
+					<key>Ocean</key>
+					<value>4</value>
+				</li>
+				<li>
+					<key>Lake</key>
+					<value>4</value>
+				</li>
+			</customBiomeCosts>
+			<vehicleJobLimitations>
+				<li>(RepairVehicle, 4)</li>
+			</vehicleJobLimitations>
+			<roles>
+				<li>
+					<key>passenger</key>
+					<label>passenger</label>
+					<slots>6</slots>
+				</li>
+			</roles>
+		</properties>	
+		<components><!-- 各種零件 -->
+		<!-- Internal mobile Part 內部驅動部件-->
+			<li><!--Engine 100-->
+				<key>Engine</key>
+				<label>Engine</label>
+				<health>100</health>
+				<priorityStatEfficiency>true</priorityStatEfficiency>
+				<categories><li>MoveSpeed</li></categories>
+				<depth>Internal</depth>		
+				<reactors>
+					<li Class = "Vehicles.Reactor_Explosive">
+						<indicator>VF_Explosive</indicator>
+						<chance>0.25</chance>
+						<maxHealth>0.3</maxHealth>
+						<radius>3</radius>
+						<damageDef>Bomb</damageDef>
+					</li>
+				</reactors>			
+				<hitbox>
+					<cells>
+						<li>(0, 2)</li>
+						<li>(1, 2)</li>
+					</cells>
+				</hitbox>				
+			</li>		
+			<li><!-- fuel tank 100-->
+				<key>FuelTank</key>
+				<label>fuel tank</label>
+				<health>100</health>
+				<depth>Internal</depth>			
+				<reactors><li Class = "Vehicles.Reactor_FuelLeak"/></reactors>			
+				<hitbox>
+					<cells>
+						<li>(0, -1)</li>
+						<li>(1, -1)</li>
+					</cells>
+				</hitbox>
+			</li>
+			<li><!-- Gearbox 50-->
+				<key>Gearbox</key>
+				<label>gearbox</label>
+				<health>50</health>
+				<depth>Internal</depth>
+				<categories><li>MoveSpeed</li></categories>	
+				<hitbox><cells><li>(0, 1)</li></cells></hitbox>			
+			</li>
+			<li><!-- transmission shaft 50 -->
+				<key>TransmissionShaft</key>
+				<label>transmission shaft</label>
+				<health>50</health>
+				<depth>Internal</depth>
+			</li>
+			<li><!-- LeftFrontSuspension 50-->
+				<key>LeftFrontSuspension</key>
+				<label>left front Suspension</label>
+				<health>50</health>
+				<depth>Internal</depth>			
+				<hitbox>
+					<cells>
+						<li>(0, 1)</li>
+					</cells>
+				</hitbox>
+				<categories><li>MoveSpeed</li></categories>
+			</li>
+			<li><!-- RightFrontSuspension 50-->
+				<key>RightFrontSuspension</key>
+				<label>right front suspension</label>
+				<health>50</health>
+				<depth>Internal</depth>
+				<hitbox>
+					<cells>
+						<li>(1, 1)</li>
+					</cells>
+				</hitbox>
+				<categories><li>MoveSpeed</li></categories>
+			</li>
+			<li><!-- LeftRearSuspension 80-->
+				<key>LeftRearSuspension</key>
+				<label>left rear suspensions</label>
+				<health>80</health>
+				<depth>Internal</depth>
+				<hitbox>
+					<cells>
+						<li>(0, -1)</li>
+						<li>(0, -2)</li>
+					</cells>
+				</hitbox>
+				<categories><li>MoveSpeed</li></categories>
+			</li>
+			<li><!-- RightRearSuspension 80-->
+				<key>RightRearSuspension</key>
+				<label>right rear suspensions</label>
+				<health>80</health>
+				<depth>Internal</depth>
+				<hitbox>
+					<cells>
+						<li>(1, -1)</li>
+						<li>(1, -2)</li>
+					</cells>
+				</hitbox>
+				<categories><li>MoveSpeed</li></categories>
+			</li>
+			<li><!-- LeftFrontWheel 40-->
+				<key>LeftFrontWheel</key>
+				<label>left front Wheel</label>
+				<health>40</health>
+				<depth>External</depth>
+				<categories><li>MoveSpeed</li></categories>
+				<tags><li>Wheel</li></tags>	
+				<armor>
+					<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+				</armor>			
+				<hitbox>
+					<fallthrough>false</fallthrough>
+					<cells>
+						<li>(0, 1)</li>
+					</cells>
+				</hitbox>			
+			</li>
+			<li><!-- RightFrontWheel 40-->
+				<key>RightFrontWheel</key>
+				<label>right front Wheel</label>
+				<health>40</health>
+				<depth>External</depth>
+				<categories><li>MoveSpeed</li></categories>
+				<tags><li>Wheel</li></tags>	
+				<armor>
+					<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+				</armor>
+				<hitbox>
+					<fallthrough>false</fallthrough>
+					<cells>
+						<li>(1, 1)</li>
+					</cells>
+				</hitbox>
+			</li>
+			<li><!-- LeftRearWheel	80-->
+				<key>LeftRearWheel</key>
+				<label>left rear wheels</label>
+				<health>80</health>
+				<depth>External</depth>
+				<categories><li>MoveSpeed</li></categories>
+				<tags><li>Wheel</li></tags>	
+				<armor>
+					<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+				</armor>
+				<hitbox>
+					<fallthrough>false</fallthrough>
+					<cells>
+						<li>(0, -1)</li>
+						<li>(0, -2)</li>
+					</cells>
+				</hitbox>
+			</li>
+			<li><!-- RightRearWheel 80-->
+				<key>RightRearWheel</key>
+				<label>right rear Wheels</label>
+				<health>80</health>
+				<depth>External</depth>
+				<categories><li>MoveSpeed</li></categories>
+				<tags><li>Wheel</li></tags>
+				<armor>
+					<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+				</armor>
+				<hitbox>
+					<fallthrough>false</fallthrough>
+					<cells>
+						<li>(1, -1)</li>
+						<li>(1, -2)</li>
+					</cells>
+				</hitbox>
+			</li>
+			<!-- External Platings 外部防禦部件 -->
+			<li><!-- FrontArmorPlating 200-->
+				<key>FrontArmorPlating</key>
+				<label>front armor Plating</label>
+				<health>135</health>
+				<depth>External</depth>
+				<hitWeight>8</hitWeight>	
+				<armor>
+					<ArmorRating_Blunt>1.10</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.9</ArmorRating_Sharp>
+				</armor>		
+				<hitbox><side>Front</side></hitbox>
+			</li>
+			<li><!-- LeftArmorPlating 180-->
+				<key>LeftArmorPlating</key>
+				<label>left armor plating</label>
+				<health>122</health>
+				<depth>External</depth>
+				<hitWeight>5</hitWeight>		
+				<armor>
+					<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+				</armor>			
+				<hitbox><side>Left</side></hitbox>
+			</li>
+			<li><!-- RightArmorPlating 180-->
+				<key>RightArmorPlating</key>
+				<label>right armor plating</label>
+				<health>122</health>
+				<depth>External</depth>
+				<hitWeight>5</hitWeight>	
+				<armor>
+					<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+				</armor>			
+				<hitbox><side>Right</side></hitbox>
+			</li>
+			<li><!-- RoofArmorPlating 150 -->
+				<key>RoofArmorPlating</key>
+				<label>roof armor plating</label>
+				<health>135</health>
+				<depth>External</depth>
+				<hitWeight>5</hitWeight>
+				<armor>
+					<ArmorRating_Blunt>1.0</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+				</armor>
+			</li>
+			<li><!-- BackArmorPlating 150-->
+				<key>BackArmorPlating</key>
+				<label>rear armor plating</label>
+				<health>101</health>
+				<depth>External</depth>
+				<hitWeight>5</hitWeight>
+				<hitbox>
+					<side>Back</side>
+				</hitbox>
+			</li>
+		</components>
+		<comps>
+			<li Class="Vehicles.CompProperties_FueledTravel">	<!-- 油箱與油耗 -->
+				<fuelType>Chemfuel</fuelType>
+				<leakDef>Filth_Fuel</leakDef>
+				<fuelConsumptionRate>20</fuelConsumptionRate>
+				<fuelConsumptionWorldMultiplier>1</fuelConsumptionWorldMultiplier>
+				<fuelCapacity>180</fuelCapacity>
+			</li>
+			<li Class="Vehicles.CompProperties_VehicleTurrets">	<!-- 砲塔 -->
+				<turrets>
+					<li>
+						<turretDef>DMS_turret_Kord</turretDef>					
+						<renderProperties>
+							<north>(0.425, -0.2)</north>
+							<south>(-0.425, 0.275)</south>
+							<east>(-0.25, 0.175)</east>
+							<west>(0.275, 0.875)</west>
+						</renderProperties>				
+						<gizmoLabel>Main Turret</gizmoLabel>
+						<aimPieOffset>(-0.1, 0)</aimPieOffset>	<!-- 預熱指示器的x,z偏移 -->
+						<drawLayer>1</drawLayer>						
+						<key>mainTurret</key>
+					</li>
+				</turrets>
+			</li>
+		</comps>
+	</Vehicles.VehicleDef>
+</Defs>

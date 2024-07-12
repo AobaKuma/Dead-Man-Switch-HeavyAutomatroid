@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- 鱷龜的主砲砲彈 。由殖民艦隊制式120毫米口徑戰車砲發射的高爆砲彈，這類武器經歷了三千多年的實戰驗證了其設計本身的有效性與可靠性。即使在面對高技術兵器的如今也是一類十分威脅性的重型武裝 -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>DMS_Bullet_ChelydridaeShell</defName>
+    <label>high-explosive shell</label>
+    <thingClass>Projectile_Explosive</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>2</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <damageAmountBase>180</damageAmountBase>
+      <armorPenetrationBase>1.18</armorPenetrationBase>
+      <speed>120</speed>
+      <explosionRadius>3.9</explosionRadius>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>Explosion_GiantBomb</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+    </projectile>
+  </ThingDef>
+
+  <!-- (超級老陰逼狙擊彈)一種由車載電磁砲發射的穩定翼磁軌砲彈，雖然在實戰性能上十分優秀可由於在惡劣環境下的低可靠性與相比於目標而言過於高昂的整備成本因此這型裝備即使在殖民艦隊的武器庫中也並不多見。 -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>DMS_Bullet_ChameleonShell</defName>
+    <label>fin-stabilized discarding sabot</label>
+    <thingClass>Projectile_Explosive</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.2</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <damageAmountBase>500</damageAmountBase>
+      <armorPenetrationBase>1.98</armorPenetrationBase>
+      <speed>200</speed>
+      <explosionRadius>1.9</explosionRadius>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>Explosion_GiantBomb</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+    </projectile>
+  </ThingDef>
+</Defs>

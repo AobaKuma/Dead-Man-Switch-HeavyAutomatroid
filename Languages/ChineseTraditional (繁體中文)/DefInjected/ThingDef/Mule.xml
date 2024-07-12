@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Mule ATV -->
+  <DMS_Mule_ATV.label>騾馬</DMS_Mule_ATV.label>
+  <!-- EN: a light mobile platform used for ground handling and short-distance transportation,Production models of this type can be traced back to pre-space colonization times, but the exact name is unknown. -->
+  <DMS_Mule_ATV.description>一種用於地勤與短途運輸的輕型輪式機動平台，這種完全沒有附加模塊的生產型號據說可以追溯到前太空殖民時代，但確切的資訊並不充足。</DMS_Mule_ATV.description>
+  <!-- EN: Engine -->
+  <DMS_Mule_ATV.components.0.label>引擎</DMS_Mule_ATV.components.0.label>
+  <!-- EN: left front Suspension -->
+  <DMS_Mule_ATV.components.1.label>左前懸掛</DMS_Mule_ATV.components.1.label>
+  <!-- EN: right front suspension -->
+  <DMS_Mule_ATV.components.2.label>右前懸掛</DMS_Mule_ATV.components.2.label>
+  <!-- EN: left rear suspension -->
+  <DMS_Mule_ATV.components.3.label>左後懸掛</DMS_Mule_ATV.components.3.label>
+  <!-- EN: right rear suspension -->
+  <DMS_Mule_ATV.components.4.label>右後懸掛</DMS_Mule_ATV.components.4.label>
+  <!-- EN: gear box -->
+  <DMS_Mule_ATV.components.5.label>變速箱</DMS_Mule_ATV.components.5.label>
+  <!-- EN: fuel tank -->
+  <DMS_Mule_ATV.components.6.label>油箱</DMS_Mule_ATV.components.6.label>
+  <!-- EN: left front Wheel -->
+  <DMS_Mule_ATV.components.7.label>左前輪</DMS_Mule_ATV.components.7.label>
+  <!-- EN: right front Wheel -->
+  <DMS_Mule_ATV.components.8.label>右前輪</DMS_Mule_ATV.components.8.label>
+  <!-- EN: left rear wheel -->
+  <DMS_Mule_ATV.components.9.label>左後輪</DMS_Mule_ATV.components.9.label>
+  <!-- EN: right rear Wheel -->
+  <DMS_Mule_ATV.components.10.label>右後輪</DMS_Mule_ATV.components.10.label>
+  <!-- EN: steering wheel -->
+  <DMS_Mule_ATV.components.12.label>方向盤</DMS_Mule_ATV.components.12.label>
+  <!-- EN: back passenger -->
+  <DMS_Mule_ATV.properties.roles.2.label>後座乘客</DMS_Mule_ATV.properties.roles.2.label>
+  
+  <!-- EN: Mule ATV -->
+  <DMS_Mule_ATV_Blueprint.label>騾馬</DMS_Mule_ATV_Blueprint.label>
+  <!-- EN: a light mobile platform used for ground handling and short-distance transportation,Production models of this type can be traced back to pre-space colonization times, but the exact name is unknown. -->
+  <DMS_Mule_ATV_Blueprint.description>一種用於地勤與短途運輸的輕型輪式機動平台，這種完全沒有附加模塊的生產型號據說可以追溯到前太空殖民時代，但確切的資訊並不充足。</DMS_Mule_ATV_Blueprint.description>
+  
+</LanguageData>
