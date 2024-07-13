@@ -4,9 +4,9 @@
   <!-- EN: Chelydridae -->
   <DMS_Chelydridae_MainBattleTank.label>鱷龜</DMS_Chelydridae_MainBattleTank.label>
   <!-- EN: The automated main battle vehicles currently in service in the colonial fleet are designed to theoretically conduct fully automatic combat. However, due to concerns about the battlefield communication environment, a space for two crew members was designed in the tail compartment. -->
-  <DMS_Chelydridae_MainBattleTank.description>殖民艦隊現役的主力戰車，是與象龜、蠵龜等同屬裝甲履帶平台的重型機兵。其特殊的全斜面設計、透過兩組濕件計算核心運行的作戰系統與無人化的砲塔使其在正面戰場上幾乎難以擊毀。出於該型機兵可觀的生存能力與戰鬥續航力因此在尾艙配置了兩個機械師控制席。</DMS_Chelydridae_MainBattleTank.description>
+  <DMS_Chelydridae_MainBattleTank.description>殖民艦隊現役的主力戰車，是與象龜、蠵龜等同屬裝甲履帶平台的重型機兵。其特殊的全斜面設計、透過兩組濕件計算核心運行的作戰系統與無人化的砲塔使其在正面戰場上幾乎難以擊毀。\n\n出於該型機兵可觀的生存能力與戰鬥續航力因此在尾艙配置了兩個機械師控制席。</DMS_Chelydridae_MainBattleTank.description>
   <!-- EN: turbine engine -->
-  <DMS_Chelydridae_MainBattleTank.components.0.label>渦輪發動機</DMS_Chelydridae_MainBattleTank.components.0.label>
+  <DMS_Chelydridae_MainBattleTank.components.0.label>渦輪引擎</DMS_Chelydridae_MainBattleTank.components.0.label>
   <!-- EN: armoured fuel tank -->
   <DMS_Chelydridae_MainBattleTank.components.1.label>裝甲油箱</DMS_Chelydridae_MainBattleTank.components.1.label>
   <!-- EN: ammo rack -->
@@ -55,6 +55,6 @@
   <!-- EN: Chelydridae -->
   <DMS_Chelydridae_MainBattleTank_Blueprint.label>鱷龜</DMS_Chelydridae_MainBattleTank_Blueprint.label>
   <!-- EN: The automated main battle vehicles currently in service in the colonial fleet are designed to theoretically conduct fully automatic combat. However, due to concerns about the battlefield communication environment, a space for two crew members was designed in the tail compartment. -->
-  <DMS_Chelydridae_MainBattleTank_Blueprint.description>殖民艦隊現役的主力戰車，是與象龜、蠵龜等同屬裝甲履帶平台的重型機兵。其特殊的全斜面設計、透過兩組濕件計算核心運行的作戰系統與無人化的砲塔使其在正面戰場上幾乎難以擊毀。出於該型機兵可觀的生存能力與戰鬥續航力因此在尾艙配置了兩個機械師控制席。</DMS_Chelydridae_MainBattleTank_Blueprint.description>
+  <DMS_Chelydridae_MainBattleTank_Blueprint.description>殖民艦隊現役的主力戰車，是與象龜、蠵龜等同屬裝甲履帶平台的重型機兵。其特殊的全斜面設計、透過兩組濕件計算核心運行的作戰系統與無人化的砲塔使其在正面戰場上幾乎難以擊毀。\n\n出於該型機兵可觀的生存能力與戰鬥續航力因此在尾艙配置了兩個機械師控制席。</DMS_Chelydridae_MainBattleTank_Blueprint.description>
   
 </LanguageData>

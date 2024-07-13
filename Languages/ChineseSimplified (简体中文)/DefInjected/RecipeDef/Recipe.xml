@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: army steed APC -->
+  <DMS_Make_ArmySteed_APC_Blueprint.label>军马</DMS_Make_ArmySteed_APC_Blueprint.label>
+  <!-- EN: assemble a vehicle. -->
+  <DMS_Make_ArmySteed_APC_Blueprint.description>组装载具</DMS_Make_ArmySteed_APC_Blueprint.description>
+  <!-- EN: vehicle assembling. -->
+  <DMS_Make_ArmySteed_APC_Blueprint.jobString>正在组装载具</DMS_Make_ArmySteed_APC_Blueprint.jobString>
+  
+  <!-- EN: chameleon TD -->
+  <DMS_Make_Chameleon_TD_Blueprint.label>变色龙</DMS_Make_Chameleon_TD_Blueprint.label>
+  <!-- EN: assemble a vehicle. -->
+  <DMS_Make_Chameleon_TD_Blueprint.description>组装载具</DMS_Make_Chameleon_TD_Blueprint.description>
+  <!-- EN: vehicle assembling. -->
+  <DMS_Make_Chameleon_TD_Blueprint.jobString>正在组装载具</DMS_Make_Chameleon_TD_Blueprint.jobString>
+  
+  <!-- EN: Chelydridae -->
+  <DMS_Make_Chelydridae_MBT_Blueprint.label>鳄龟</DMS_Make_Chelydridae_MBT_Blueprint.label>
+  <!-- EN: assemble a vehicle. -->
+  <DMS_Make_Chelydridae_MBT_Blueprint.description>组装载具</DMS_Make_Chelydridae_MBT_Blueprint.description>
+  <!-- EN: vehicle assembling. -->
+  <DMS_Make_Chelydridae_MBT_Blueprint.jobString>正在组装载具</DMS_Make_Chelydridae_MBT_Blueprint.jobString>
+  
+  <!-- EN: mule ATV -->
+  <DMS_Make_Mule_ATV_Blueprint.label>骡马</DMS_Make_Mule_ATV_Blueprint.label>
+  <!-- EN: assemble a vehicle. -->
+  <DMS_Make_Mule_ATV_Blueprint.description>组装载具</DMS_Make_Mule_ATV_Blueprint.description>
+  <!-- EN: vehicle assembling. -->
+  <DMS_Make_Mule_ATV_Blueprint.jobString>正在组装载具</DMS_Make_Mule_ATV_Blueprint.jobString>
+  
+  <!-- EN: mustang ATV -->
+  <DMS_Make_Mustang_ATV_Blueprint.label>野马</DMS_Make_Mustang_ATV_Blueprint.label>
+  <!-- EN: assemble a vehicle. -->
+  <DMS_Make_Mustang_ATV_Blueprint.description>组装载具</DMS_Make_Mustang_ATV_Blueprint.description>
+  <!-- EN: vehicle assembling. -->
+  <DMS_Make_Mustang_ATV_Blueprint.jobString>正在组装载具</DMS_Make_Mustang_ATV_Blueprint.jobString>
+  
+</LanguageData>

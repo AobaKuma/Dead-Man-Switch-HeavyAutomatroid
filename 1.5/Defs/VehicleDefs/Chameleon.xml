@@ -117,15 +117,8 @@
 				</li>
 			</customBiomeCosts>
 			<vehicleJobLimitations>
-				<li>(RepairVehicle, 4)</li>
+				<li>(RepairVehicle, 5)</li>
 			</vehicleJobLimitations>
-			<roles>
-				<li>
-					<key>passenger</key>
-					<label>passenger</label>
-					<slots>2</slots>
-				</li>
-			</roles>
 		</properties>	
 		<components><!-- 各種零件 -->
 		<!-- Internal mobile Part 內部驅動部件-->

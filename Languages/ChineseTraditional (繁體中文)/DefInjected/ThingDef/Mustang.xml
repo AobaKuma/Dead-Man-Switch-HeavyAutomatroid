@@ -4,7 +4,7 @@
   <!-- EN: Mustang ATV -->
   <DMS_Mustang_ATV.label>野馬</DMS_Mustang_ATV.label>
   <!-- EN: A lightweight autonomous combat platform that is used to coordinate infantry attacks. This type of fire control system that uses existing platform modifications and is controlled by algorithms is a common configuration of the first generation of automatroid -->
-  <DMS_Mustang_ATV.description>用於支援步兵的無人輪式機槍運載車，是大多數殖民艦隊現役裝備庫存中最多的載具。據說類似野馬這樣使用輪式平台改造的無人載具也是常見於第一代機兵的型式。</DMS_Mustang_ATV.description>
+  <DMS_Mustang_ATV.description>用於支援步兵的無人輪式機槍運載車，是大多數殖民艦隊現役裝備庫存中最多的載具。\n\n據說類似野馬這樣使用輪式平台改造的無人載具也是常見於第一代機兵的型式。</DMS_Mustang_ATV.description>
   <!-- EN: Engine -->
   <DMS_Mustang_ATV.components.0.label>引擎</DMS_Mustang_ATV.components.0.label>
   <!-- EN: left front Suspension -->
@@ -45,6 +45,6 @@
   <!-- EN: Mustang ATV -->
   <DMS_Mustang_ATV_Blueprint.label>野馬</DMS_Mustang_ATV_Blueprint.label>
   <!-- EN: A lightweight autonomous combat platform that is used to coordinate infantry attacks. This type of fire control system that uses existing platform modifications and is controlled by algorithms is a common configuration of the first generation of automatroid. -->
-  <DMS_Mustang_ATV_Blueprint.description>用於支援步兵的無人輪式機槍運載車，是大多數殖民艦隊現役裝備庫存中最多的載具。據說類似野馬這樣使用輪式平台改造的無人載具也是常見於第一代機兵的型式。</DMS_Mustang_ATV_Blueprint.description>
+  <DMS_Mustang_ATV_Blueprint.description>用於支援步兵的無人輪式機槍運載車，是大多數殖民艦隊現役裝備庫存中最多的載具。\n\n據說類似野馬這樣使用輪式平台改造的無人載具也是常見於第一代機兵的型式。</DMS_Mustang_ATV_Blueprint.description>
   
 </LanguageData>

@@ -7,9 +7,6 @@
 			<graphicClass>Graphic_Multi</graphicClass>
 		</graphicData>
 		<designationCategory>VF_Vehicles</designationCategory>
-		<researchPrerequisites>
-			<li>Machining</li>
-		</researchPrerequisites>
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 	</Vehicles.VehicleBuildDef>
 

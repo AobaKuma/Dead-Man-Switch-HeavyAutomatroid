@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Chelydridae -->
+  <DMS_Chelydridae_MainBattleTank.label>鳄龟</DMS_Chelydridae_MainBattleTank.label>
+  <!-- EN: The automated main battle vehicles currently in service in the colonial fleet are designed to theoretically conduct fully automatic combat. However, due to concerns about the battlefield communication environment, a space for two crew members was designed in the tail compartment. -->
+  <DMS_Chelydridae_MainBattleTank.description>殖民舰队现役的主战坦克，是与象龟、蠵龟等同属装甲履带平台的重型机兵。其特殊的全斜面设计、透过两组湿件计算核心运行的作战系统与无人化的炮塔使其在正面战场上几乎难以击毁。\n\n出於该型机兵可观的生存能力与战斗续航力因此在尾舱配置了两个机械师控制席。</DMS_Chelydridae_MainBattleTank.description>
+  <!-- EN: turbine engine -->
+  <DMS_Chelydridae_MainBattleTank.components.0.label>涡轮发动机</DMS_Chelydridae_MainBattleTank.components.0.label>
+  <!-- EN: armoured fuel tank -->
+  <DMS_Chelydridae_MainBattleTank.components.1.label>装甲油箱</DMS_Chelydridae_MainBattleTank.components.1.label>
+  <!-- EN: ammo rack -->
+  <DMS_Chelydridae_MainBattleTank.components.3.label>弹药架</DMS_Chelydridae_MainBattleTank.components.3.label>
+  <!-- EN: transmission shaft -->
+  <DMS_Chelydridae_MainBattleTank.components.4.label>传动轴</DMS_Chelydridae_MainBattleTank.components.4.label>
+  <!-- EN: left track -->
+  <DMS_Chelydridae_MainBattleTank.components.5.label>左履带组</DMS_Chelydridae_MainBattleTank.components.5.label>
+  <!-- EN: right track -->
+  <DMS_Chelydridae_MainBattleTank.components.6.label>右履带组</DMS_Chelydridae_MainBattleTank.components.6.label>
+  <!-- EN: left road wheels -->
+  <DMS_Chelydridae_MainBattleTank.components.7.label>左行走轮组</DMS_Chelydridae_MainBattleTank.components.7.label>
+  <!-- EN: right road wheels -->
+  <DMS_Chelydridae_MainBattleTank.components.8.label>右行走轮组</DMS_Chelydridae_MainBattleTank.components.8.label>
+  <!-- EN: left drive sprocket -->
+  <DMS_Chelydridae_MainBattleTank.components.9.label>左驱动轮</DMS_Chelydridae_MainBattleTank.components.9.label>
+  <!-- EN: right drive sprocket -->
+  <DMS_Chelydridae_MainBattleTank.components.10.label>右驱动轮</DMS_Chelydridae_MainBattleTank.components.10.label>
+  <!-- EN: left tensioner wheel -->
+  <DMS_Chelydridae_MainBattleTank.components.11.label>左牵引轮</DMS_Chelydridae_MainBattleTank.components.11.label>
+  <!-- EN: right tensioner wheel -->
+  <DMS_Chelydridae_MainBattleTank.components.12.label>右牵引轮</DMS_Chelydridae_MainBattleTank.components.12.label>
+  <!-- EN: front armor Plating -->
+  <DMS_Chelydridae_MainBattleTank.components.13.label>正面装甲</DMS_Chelydridae_MainBattleTank.components.13.label>
+  <!-- EN: left armor plating -->
+  <DMS_Chelydridae_MainBattleTank.components.14.label>左侧装甲</DMS_Chelydridae_MainBattleTank.components.14.label>
+  <!-- EN: right armor plating -->
+  <DMS_Chelydridae_MainBattleTank.components.15.label>右侧装甲</DMS_Chelydridae_MainBattleTank.components.15.label>
+  <!-- EN: left ERA plating -->
+  <DMS_Chelydridae_MainBattleTank.components.16.label>反应装甲</DMS_Chelydridae_MainBattleTank.components.16.label>
+  <!-- EN: roof armor plating -->
+  <DMS_Chelydridae_MainBattleTank.components.17.label>顶部装甲</DMS_Chelydridae_MainBattleTank.components.17.label>
+  <!-- EN: rear armor plating -->
+  <DMS_Chelydridae_MainBattleTank.components.18.label>後方装甲</DMS_Chelydridae_MainBattleTank.components.18.label>
+  <!-- EN: Main Turret -->
+  <DMS_Chelydridae_MainBattleTank.components.19.label>主炮塔</DMS_Chelydridae_MainBattleTank.components.19.label>
+  <!-- EN: front ERA Plating -->
+  <DMS_Chelydridae_MainBattleTank.components.20.label>正面反应装甲</DMS_Chelydridae_MainBattleTank.components.20.label>
+  <!-- EN: turret ERA plating -->
+  <DMS_Chelydridae_MainBattleTank.components.21.label>炮塔反应装甲</DMS_Chelydridae_MainBattleTank.components.21.label>
+  <!-- EN: Main Turret -->
+  <DMS_Chelydridae_MainBattleTank.comps.CompVehicleTurrets.turrets.0.gizmoLabel>主炮塔</DMS_Chelydridae_MainBattleTank.comps.CompVehicleTurrets.turrets.0.gizmoLabel>
+  <!-- EN: support MG -->
+  <DMS_Chelydridae_MainBattleTank.comps.CompVehicleTurrets.turrets.3.gizmoLabel>遥控重机枪</DMS_Chelydridae_MainBattleTank.comps.CompVehicleTurrets.turrets.3.gizmoLabel>
+  
+  <!-- EN: Chelydridae -->
+  <DMS_Chelydridae_MainBattleTank_Blueprint.label>鳄龟</DMS_Chelydridae_MainBattleTank_Blueprint.label>
+  <!-- EN: The automated main battle vehicles currently in service in the colonial fleet are designed to theoretically conduct fully automatic combat. However, due to concerns about the battlefield communication environment, a space for two crew members was designed in the tail compartment. -->
+  <DMS_Chelydridae_MainBattleTank_Blueprint.description>殖民舰队现役的主战坦克，是与象龟、蠵龟等同属装甲履带平台的重型机兵。其特殊的全斜面设计、透过两组湿件计算核心运行的作战系统与无人化的炮塔使其在正面战场上几乎难以击毁。\n\n出於该型机兵可观的生存能力与战斗续航力因此在尾舱配置了两个机械师控制席。</DMS_Chelydridae_MainBattleTank_Blueprint.description>
+  
+</LanguageData>

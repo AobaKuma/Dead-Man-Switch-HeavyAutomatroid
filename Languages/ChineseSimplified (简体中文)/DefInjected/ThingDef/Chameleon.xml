@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: chameleon -->
+  <DMS_Chameleon_TD.label>变色龙</DMS_Chameleon_TD.label>
+  <!-- EN: A four-legged heavy automatroid used for anti-tank ambush. It is the main unit used by the colonial fleet to deal with armored regiments. -->
+  <DMS_Chameleon_TD.description>安装了转膛反坦克炮的四足重型机兵平台，变色龙是殖民舰队的重型猎坦机兵，具有极强的通过性与静态射击稳定性并且使用燃料电池而非常规发动机的设计使其在原地保持不动时几乎没有任何噪音，极强的伏击能力与轻量化改造的76毫米炮足以在敌人反应过来前便击毁敌方装甲载具。\n\n传言中是鬣蜥系列的早期生产型号，其70%的零件通用率似乎可以证实该型号与鬣蜥的关联性。</DMS_Chameleon_TD.description>
+  <!-- EN: main engine -->
+  <DMS_Chameleon_TD.components.0.label>主驱动舱</DMS_Chameleon_TD.components.0.label>
+  <!-- EN: battery tank -->
+  <DMS_Chameleon_TD.components.1.label>燃料电池舱</DMS_Chameleon_TD.components.1.label>
+  <!-- EN: left front Suspension -->
+  <DMS_Chameleon_TD.components.2.label>左前机械腿</DMS_Chameleon_TD.components.2.label>
+  <!-- EN: right front suspension -->
+  <DMS_Chameleon_TD.components.3.label>右前机械腿</DMS_Chameleon_TD.components.3.label>
+  <!-- EN: left rear suspension -->
+  <DMS_Chameleon_TD.components.4.label>左後机械腿</DMS_Chameleon_TD.components.4.label>
+  <!-- EN: right rear suspension -->
+  <DMS_Chameleon_TD.components.5.label>右後机械腿</DMS_Chameleon_TD.components.5.label>
+  <!-- EN: left front mechanical leg -->
+  <DMS_Chameleon_TD.components.6.label>左前机械足</DMS_Chameleon_TD.components.6.label>
+  <!-- EN: right front mechanical leg -->
+  <DMS_Chameleon_TD.components.7.label>右前机械足</DMS_Chameleon_TD.components.7.label>
+  <!-- EN: left rear mechanical leg -->
+  <DMS_Chameleon_TD.components.8.label>左後机械足</DMS_Chameleon_TD.components.8.label>
+  <!-- EN: right rear mechanical leg -->
+  <DMS_Chameleon_TD.components.9.label>右後机械足</DMS_Chameleon_TD.components.9.label>
+  <!-- EN: front armor Plating -->
+  <DMS_Chameleon_TD.components.10.label>正面装甲</DMS_Chameleon_TD.components.10.label>
+  <!-- EN: left armor plating -->
+  <DMS_Chameleon_TD.components.11.label>左侧装甲</DMS_Chameleon_TD.components.11.label>
+  <!-- EN: right armor plating -->
+  <DMS_Chameleon_TD.components.12.label>右侧装甲</DMS_Chameleon_TD.components.12.label>
+  <!-- EN: roof armor plating -->
+  <DMS_Chameleon_TD.components.13.label>顶部装甲</DMS_Chameleon_TD.components.13.label>
+  <!-- EN: rear armor plating -->
+  <DMS_Chameleon_TD.components.14.label>後方装甲</DMS_Chameleon_TD.components.14.label>
+  <!-- EN: coaxial MG -->
+  <DMS_Chameleon_TD.comps.CompVehicleTurrets.turrets.0.gizmoLabel>航向机枪</DMS_Chameleon_TD.comps.CompVehicleTurrets.turrets.0.gizmoLabel>
+  <!-- EN: coaxial MG -->
+  <DMS_Chameleon_TD.comps.CompVehicleTurrets.turrets.2.gizmoLabel>航向机枪</DMS_Chameleon_TD.comps.CompVehicleTurrets.turrets.2.gizmoLabel>
+  
+  <!-- EN: chameleon -->
+  <DMS_Chameleon_TD_Blueprint.label>变色龙</DMS_Chameleon_TD_Blueprint.label>
+  <!-- EN: A four-legged heavy automatroid used for anti-tank ambush. It is the main unit used by the colonial fleet to deal with armored regiments. -->
+  <DMS_Chameleon_TD_Blueprint.description>安装了转膛反坦克炮的四足重型机兵平台，变色龙是殖民舰队的重型猎坦机兵，具有极强的通过性与静态射击稳定性并且使用燃料电池而非常规发动机的设计使其在原地保持不动时几乎没有任何噪音，极强的伏击能力与轻量化改造的76毫米炮足以在敌人反应过来前便击毁敌方装甲载具。\n\n传言中是鬣蜥系列的早期生产型号，其70%的零件通用率似乎可以证实该型号与鬣蜥的关联性。</DMS_Chameleon_TD_Blueprint.description>
+  
+</LanguageData>
