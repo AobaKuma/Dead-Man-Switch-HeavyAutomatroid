@@ -29,11 +29,4 @@
   <!-- EN: vehicle assembling. -->
   <DMS_Make_Mule_ATV_Blueprint.jobString>正在组装载具</DMS_Make_Mule_ATV_Blueprint.jobString>
   
-  <!-- EN: mustang ATV -->
-  <DMS_Make_Mustang_ATV_Blueprint.label>野马</DMS_Make_Mustang_ATV_Blueprint.label>
-  <!-- EN: assemble a vehicle. -->
-  <DMS_Make_Mustang_ATV_Blueprint.description>组装载具</DMS_Make_Mustang_ATV_Blueprint.description>
-  <!-- EN: vehicle assembling. -->
-  <DMS_Make_Mustang_ATV_Blueprint.jobString>正在组装载具</DMS_Make_Mustang_ATV_Blueprint.jobString>
-  
 </LanguageData>

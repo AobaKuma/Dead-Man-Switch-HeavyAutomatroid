@@ -1,19 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
-  <!-- EN: coaxial MG -->
-  <DMS_Okhotnik_Coaxial.label>航向重机枪</DMS_Okhotnik_Coaxial.label>
+  <!-- EN: GAU-19/A -->
+  <DMS_GAU19A_Coaxial.label>GAU-19/A</DMS_GAU19A_Coaxial.label>
   <!-- EN: Select Target.\n\nFire for effect -->
-  <DMS_Okhotnik_Coaxial.gizmoDescription>瞄准目标</DMS_Okhotnik_Coaxial.gizmoDescription>
+  <DMS_GAU19A_Coaxial.gizmoDescription>瞄准射击</DMS_GAU19A_Coaxial.gizmoDescription>
+  
+  <!-- EN: M134 turret -->
+  <DMS_GAU4_Turret.label>GAU-4/M61"火神"</DMS_GAU4_Turret.label>
+  <!-- EN: a rapid-firing multiple-barrel firearm chambered in autocannon rounds. -->
+  <DMS_GAU4_Turret.description>一种使用大口径机炮弹的多管机炮</DMS_GAU4_Turret.description>
+  <!-- EN: Select Target.\n\nFire for effect -->
+  <DMS_GAU4_Turret.gizmoDescription>瞄准射击</DMS_GAU4_Turret.gizmoDescription>
   
   <!-- EN: Smoke grenade launcher -->
   <DMS_GrenadeLauncher.label>烟雾发射器</DMS_GrenadeLauncher.label>
   <!-- EN: Select Target.\n\nFire for effect -->
-  <DMS_GrenadeLauncher.gizmoDescription>瞄准目标</DMS_GrenadeLauncher.gizmoDescription>
+  <DMS_GrenadeLauncher.gizmoDescription>瞄准射击</DMS_GrenadeLauncher.gizmoDescription>
+  
+  <!-- EN: coaxial light machinegun -->
+  <DMS_LMG_Coaxial.label>同轴轻机枪</DMS_LMG_Coaxial.label>
+  <!-- EN: Select Target.\n\nFire for effect -->
+  <DMS_LMG_Coaxial.gizmoDescription>瞄准射击</DMS_LMG_Coaxial.gizmoDescription>
+  
+  <!-- EN: coaxial machinegun -->
+  <DMS_Okhotnik_Coaxial.label>同轴机枪</DMS_Okhotnik_Coaxial.label>
+  <!-- EN: Select Target.\n\nFire for effect -->
+  <DMS_Okhotnik_Coaxial.gizmoDescription>瞄准射击</DMS_Okhotnik_Coaxial.gizmoDescription>
   
   <!-- EN: heavy machinegun turret -->
   <DMS_Okhotnik_Turret.label>重机枪炮塔</DMS_Okhotnik_Turret.label>
   <!-- EN: Select Target.\n\nFire for effect -->
-  <DMS_Okhotnik_Turret.gizmoDescription>瞄准目标</DMS_Okhotnik_Turret.gizmoDescription>
+  <DMS_Okhotnik_Turret.gizmoDescription>瞄准射击</DMS_Okhotnik_Turret.gizmoDescription>
   
 </LanguageData>

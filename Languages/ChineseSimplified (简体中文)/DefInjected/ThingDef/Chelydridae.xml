@@ -4,7 +4,7 @@
   <!-- EN: Chelydridae -->
   <DMS_Chelydridae_MainBattleTank.label>鳄龟</DMS_Chelydridae_MainBattleTank.label>
   <!-- EN: The automated main battle vehicles currently in service in the colonial fleet are designed to theoretically conduct fully automatic combat. However, due to concerns about the battlefield communication environment, a space for two crew members was designed in the tail compartment. -->
-  <DMS_Chelydridae_MainBattleTank.description>殖民舰队现役的主战坦克，是与象龟、蠵龟等同属装甲履带平台的重型机兵。其特殊的全斜面设计、透过两组湿件计算核心运行的作战系统与无人化的炮塔使其在正面战场上几乎难以击毁。\n\n出於该型机兵可观的生存能力与战斗续航力因此在尾舱配置了两个机械师控制席。</DMS_Chelydridae_MainBattleTank.description>
+  <DMS_Chelydridae_MainBattleTank.description>殖民舰队现役的主力战车，是与象龟、蠵龟等同属装甲履带平台的重型机兵。其特殊的全斜面设计、透过两组湿件计算核心运行的作战系统与无人化的炮塔使其在正面战场上几乎难以击毁。\n\n出於该型机兵可观的生存能力与战斗续航力因此在尾舱配置了两个机械师控制席。</DMS_Chelydridae_MainBattleTank.description>
   <!-- EN: turbine engine -->
   <DMS_Chelydridae_MainBattleTank.components.0.label>涡轮发动机</DMS_Chelydridae_MainBattleTank.components.0.label>
   <!-- EN: armoured fuel tank -->
@@ -55,6 +55,6 @@
   <!-- EN: Chelydridae -->
   <DMS_Chelydridae_MainBattleTank_Blueprint.label>鳄龟</DMS_Chelydridae_MainBattleTank_Blueprint.label>
   <!-- EN: The automated main battle vehicles currently in service in the colonial fleet are designed to theoretically conduct fully automatic combat. However, due to concerns about the battlefield communication environment, a space for two crew members was designed in the tail compartment. -->
-  <DMS_Chelydridae_MainBattleTank_Blueprint.description>殖民舰队现役的主战坦克，是与象龟、蠵龟等同属装甲履带平台的重型机兵。其特殊的全斜面设计、透过两组湿件计算核心运行的作战系统与无人化的炮塔使其在正面战场上几乎难以击毁。\n\n出於该型机兵可观的生存能力与战斗续航力因此在尾舱配置了两个机械师控制席。</DMS_Chelydridae_MainBattleTank_Blueprint.description>
+  <DMS_Chelydridae_MainBattleTank_Blueprint.description>殖民舰队现役的主力战车，是与象龟、蠵龟等同属装甲履带平台的重型机兵。其特殊的全斜面设计、透过两组湿件计算核心运行的作战系统与无人化的炮塔使其在正面战场上几乎难以击毁。\n\n出於该型机兵可观的生存能力与战斗续航力因此在尾舱配置了两个机械师控制席。</DMS_Chelydridae_MainBattleTank_Blueprint.description>
   
 </LanguageData>

@@ -584,7 +584,7 @@
 			<li>
 				<key>Kord</key>
 				<label>Kord HMG</label>
-				<description>將機身下方的防禦機槍更換為Kord重機槍</description>
+				<description>Replace the light machine gun under chassis with Kord heavy machine gun</description>
 				<icon>Things/Vehicles/Common/DMS_Okhotnik_Coaxial_Icon</icon>
 				<work>2500</work>
 				<gridCoordinate>(5,15)</gridCoordinate>
@@ -637,7 +637,7 @@
 				<key>GAU19A</key>
 				<label>GAU-19/A</label>
 				<!-- 將機身下方的防禦機槍更換為GAU-19/A多管重機槍 -->
-				<description>Replace the defensive machine gun under chassis with GAU-19/A multi-barreled heavy machine gun</description>
+				<description>Replace the light machine gun under chassis with GAU-19/A multi-barreled heavy machine gun</description>
 				<icon>Things/Vehicles/Common/DMS_GAU19_Coaxial_Icon</icon>
 				<work>5000</work>
 				<gridCoordinate>(10,15)</gridCoordinate>

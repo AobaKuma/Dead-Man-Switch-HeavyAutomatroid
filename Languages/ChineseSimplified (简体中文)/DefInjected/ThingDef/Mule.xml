@@ -29,6 +29,16 @@
   <DMS_Mule_ATV.components.10.label>右後轮</DMS_Mule_ATV.components.10.label>
   <!-- EN: steering wheel -->
   <DMS_Mule_ATV.components.12.label>方向盘</DMS_Mule_ATV.components.12.label>
+  <!-- EN: front armor Plating -->
+  <DMS_Mule_ATV.components.13.label>正面装甲</DMS_Mule_ATV.components.13.label>
+  <!-- EN: left armor plating -->
+  <DMS_Mule_ATV.components.14.label>左侧装甲</DMS_Mule_ATV.components.14.label>
+  <!-- EN: right armor plating -->
+  <DMS_Mule_ATV.components.15.label>右侧装甲</DMS_Mule_ATV.components.15.label>
+  <!-- EN: roof armor plating -->
+  <DMS_Mule_ATV.components.16.label>顶部装甲</DMS_Mule_ATV.components.16.label>
+  <!-- EN: rear armor plating -->
+  <DMS_Mule_ATV.components.17.label>後方装甲</DMS_Mule_ATV.components.17.label>
   <!-- EN: back passenger -->
   <DMS_Mule_ATV.properties.roles.2.label>後座乘客</DMS_Mule_ATV.properties.roles.2.label>
   
