@@ -720,8 +720,8 @@
 		<nodes>
 			<li>
 				<key>Vulcan</key>
-				<label>M61 "Vulcan"</label>
-				<description>將砲塔上的武器站更換為M61</description>
+				<label>GAU-4/M61 "Vulkan"</label>
+				<description>replace weapon station on the turret with M61. The GAU-4/M61 "Vulkan" is a formidable vehicle-mounted, remote-controlled Gatling weapon system utilized by the army. It demonstrates exceptional combat effectiveness, excelling in air defense, ground suppression, and interception of low-speed, close-to-earth aircraft. Despite utilizing relatively easy-to-obtain steel core ammunition, it swiftly depletes its supply when fired.</description>
 				<icon>Things/Vehicles/Common/DMS_GAU4_Icon</icon>
 				<work>2500</work>
 				<gridCoordinate>(5,5)</gridCoordinate>

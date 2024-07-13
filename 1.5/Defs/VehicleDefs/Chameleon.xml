@@ -488,7 +488,8 @@
 			<li>
 				<key>ARES</key>
 				<label>Automatic Revolver Electromagnetic Slingshot</label>
-				<description>一種輕量化的76毫米轉膛反坦克加農砲，具有獨立的火控系統並罕見的採用電磁軌道加速使砲彈能以接近跨音速的出膛速度發射，足以讓特製的鎢芯穿甲彈在敵人反應過來前便擊穿敵方裝甲載具。\n\n 有趣的是，該武器也是目前已知殖民艦隊少數進入量產階段並投入使用的非火藥武器系統。</description>
+				<!-- 一種輕量化的76毫米轉膛反坦克加農砲，具有獨立的火控系統並罕見的採用電磁軌道加速使砲彈能以接近跨音速的出膛速度發射，足以讓特製的鎢芯穿甲彈在敵人反應過來前便擊穿敵方裝甲載具。\n\n 有趣的是，該武器也是目前已知殖民艦隊少數進入量產階段並投入使用的非火藥武器系統。 -->
+				<description>A lightweight 76mm anti-tank revolver cannon with an independent fire control system. the use of electromagnetic acceleration makes projectile capable to penetrate any heavy armored vehicles. \n\n Interestingly, this weapon is also one of the few non-gunpowder weapon systems known to have entered the mass production stage and been put into use by the colonial fleet.</description>
 				<icon>Things/Vehicles/Common/DMS_GAU4_Icon</icon>
 				<work>5000</work>
 				<gridCoordinate>(5,5)</gridCoordinate>
@@ -635,7 +636,8 @@
 			<li>
 				<key>GAU19A</key>
 				<label>GAU-19/A</label>
-				<description>將機身下方的防禦機槍更換為GAU-19/A多管重機槍</description>
+				<!-- 將機身下方的防禦機槍更換為GAU-19/A多管重機槍 -->
+				<description>Replace the defensive machine gun under chassis with GAU-19/A multi-barreled heavy machine gun</description>
 				<icon>Things/Vehicles/Common/DMS_GAU19_Coaxial_Icon</icon>
 				<work>5000</work>
 				<gridCoordinate>(10,15)</gridCoordinate>
@@ -664,7 +666,7 @@
 						</removeTurrets>
 					</li>
 				</upgrades>
-				<researchPrerequisites><li>DMS_EquipmentElite</li></researchPrerequisites>
+				<researchPrerequisites><li>MultibarrelWeapons</li></researchPrerequisites>
 				<ingredients>
 					<Tungsteel>120</Tungsteel>
 					<ComponentStamped>8</ComponentStamped>

@@ -140,7 +140,7 @@
   <!-- 20mm 大口徑多管砲塔 -->
   <Vehicles.VehicleTurretDef ParentName="DMS_BaseTurret" Name="DMS_BaseGAU4Gun">
     <defName>DMS_GAU4_Turret</defName>
-    <label>M134 turret</label>
+    <label>M61 "Vulcan"</label>
     <description>a rapid-firing multiple-barrel firearm chambered in autocannon rounds.</description>
     <!-- 砲塔的渲染顯示 -->
     <gizmoIconTexPath>Things/Vehicles/Common/DMS_GAU4_Icon</gizmoIconTexPath>

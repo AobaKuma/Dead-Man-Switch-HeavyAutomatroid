@@ -384,7 +384,7 @@
 			<li>  <!--同一升级树下不同选择在nodes下分离-->
 				<key>Okhotnik</key>
 				<label>Okhotnik</label>
-				<description>"獵手"是一種發射大口徑機槍彈的車載遙控重機槍武器系統，相對於防空機槍有更大的威力、精確度與射程，但消耗的彈藥較為昂貴。</description>
+				<description>"Okhotnik" is a vehicle-mounted remote-controlled heavy machine gun weapon system that fires large-caliber machine gun bullets. It has greater power, accuracy and range than anti-aircraft machine guns, but the ammunition it consumes is more expensive.</description>
 				<icon>Things/Vehicles/Common/DMS_Okhotnik_Icon</icon>
 				<work>3000</work>
 				<gridCoordinate>(5,5)</gridCoordinate>
@@ -431,8 +431,9 @@
 			</li>
 			<li>
 				<key>GAU4</key>
-				<label>GAU-4/M168</label>
-				<description>M168是一種由陸軍使用的車載遙控加特林武器系統，在防空、對地壓制與攔截低速近地飛行器上具有較高的作戰效能，使用相對易取得的鋼芯彈藥但發射時消耗速度極快。</description>
+				<label>GAU-4/M61 "Vulcan"</label>
+				<!-- M168是一種由陸軍使用的車載遙控加特林武器系統，在防空、對地壓制與攔截低速近地飛行器上具有較高的作戰效能，使用相對易取得的鋼芯彈藥但發射時消耗速度極快。 -->
+				<description>The GAU-4/M61 "Vulcan" is a formidable vehicle-mounted, remote-controlled Gatling weapon system utilized by the army. It demonstrates exceptional combat effectiveness, excelling in air defense, ground suppression, and interception of low-speed, close-to-earth aircraft. Despite utilizing relatively easy-to-obtain steel core ammunition, it swiftly depletes its supply when fired.</description>
 				<icon>Things/Vehicles/Common/DMS_GAU4_Icon</icon>
 				<work>5000</work>
 				<gridCoordinate>(5,10)</gridCoordinate>

@@ -12,7 +12,7 @@
     </graphicData>
     <projectile>
       <damageDef>Bomb</damageDef>
-      <damageAmountBase>180</damageAmountBase>
+      <damageAmountBase>120</damageAmountBase>
       <armorPenetrationBase>1.18</armorPenetrationBase>
       <speed>120</speed>
       <explosionRadius>3.9</explosionRadius>
@@ -35,7 +35,7 @@
     </graphicData>
     <projectile>
       <damageDef>Bomb</damageDef>
-      <damageAmountBase>500</damageAmountBase>
+      <damageAmountBase>300</damageAmountBase>
       <armorPenetrationBase>1.98</armorPenetrationBase>
       <speed>200</speed>
       <explosionRadius>1.9</explosionRadius>
