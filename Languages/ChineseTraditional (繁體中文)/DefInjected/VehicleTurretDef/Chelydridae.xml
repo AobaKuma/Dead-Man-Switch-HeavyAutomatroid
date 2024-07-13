@@ -6,11 +6,11 @@
   <!-- EN: Single Shot -->
   <Chelydridae_Tank_Turret.fireModes.0.label>單發</Chelydridae_Tank_Turret.fireModes.0.label>
   <!-- EN: Select Target.\n\nFire for effect -->
-  <Chelydridae_Tank_Turret.gizmoDescription>瞄準目標</Chelydridae_Tank_Turret.gizmoDescription>
+  <Chelydridae_Tank_Turret.gizmoDescription>瞄準射擊</Chelydridae_Tank_Turret.gizmoDescription>
   
   <!-- EN: heavy machinegun turret -->
   <DMS_Chelydridae_Kord.label>重機槍砲塔</DMS_Chelydridae_Kord.label>
   <!-- EN: Select Target.\n\nFire for effect -->
-  <DMS_Chelydridae_Kord.gizmoDescription>瞄準目標</DMS_Chelydridae_Kord.gizmoDescription>
+  <DMS_Chelydridae_Kord.gizmoDescription>瞄準射擊</DMS_Chelydridae_Kord.gizmoDescription>
   
 </LanguageData>

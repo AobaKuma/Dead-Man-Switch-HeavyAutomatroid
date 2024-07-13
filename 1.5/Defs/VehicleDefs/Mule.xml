@@ -423,7 +423,7 @@
 			<li>
 				<key>Mustang</key>
 				<label>Mustang</label>
-				<description>A lightweight autonomous combat platform that is used to coordinate infantry attacks. This type of fire control system that uses existing platform modifications and is controlled by algorithms is a common configuration of the first generation of automatroid.</description>
+				<description>Mustang is a lightweight autonomous combat platform used to coordinate infantry attacks. This fire control system utilizes existing platform modifications and is controlled by algorithms, a common configuration of the first generation of automatroid.</description>
 				<icon>Things/Vehicles/Common/DMS_Okhotnik_Icon</icon>
 				<work>3000</work>
 				<gridCoordinate>(5,5)</gridCoordinate>

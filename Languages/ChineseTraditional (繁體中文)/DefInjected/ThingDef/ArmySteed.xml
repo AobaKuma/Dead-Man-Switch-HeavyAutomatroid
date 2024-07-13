@@ -37,7 +37,8 @@
   <DMS_ArmySteed_APC.components.15.label>頂部裝甲</DMS_ArmySteed_APC.components.15.label>
   <!-- EN: rear armor plating -->
   <DMS_ArmySteed_APC.components.16.label>後方裝甲</DMS_ArmySteed_APC.components.16.label>
-  <!-- EN: Main Turret -->
+  
+  <!-- UNUSED -->
   <DMS_ArmySteed_APC.comps.CompVehicleTurrets.turrets.0.gizmoLabel>車載機砲</DMS_ArmySteed_APC.comps.CompVehicleTurrets.turrets.0.gizmoLabel>
   
   <!-- EN: army steed APC -->

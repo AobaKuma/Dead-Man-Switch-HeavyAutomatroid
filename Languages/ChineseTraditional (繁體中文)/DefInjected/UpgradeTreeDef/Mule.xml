@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: A lightweight autonomous combat platform that is used to coordinate infantry attacks. This type of fire control system that uses existing platform modifications and is controlled by algorithms is a common configuration of the first generation of automatroid. -->
+  <DMS_Mule_UpgradeTree.nodes.0.description>野馬是用於協調步兵攻擊的輕型自主作戰改裝型騾馬。此利用現有平台修改並由車載電腦所控制，這是第一代自動機器人的常見配置。</DMS_Mule_UpgradeTree.nodes.0.description>
+  <!-- EN: Main Turret -->
+  <DMS_Mule_UpgradeTree.nodes.0.upgrades.0.turrets.0.gizmoLabel>主炮塔</DMS_Mule_UpgradeTree.nodes.0.upgrades.0.turrets.0.gizmoLabel>
+  <!-- EN: back passenger -->
+  <DMS_Mule_UpgradeTree.nodes.0.upgrades.1.roles.2.label>後座</DMS_Mule_UpgradeTree.nodes.0.upgrades.1.roles.2.label>
+  
+</LanguageData>
