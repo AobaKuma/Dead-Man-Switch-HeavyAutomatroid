@@ -2,9 +2,9 @@
 <LanguageData>
   
   <!-- EN: coaxial MG -->
-  <DMS_Chelydridae_MGTurret.label>航向重机枪</DMS_Chelydridae_MGTurret.label>
+  <DMS_Okhotnik_Coaxial.label>航向重机枪</DMS_Okhotnik_Coaxial.label>
   <!-- EN: Select Target.\n\nFire for effect -->
-  <DMS_Chelydridae_MGTurret.gizmoDescription>瞄准目标</DMS_Chelydridae_MGTurret.gizmoDescription>
+  <DMS_Okhotnik_Coaxial.gizmoDescription>瞄准目标</DMS_Okhotnik_Coaxial.gizmoDescription>
   
   <!-- EN: Smoke grenade launcher -->
   <DMS_GrenadeLauncher.label>烟雾发射器</DMS_GrenadeLauncher.label>
@@ -12,8 +12,8 @@
   <DMS_GrenadeLauncher.gizmoDescription>瞄准目标</DMS_GrenadeLauncher.gizmoDescription>
   
   <!-- EN: heavy machinegun turret -->
-  <DMS_turret_Kord.label>重机枪炮塔</DMS_turret_Kord.label>
+  <DMS_Okhotnik_Turret.label>重机枪炮塔</DMS_Okhotnik_Turret.label>
   <!-- EN: Select Target.\n\nFire for effect -->
-  <DMS_turret_Kord.gizmoDescription>瞄准目标</DMS_turret_Kord.gizmoDescription>
+  <DMS_Okhotnik_Turret.gizmoDescription>瞄准目标</DMS_Okhotnik_Turret.gizmoDescription>
   
 </LanguageData>

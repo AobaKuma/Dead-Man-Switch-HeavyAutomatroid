@@ -14,7 +14,7 @@
 			<WorkToBuild>20000</WorkToBuild>
 			<Flammability>0.05</Flammability>
 		</statBases>
-		<size>(2,5)</size>
+		<size>(3,5)</size>
 		<researchPrerequisites>
 			<li>DMS_Hypothesis</li>
 		</researchPrerequisites>
@@ -43,9 +43,9 @@
 			<texPath>Things/Vehicles/ArmySteed/vehicle</texPath>
 			<drawSize>5.5</drawSize>
 		</graphicData>
-		<size>(2,5)</size>
+		<size>(3,5)</size>
 		<fillPercent>0.9</fillPercent>
-		<vehicleCategory>Transport</vehicleCategory>
+		<vehicleCategory>Trader</vehicleCategory>
 		<vehicleMovementPermissions>NoDriverNeeded</vehicleMovementPermissions>
 		<statBases>
 			<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
@@ -186,7 +186,7 @@
 				<depth>Internal</depth>			
 				<hitbox>
 					<cells>
-						<li>(0, 1)</li>
+						<li>(-1, 1)</li>
 					</cells>
 				</hitbox>
 				<categories><li>MoveSpeed</li></categories>
@@ -210,8 +210,8 @@
 				<depth>Internal</depth>
 				<hitbox>
 					<cells>
-						<li>(0, -1)</li>
-						<li>(0, -2)</li>
+						<li>(-1, -1)</li>
+						<li>(-1, -2)</li>
 					</cells>
 				</hitbox>
 				<categories><li>MoveSpeed</li></categories>
@@ -243,7 +243,7 @@
 				<hitbox>
 					<fallthrough>false</fallthrough>
 					<cells>
-						<li>(0, 1)</li>
+						<li>(-1, 1)</li>
 					</cells>
 				</hitbox>			
 			</li>
@@ -279,8 +279,8 @@
 				<hitbox>
 					<fallthrough>false</fallthrough>
 					<cells>
-						<li>(0, -1)</li>
-						<li>(0, -2)</li>
+						<li>(-1, -1)</li>
+						<li>(-1, -2)</li>
 					</cells>
 				</hitbox>
 			</li>
@@ -363,30 +363,119 @@
 			</li>
 		</components>
 		<comps>
-			<li Class="Vehicles.CompProperties_FueledTravel">	<!-- 油箱與油耗 -->
+			<li Class="Vehicles.CompProperties_FueledTravel"><!-- 油箱與油耗 -->
 				<fuelType>Chemfuel</fuelType>
 				<leakDef>Filth_Fuel</leakDef>
 				<fuelConsumptionRate>20</fuelConsumptionRate>
 				<fuelConsumptionWorldMultiplier>1</fuelConsumptionWorldMultiplier>
 				<fuelCapacity>180</fuelCapacity>
 			</li>
-			<li Class="Vehicles.CompProperties_VehicleTurrets">	<!-- 砲塔 -->
-				<turrets>
-					<li>
-						<turretDef>DMS_turret_Kord</turretDef>					
-						<renderProperties>
-							<north>(0.425, -0.2)</north>
-							<south>(-0.425, 0.275)</south>
-							<east>(-0.25, 0.175)</east>
-							<west>(0.275, 0.875)</west>
-						</renderProperties>				
-						<gizmoLabel>Main Turret</gizmoLabel>
-						<aimPieOffset>(-0.1, 0)</aimPieOffset>	<!-- 預熱指示器的x,z偏移 -->
-						<drawLayer>1</drawLayer>						
-						<key>mainTurret</key>
-					</li>
-				</turrets>
+			<li Class="Vehicles.CompProperties_VehicleTurrets"/><!-- 默認無砲塔 -->
+			<li Class="Vehicles.CompProperties_UpgradeTree"> <!--开启改装系统-->
+				<def>DMS_ArmySteed_UpgradeTree</def>
 			</li>
 		</comps>
 	</Vehicles.VehicleDef>
+
+	<!-- 升級 -->
+	<Vehicles.UpgradeTreeDef>
+		<defName>DMS_ArmySteed_UpgradeTree</defName>
+		<nodes>
+			<li>  <!--同一升级树下不同选择在nodes下分离-->
+				<key>Okhotnik</key>
+				<label>Okhotnik</label>
+				<description>"獵手"是一種發射大口徑機槍彈的車載遙控重機槍武器系統，相對於防空機槍有更大的威力、精確度與射程，但消耗的彈藥較為昂貴。</description>
+				<icon>Things/Vehicles/Common/DMS_Okhotnik_Icon</icon>
+				<work>3000</work>
+				<gridCoordinate>(5,5)</gridCoordinate>
+				<disableIfUpgradeNodeEnabled>GAU4</disableIfUpgradeNodeEnabled>
+				<upgrades>
+					<li Class="Vehicles.TurretUpgrade"><!--炮塔升级相关，直接从空炮塔升级为有炮塔不可行，需要空白comps，参见Trucks.xml-->
+						<turrets>
+							<li> 
+								<turretDef>DMS_Okhotnik_Turret</turretDef> <!--调用的炮塔def,嫌麻烦就不要在两个改装炮塔之间来回切，直接remove回到原始状态-->					
+								<renderProperties>
+									<north>(0.425, -0.2)</north>
+									<south>(-0.425, 0.275)</south>
+									<east>(-0.25, 0.175)</east>
+									<west>(0.275, 0.875)</west>
+								</renderProperties>
+								<gizmoLabel>Main Turret</gizmoLabel>
+								<aimPieOffset>(0, 2.55)</aimPieOffset>
+								<key>mainTurret_Okhotnik</key>
+							</li>
+						</turrets>
+					</li>
+					<li Class = "Vehicles.StatUpgrade"> <!--基础属性修改，可用add/set，具体修改范围参考文档-->
+						<vehicleStats>
+							<li>
+								<def>MoveSpeed</def>
+								<value>-1</value>
+								<type>Add</type>
+							</li>
+							<li>
+								<def>CargoCapacity</def>
+								<value>-48</value>
+								<type>Add</type>
+							</li>
+						</vehicleStats>
+					</li>
+				</upgrades>
+				<researchPrerequisites>
+				  <li>DMS_EquipmentElite</li>
+				</researchPrerequisites>
+				<ingredients> <!--改装成本-->
+					<Tungsteel>100</Tungsteel>
+					<ComponentStamped>5</ComponentStamped>
+				</ingredients>
+			</li>
+			<li>
+				<key>GAU4</key>
+				<label>GAU-4/M168</label>
+				<description>M168是一種由陸軍使用的車載遙控加特林武器系統，在防空、對地壓制與攔截低速近地飛行器上具有較高的作戰效能，使用相對易取得的鋼芯彈藥但發射時消耗速度極快。</description>
+				<icon>Things/Vehicles/Common/DMS_GAU4_Icon</icon>
+				<work>5000</work>
+				<gridCoordinate>(5,10)</gridCoordinate>
+				<disableIfUpgradeNodeEnabled>Okhotnik</disableIfUpgradeNodeEnabled>
+				<upgrades>
+					<li Class="Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>DMS_GAU4_Turret</turretDef>
+								<renderProperties>
+									<north>(0.425, -0.2)</north>
+									<south>(-0.425, 0.275)</south>
+									<east>(-0.25, 0.175)</east>
+									<west>(0.275, 0.875)</west>
+								</renderProperties>
+								<gizmoLabel>Main Turret</gizmoLabel>
+								<aimPieOffset>(0, 1)</aimPieOffset>
+								<key>mainTurret_GAU4</key>
+							</li>
+						</turrets>
+					</li>
+					<li Class = "Vehicles.StatUpgrade"> <!--基础属性修改，可用add/set，具体修改范围参考文档-->
+						<vehicleStats>
+							<li>
+								<def>MoveSpeed</def>
+								<value>-1</value>
+								<type>Add</type>
+							</li>
+							<li>
+								<def>CargoCapacity</def>
+								<value>-80</value>
+								<type>Add</type>
+							</li>
+						</vehicleStats>
+					</li>
+				</upgrades>
+				<researchPrerequisites><li>MultibarrelWeapons</li></researchPrerequisites>
+				<ingredients>
+					<Tungsteel>225</Tungsteel>
+					<ComponentStamped>10</ComponentStamped>
+				</ingredients>
+			</li>
+		</nodes>
+	</Vehicles.UpgradeTreeDef>
+	
 </Defs>

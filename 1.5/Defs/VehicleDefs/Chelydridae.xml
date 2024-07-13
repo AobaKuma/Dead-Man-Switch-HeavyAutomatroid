@@ -130,7 +130,7 @@
         <reactors>
           <li Class="Vehicles.Reactor_Explosive">
             <indicator>VF_Explosive</indicator>
-            <chance>0.25</chance>
+            <chance>0.05</chance>
             <radius>3</radius>
             <damageDef>Bomb</damageDef>
           </li>
@@ -150,6 +150,12 @@
         <depth>Internal</depth>
         <reactors>
           <li Class="Vehicles.Reactor_FuelLeak" />
+          <li Class="Vehicles.Reactor_Explosive">
+            <indicator>VF_Explosive</indicator>
+            <chance>0.05</chance>
+            <radius>2</radius>
+            <damageDef>Flame</damageDef>
+          </li>
         </reactors>
         <hitbox>
           <cells>
@@ -185,9 +191,9 @@
         <reactors>
           <li Class="Vehicles.Reactor_Explosive">
             <indicator>VF_Explosive</indicator>
-            <chance>0.25</chance>
+            <chance>0.02</chance>
             <radius>5</radius>
-            <damageDef>Bomb</damageDef>
+            <damageDef>Flame</damageDef>
           </li>
         </reactors>
         <hitbox>
@@ -545,22 +551,22 @@
             <renderProperties>
               <north>(0, -0.2)</north>
               <south>(0, 0.65)</south>
-              <east>(-0.65,0.4)</east>
-              <west>(0.65,0.4)</west>
+              <east>(-0.65,0.5)</east>
+              <west>(0.65,0.5)</west>
             </renderProperties>
             <gizmoLabel>Main Turret</gizmoLabel>
-            <aimPieOffset>(0, 3)</aimPieOffset>
+            <aimPieOffset>(0, 3.35)</aimPieOffset>
             <!-- 預熱指示器的x,z偏移 -->
-            <drawLayer>1</drawLayer>
+            <drawLayer>2</drawLayer>
             <key>mainTurret</key>
-            <component>
+            <!-- <component>
               <key>MainTurret</key>
               <healthPercent>0.01</healthPercent>
-            </component>
+            </component> -->
           </li>
           <li>
             <!--車頂機槍-->
-            <turretDef>DMS_turret_Kord</turretDef>
+            <turretDef>DMS_Okhotnik_Turret</turretDef>
             <renderProperties>
               <!--這裡的坐標系是無視旋轉的,所以x就是恆定左右偏移-->
               <north>(0.75,-0.7)</north>
@@ -571,12 +577,12 @@
             <gizmoLabel>support MG</gizmoLabel>
             <aimPieOffset>(0, 0)</aimPieOffset>
             <key>topMG</key>
-            <drawLayer>2</drawLayer>
+            <drawLayer>3</drawLayer>
             <parentKey>mainTurret</parentKey>
           </li>
           <li>
             <!--同軸機槍-->
-            <turretDef>DMS_Chelydridae_MGTurret</turretDef>
+            <turretDef>DMS_LMG_Coaxial</turretDef>
             <renderProperties>
               <east>(1.67,0.4)</east>
               <south>(0.4,-1.67)</south>
@@ -587,7 +593,7 @@
             <angleRestricted>(345,15)</angleRestricted>
             <aimPieOffset>(0, 0)</aimPieOffset>
             <key>coaxialMG</key>
-            <drawLayer>2</drawLayer>
+            <drawLayer>3</drawLayer>
             <parentKey>mainTurret</parentKey>
           </li>
           <li>
@@ -623,6 +629,9 @@
 					</li>
         </turrets>
       </li>
+			<li Class="Vehicles.CompProperties_UpgradeTree"> <!--开启改装系统-->
+				<def>DMS_Chelydridae_UpgradeTree</def>
+			</li>
     </comps>
   </Vehicles.VehicleDef>
 
@@ -665,7 +674,7 @@
     <!-- 射程與射界相關 -->
     <minRange>2</minRange>
     <maxRange>60.9</maxRange>
-		<rotationSpeed>0.75</rotationSpeed>
+		<rotationSpeed>10</rotationSpeed>
     <!-- 射擊相關 -->
     <warmUpTimer>3</warmUpTimer>
     <shotSound>DMS_Shot_MBTCannonSound</shotSound>
@@ -705,5 +714,63 @@
       <drawSize>3</drawSize>
     </graphicData>
   </Vehicles.VehicleTurretDef>
+
+  <Vehicles.UpgradeTreeDef>
+		<defName>DMS_Chelydridae_UpgradeTree</defName>
+		<nodes>
+			<li>
+				<key>Vulcan</key>
+				<label>M61 "Vulcan"</label>
+				<description>將砲塔上的武器站更換為M61</description>
+				<icon>Things/Vehicles/Common/DMS_GAU4_Icon</icon>
+				<work>2500</work>
+				<gridCoordinate>(5,5)</gridCoordinate>
+				<upgrades>
+					<li Class="Vehicles.TurretUpgrade">
+						<turrets>			
+							<li>
+							  <!--車體機槍-->
+							  <turretDef>DMS_GAU4_Turret</turretDef>
+                <renderProperties>
+                  <!--這裡的坐標系是無視旋轉的,所以x就是恆定左右偏移-->
+                  <north>(0.75,-0.7)</north>
+                  <south>(-0.75,0.7)</south>
+                  <east>(-0.7,-0.75)</east>
+                  <west>(0.7,-0.75)</west>
+                </renderProperties>
+                <gizmoLabel>M61 "Vulcan"</gizmoLabel>
+                <aimPieOffset>(0, 1)</aimPieOffset>
+                <key>topMG_Vulcan</key>
+                <drawLayer>3</drawLayer>
+                <parentKey>mainTurret</parentKey>
+							</li>
+						</turrets>
+						<removeTurrets>
+							<li>topMG</li>
+						</removeTurrets>
+					</li>
+					<li Class = "Vehicles.StatUpgrade"> <!--基础属性修改，可用add/set，具体修改范围参考文档-->
+						<vehicleStats>
+							<li>
+								<def>MoveSpeed</def>
+								<value>-1</value>
+								<type>Add</type>
+							</li>
+							<li>
+								<def>CargoCapacity</def>
+								<value>-75</value>
+								<type>Add</type>
+							</li>
+						</vehicleStats>
+					</li>
+				</upgrades>
+				<researchPrerequisites><li>MultibarrelWeapons</li></researchPrerequisites>
+				<ingredients>
+          <Tungsteel>225</Tungsteel>
+          <ComponentStamped>10</ComponentStamped>
+				</ingredients>
+			</li>
+		</nodes>
+	</Vehicles.UpgradeTreeDef>
 
 </Defs>

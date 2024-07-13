@@ -7,14 +7,14 @@
 		<description>A four-legged heavy automatroid used for anti-tank ambush. It is the main unit used by the colonial fleet to deal with armored regiments.</description>
 		<graphicData>
 			<texPath>Things/Vehicles/Chameleon/vehicle</texPath>
-			<drawSize>7</drawSize>
+			<drawSize>6</drawSize>
 		</graphicData>	
 		<statBases> 		
 			<MaxHitPoints>500</MaxHitPoints>
 			<WorkToBuild>20000</WorkToBuild>
 			<Flammability>0.05</Flammability>
 		</statBases>
-		<size>(3,4)</size>
+		<size>(3,3)</size>
 		<researchPrerequisites>
 			<li>DMS_HeavyAutomatroid</li>
 		  </researchPrerequisites>
@@ -40,9 +40,9 @@
 		<buildDef>DMS_Chameleon_TD_Blueprint</buildDef>
 		<graphicData>
 			<texPath>Things/Vehicles/Chameleon/vehicle</texPath>
-			<drawSize>7</drawSize>
+			<drawSize>6</drawSize>
 		</graphicData>
-		<size>(3,4)</size>
+		<size>(3,3)</size>
 		<fillPercent>0.75</fillPercent>
 		<vehicleCategory>Transport</vehicleCategory>
 		<vehicleMovementPermissions>NoDriverNeeded</vehicleMovementPermissions>
@@ -90,6 +90,7 @@
 			<customRoadCosts AssignDefaults = "0.3"/>
 			<worldSpeedMultiplier>1.2</worldSpeedMultiplier>
 			<winterCostMultiplier>1.1</winterCostMultiplier>
+			<offRoadMultiplier>0.5</offRoadMultiplier>
 			<restrictToFactions>
 				<li>DMS_Army</li>
 			</restrictToFactions>
@@ -136,13 +137,20 @@
 			</li>	
 			<li><!-- fuel tank 100-->
 				<key>FuelTank</key>
-				<label>battery tank</label>
+				<label>fuel battery tank</label>
 				<health>150</health>
-				<depth>Internal</depth>		
+				<depth>Internal</depth>
+				<reactors>
+				  <li Class="Vehicles.Reactor_Explosive">
+					<indicator>VF_Explosive</indicator>
+					<chance>0.02</chance>
+					<radius>2</radius>
+					<damageDef>Flame</damageDef>
+				  </li>
+				</reactors>
 				<hitbox>
 					<cells>
 						<li>(0, -1)</li>
-						<li>(1, -1)</li>
 					</cells>
 				</hitbox>
 			</li>
@@ -153,7 +161,6 @@
 				<depth>Internal</depth>			
 				<hitbox>
 					<cells>
-						<li>(-1, 2)</li>
 						<li>(-1, 1)</li>
 					</cells>
 				</hitbox>
@@ -166,7 +173,6 @@
 				<depth>Internal</depth>
 				<hitbox>
 					<cells>
-						<li>(1, 2)</li>
 						<li>(1, 1)</li>
 					</cells>
 				</hitbox>
@@ -212,7 +218,6 @@
 				<hitbox>
 					<fallthrough>false</fallthrough>
 					<cells>
-						<li>(-1, 2)</li>
 						<li>(-1, 1)</li>
 					</cells>
 				</hitbox>			
@@ -231,7 +236,6 @@
 				<hitbox>
 					<fallthrough>false</fallthrough>
 					<cells>
-						<li>(1, 2)</li>
 						<li>(1, 1)</li>
 					</cells>
 				</hitbox>
@@ -343,23 +347,9 @@
 			</li>
 			<li Class="Vehicles.CompProperties_VehicleTurrets">	<!-- 砲塔 -->
 				<turrets>
-					<li><!--同軸機槍-->
-					  <turretDef>DMS_Chelydridae_MGTurret</turretDef>
-					  <renderProperties>
-						<east>(1,0.35)</east>
-						<south>(0.35,-1)</south>
-						<north>(-0.35,1)</north>
-						<west>(-1,0.35)</west>
-					  </renderProperties>
-					  <gizmoLabel>coaxial MG</gizmoLabel>
-					  <angleRestricted>(340,20)</angleRestricted>
-					  <aimPieOffset>(0, 0)</aimPieOffset>
-					  <key>coaxialMG</key>
-					  <drawLayer>5</drawLayer>
-					  <parentKey>mainTurret</parentKey>
-					</li>
 					<li>
-						<turretDef>Chameleon_Tank_Turret</turretDef>					
+						<turretDef>DMS_GAU4_Turret</turretDef>
+						<!-- <turretDef>DMS_Chameleon_Tank_Turret</turretDef>-->
 						<renderProperties>
 							<north>(0, 0)</north>
 							<south>(0, 0)</south>
@@ -368,17 +358,17 @@
 						</renderProperties>				
 						<gizmoLabel>Main Turret</gizmoLabel>
 						<aimPieOffset>(0.045, 1.9)</aimPieOffset>	<!-- 預熱指示器的x,z偏移 -->
-						<drawLayer>2</drawLayer>						
+						<drawLayer>2</drawLayer>
 						<key>mainTurret</key>
 					</li>
 					<li>
 					  <!--車體機槍-->
-					  <turretDef>DMS_Chelydridae_MGTurret</turretDef>
+					  <turretDef>DMS_LMG_Coaxial</turretDef>
 					  <renderProperties>
-						<east>(2,-0.4)</east>
-						<south>(0.4,-2.0)</south>
-						<north>(-0.4,2.0)</north> 
-						<west>(-2,-0.4)</west>
+						<east>(1.75,-0.3)</east>
+						<south>(0.3,-1.75)</south>
+						<north>(-0.3,1.75)</north> 
+						<west>(-1.75,-0.3)</west>
 					  </renderProperties>
 					  <gizmoLabel>coaxial MG</gizmoLabel>
 					  <angleRestricted>(300,60)</angleRestricted>
@@ -386,48 +376,23 @@
 					  <key>chassicMG</key>
 					  <drawLayer>-1</drawLayer>
 					</li>
-					<li>
-						<turretDef>DMS_GrenadeLauncher</turretDef>
-						<gizmoLabel>Left Grenade Launcher</gizmoLabel>
-						<renderProperties>
-							<north>(-0.7, 0.2)</north>
-							<south>(0.7, -0.2)</south>
-							<east>(0.2, 0.7)</east>
-							<west>(-0.2, -0.7)</west>
-						</renderProperties>
-						<aimPieOffset>(0, 0)</aimPieOffset>
-						<drawLayer>2</drawLayer>
-						<key>leftSmoke</key>
-						<parentKey>mainTurret</parentKey>
-					</li>
-					<li>
-						<turretDef>DMS_GrenadeLauncher</turretDef>
-						<gizmoLabel>Right Grenade Launcher</gizmoLabel>
-						<renderProperties>
-							<north>(0.7, 0.2)</north>
-							<south>(-0.7, -0.2)</south>
-							<east>(0.2, -0.7)</east>
-							<west>(-0.2, 0.7)</west>
-						</renderProperties>
-						<aimPieOffset>(0, 0)</aimPieOffset>
-						<drawLayer>2</drawLayer>
-						<key>rightSmoke</key>
-						<parentKey>mainTurret</parentKey>
-					</li>
 				</turrets>
+			</li>
+			<li Class="Vehicles.CompProperties_UpgradeTree"> <!--开启改装系统-->
+				<def>DMS_Chameleon_UpgradeTree</def>
 			</li>
 		</comps>
 	</Vehicles.VehicleDef>
 
 	<Vehicles.VehicleTurretDef ParentName="DMS_BaseTurret">
-		<defName>Chameleon_Tank_Turret</defName>
-		<label>main turret</label>
+		<defName>DMS_Chameleon_Tank_Turret</defName>
+		<label>revolver cannon</label>
 		<description>A highly automatic revolver cannon designed for anti heavy mech purposes. It can launch anti-tank tungsten core armor-piercing projectiles in a very short time and accurately destroy targets within the range.</description>
 		<gizmoIconTexPath>Things/Vehicles/Chameleon/mainTurret_gizmo</gizmoIconTexPath>
 		<!-- 砲塔的渲染顯示 -->
 		<graphicData>
 		  <texPath>Things/Vehicles/Chameleon/vehicle_turretTop_top</texPath>
-		  <drawSize>7</drawSize>
+		  <drawSize>6</drawSize>
 		  <layer>2</layer>
 		</graphicData>
 		<recoil>
@@ -439,7 +404,7 @@
 			<li>
 				<graphicData>
 					<texPath>Things/Vehicles/Chameleon/vehicle_turretTop_mid</texPath>
-					<drawSize>7</drawSize>
+					<drawSize>6</drawSize>
 					<graphicClass>Vehicles.Graphic_Turret</graphicClass>
 					<shaderType>CutoutComplexPattern</shaderType>
 					<layer>0</layer>
@@ -453,7 +418,7 @@
 			<li>
 				<graphicData>
 					<texPath>Things/Vehicles/Chameleon/vehicle_turretTop_btm</texPath>
-					<drawSize>7</drawSize>
+					<drawSize>6</drawSize>
 					<graphicClass>Vehicles.Graphic_Turret</graphicClass>
 					<shaderType>CutoutComplexPattern</shaderType>
 					<layer>-1</layer>
@@ -466,7 +431,7 @@
 			</li>
 		</graphics>
 		<!-- 彈藥與裝填容量相關 -->
-		<reloadTimer>6.5</reloadTimer>
+		<reloadTimer>10.5</reloadTimer>
 		<magazineCapacity>6</magazineCapacity>
 		<chargePerAmmoCount>10</chargePerAmmoCount>
 		<genericAmmo>true</genericAmmo>
@@ -515,4 +480,196 @@
 		  </li>
 		</motes>
 	  </Vehicles.VehicleTurretDef>
+
+	  <!-- 升級 -->
+	<Vehicles.UpgradeTreeDef>
+		<defName>DMS_Chameleon_UpgradeTree</defName>
+		<nodes>
+			<li>
+				<key>ARES</key>
+				<label>Automatic Revolver Electromagnetic Slingshot</label>
+				<description>一種輕量化的76毫米轉膛反坦克加農砲，具有獨立的火控系統並罕見的採用電磁軌道加速使砲彈能以接近跨音速的出膛速度發射，足以讓特製的鎢芯穿甲彈在敵人反應過來前便擊穿敵方裝甲載具。\n\n 有趣的是，該武器也是目前已知殖民艦隊少數進入量產階段並投入使用的非火藥武器系統。</description>
+				<icon>Things/Vehicles/Common/DMS_GAU4_Icon</icon>
+				<work>5000</work>
+				<gridCoordinate>(5,5)</gridCoordinate>
+				<disableIfUpgradeNodeEnabled>Okhotnik</disableIfUpgradeNodeEnabled>
+				<upgrades>
+					<li Class="Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>DMS_Chameleon_Tank_Turret</turretDef>
+								<renderProperties>
+									<north>(0, 0)</north>
+									<south>(0, 0)</south>
+									<east>(0, 0)</east>
+									<west>(0, 0)</west>
+								</renderProperties>
+								<gizmoLabel>Main Turret</gizmoLabel>
+								<aimPieOffset>(0, 1)</aimPieOffset>
+								<key>mainTurret_ARES</key>
+								<drawLayer>2</drawLayer>
+							</li>					
+							<li><!--同軸機槍-->
+								<turretDef>DMS_LMG_Coaxial</turretDef>
+								<renderProperties>
+								<east>(1,0.35)</east>
+								<south>(0.35,-1)</south>
+								<north>(-0.35,1)</north>
+								<west>(-1,0.35)</west>
+								</renderProperties>
+								<gizmoLabel>coaxial MG</gizmoLabel>
+								<angleRestricted>(340,20)</angleRestricted>
+								<aimPieOffset>(0, 0)</aimPieOffset>
+								<key>coaxialMG</key>
+								<drawLayer>5</drawLayer>
+								<parentKey>mainTurret_ARES</parentKey>
+							</li>		
+							<li>
+								<turretDef>DMS_GrenadeLauncher</turretDef>
+								<gizmoLabel>Left Grenade Launcher</gizmoLabel>
+								<renderProperties>
+									<north>(-0.7, 0.2)</north>
+									<south>(0.7, -0.2)</south>
+									<east>(0.2, 0.7)</east>
+									<west>(-0.2, -0.7)</west>
+								</renderProperties>
+								<aimPieOffset>(0, 0)</aimPieOffset>
+								<drawLayer>2</drawLayer>
+								<key>leftSmoke</key>
+								<parentKey>mainTurret_ARES</parentKey>
+							</li>
+							<li>
+								<turretDef>DMS_GrenadeLauncher</turretDef>
+								<gizmoLabel>Right Grenade Launcher</gizmoLabel>
+								<renderProperties>
+									<north>(0.7, 0.2)</north>
+									<south>(-0.7, -0.2)</south>
+									<east>(0.2, -0.7)</east>
+									<west>(-0.2, 0.7)</west>
+								</renderProperties>
+								<aimPieOffset>(0, 0)</aimPieOffset>
+								<drawLayer>2</drawLayer>
+								<key>rightSmoke</key>
+								<parentKey>mainTurret_ARES</parentKey>
+							</li>
+						</turrets>
+						<removeTurrets>
+							<li>mainTurret</li>
+						</removeTurrets>
+					</li>
+					<li Class = "Vehicles.StatUpgrade"> <!--基础属性修改，可用add/set，具体修改范围参考文档-->
+						<vehicleStats>
+							<li>
+								<def>MoveSpeed</def>
+								<value>-1.75</value>
+								<type>Add</type>
+							</li>
+							<li>
+								<def>CargoCapacity</def>
+								<value>-100</value>
+								<type>Add</type>
+							</li>
+						</vehicleStats>
+					</li>
+				</upgrades>
+				<researchPrerequisites><li>DMS_Synthroid</li></researchPrerequisites>
+				<ingredients>
+					<Tungsteel>250</Tungsteel>
+					<ComponentStamped>15</ComponentStamped>
+					<ComponentSpacer>2</ComponentSpacer>
+					<ComponentFireControl>1</ComponentFireControl>
+				</ingredients>
+			</li>
+			<li>
+				<key>Kord</key>
+				<label>Kord HMG</label>
+				<description>將機身下方的防禦機槍更換為Kord重機槍</description>
+				<icon>Things/Vehicles/Common/DMS_Okhotnik_Coaxial_Icon</icon>
+				<work>2500</work>
+				<gridCoordinate>(5,15)</gridCoordinate>
+				<disableIfUpgradeNodeEnabled>GAU19A</disableIfUpgradeNodeEnabled>
+				<upgrades>
+					<li Class="Vehicles.TurretUpgrade">
+						<turrets>			
+							<li>
+							  <!--車體機槍-->
+							  <turretDef>DMS_Okhotnik_Coaxial</turretDef>
+							  <renderProperties>
+								<east>(1.75,-0.3)</east>
+								<south>(0.3,-1.75)</south>
+								<north>(-0.3,1.75)</north> 
+								<west>(-1.75,-0.3)</west>
+							  </renderProperties>
+							  <gizmoLabel>coaxial MG</gizmoLabel>
+							  <angleRestricted>(300,60)</angleRestricted>
+							  <aimPieOffset>(0, 1.1)</aimPieOffset>
+							  <key>chassicMG_Kord</key>
+							  <drawLayer>-1</drawLayer>
+							</li>
+						</turrets>
+						<removeTurrets>
+							<li>chassicMG</li>
+						</removeTurrets>
+					</li>
+					<li Class = "Vehicles.StatUpgrade"> <!--基础属性修改，可用add/set，具体修改范围参考文档-->
+						<vehicleStats>
+							<li>
+								<def>MoveSpeed</def>
+								<value>-0.5</value>
+								<type>Add</type>
+							</li>
+							<li>
+								<def>CargoCapacity</def>
+								<value>-50</value>
+								<type>Add</type>
+							</li>
+						</vehicleStats>
+					</li>
+				</upgrades>
+				<researchPrerequisites><li>DMS_EquipmentAdvanced</li></researchPrerequisites>
+				<ingredients>
+					<Tungsteel>100</Tungsteel>
+					<ComponentStamped>5</ComponentStamped>
+				</ingredients>
+			</li>
+			<li>
+				<key>GAU19A</key>
+				<label>GAU-19/A</label>
+				<description>將機身下方的防禦機槍更換為GAU-19/A多管重機槍</description>
+				<icon>Things/Vehicles/Common/DMS_GAU19_Coaxial_Icon</icon>
+				<work>5000</work>
+				<gridCoordinate>(10,15)</gridCoordinate>
+				<disableIfUpgradeNodeEnabled>Kord</disableIfUpgradeNodeEnabled>
+				<upgrades>
+					<li Class="Vehicles.TurretUpgrade">
+						<turrets>			
+							<li>
+							  <!--車體機槍-->
+							  <turretDef>DMS_GAU19A_Coaxial</turretDef>
+							  <renderProperties>
+								<east>(1.75,-0.3)</east>
+								<south>(0.3,-1.75)</south>
+								<north>(-0.3,1.75)</north> 
+								<west>(-1.75,-0.3)</west>
+							  </renderProperties>
+							  <gizmoLabel>coaxial MG</gizmoLabel>
+							  <angleRestricted>(300,60)</angleRestricted>
+							  <aimPieOffset>(0, 1)</aimPieOffset>
+							  <key>chassicMG_GAU19A</key>
+							  <drawLayer>-1</drawLayer>
+							</li>
+						</turrets>
+						<removeTurrets>
+							<li>chassicMG</li>
+						</removeTurrets>
+					</li>
+				</upgrades>
+				<researchPrerequisites><li>DMS_EquipmentElite</li></researchPrerequisites>
+				<ingredients>
+					<Tungsteel>120</Tungsteel>
+					<ComponentStamped>8</ComponentStamped>
+				</ingredients>
+			</li>
+		</nodes>
+	</Vehicles.UpgradeTreeDef>
 </Defs>

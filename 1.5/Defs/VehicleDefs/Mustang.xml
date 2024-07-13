@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
-	<Vehicles.VehicleBuildDef ParentName="DMS_BaseVehicleBuild"><!-- 建築型態的載具，基本上與BuildingDef相同-->
+	<!-- <Vehicles.VehicleBuildDef ParentName="DMS_BaseVehicleBuild">
 		<defName>DMS_Mustang_ATV_Blueprint</defName>
 		<label>Mustang ATV</label>
 		<description>A lightweight autonomous combat platform that is used to coordinate infantry attacks. This type of fire control system that uses existing platform modifications and is controlled by algorithms is a common configuration of the first generation of automatroid.</description>
@@ -29,7 +29,7 @@
 			<Steel>100</Steel>
 			<Chemfuel>120</Chemfuel>
 		</costList>
-		<thingToSpawn>DMS_Mustang_ATV</thingToSpawn>	<!-- 建造後生成的載具Kind,這是與建築唯一不一樣的-->
+		<thingToSpawn>DMS_Mustang_ATV</thingToSpawn>	
 	</Vehicles.VehicleBuildDef>
 
 	<Vehicles.VehicleDef ParentName="DMS_BaseVehicle">
@@ -99,8 +99,8 @@
 			</vehicleJobLimitations>
 		</properties>	
 		<components>
-			<!-- Internal mobile Part 內部驅動部件-->
-			<li><!-- Engine 100-->
+			
+			<li>
 				<key>Engine</key>
 				<label>Engine</label>
 				<health>100</health>
@@ -122,7 +122,7 @@
 					</cells>
 				</hitbox>						
 			</li>
-			<li><!-- LeftFrontSuspension 40-->
+			<li>
 				<key>LeftFrontSuspension</key>
 				<label>left front Suspension</label>
 				<health>40</health>
@@ -134,7 +134,7 @@
 				</hitbox>
 				<categories><li>MoveSpeed</li></categories>
 			</li>
-			<li><!-- RightFrontSuspension 40-->
+			<li>
 				<key>RightFrontSuspension</key>
 				<label>right front suspension</label>
 				<health>40</health>
@@ -146,7 +146,7 @@
 				</hitbox>
 				<categories><li>MoveSpeed</li></categories>
 			</li>
-			<li><!-- LeftRearSuspension 40-->
+			<li>
 				<key>LeftRearSuspension</key>
 				<label>left rear suspension</label>
 				<health>40</health>
@@ -158,7 +158,7 @@
 				</hitbox>
 				<categories><li>MoveSpeed</li></categories>
 			</li>
-			<li><!-- RightRearSuspension 40-->
+			<li>
 				<key>RightRearSuspension</key>
 				<label>right rear suspension</label>
 				<health>40</health>
@@ -170,7 +170,7 @@
 				</hitbox>
 				<categories><li>MoveSpeed</li></categories>
 			</li>
-			<li><!-- Gearbox 45-->
+			<li>
 				<key>Gearbox</key>
 				<label>gear box</label>
 				<health>45</health>
@@ -183,7 +183,7 @@
 				</hitbox>
 				<categories><li>MoveSpeed</li></categories>
 			</li>
-			<li><!-- FuelTank 40-->
+			<li>
 				<key>FuelTank</key>
 				<label>fuel tank</label>
 				<health>40</health>
@@ -198,8 +198,7 @@
 					</cells>
 				</hitbox>
 			</li>
-		<!-- External mobile Part 外部驅動部件-->
-			<li><!-- LeftFrontWheel 30-->
+			<li>
 				<key>LeftFrontWheel</key>
 				<label>left front Wheel</label>
 				<health>30</health>
@@ -217,7 +216,7 @@
 					</cells>
 				</hitbox>			
 			</li>
-			<li><!-- RightFrontWheel 30-->
+			<li>
 				<key>RightFrontWheel</key>
 				<label>right front Wheel</label>
 				<health>30</health>
@@ -235,7 +234,7 @@
 					</cells>
 				</hitbox>
 			</li>
-			<li><!-- LeftRearWheel	30-->
+			<li>
 				<key>LeftRearWheel</key>
 				<label>left rear wheel</label>
 				<health>30</health>
@@ -253,7 +252,7 @@
 					</cells>
 				</hitbox>
 			</li>
-			<li><!-- RightRearWheel 30-->
+			<li>
 				<key>RightRearWheel</key>
 				<label>right rear Wheel</label>
 				<health>30</health>
@@ -271,76 +270,17 @@
 					</cells>
 				</hitbox>
 			</li>
-		<!-- Internal Shell Part 內裝部件-->
-			<li><!-- Dashboard 30-->
+			<li>
 				<key>Dashboard</key>
 				<label>dashboard</label>
 				<health>30</health>
 				<depth>Internal</depth>
 			</li>
-			<li><!-- SteeringWheel 20-->
+			<li>
 				<key>SteeringWheel</key>
 				<label>steering wheel</label>
 				<health>20</health>
 				<depth>Internal</depth>
-			</li>
-			<!-- External Platings 外部防禦部件 -->
-			<li><!-- FrontArmorPlating 200-->
-				<key>FrontArmorPlating</key>
-				<label>front armor Plating</label>
-				<health>70</health>
-				<depth>External</depth>
-				<hitWeight>8</hitWeight>	
-				<armor>
-					<ArmorRating_Blunt>1.10</ArmorRating_Blunt>
-					<ArmorRating_Sharp>0.9</ArmorRating_Sharp>
-				</armor>		
-				<hitbox><side>Front</side></hitbox>
-			</li>
-			<li><!-- LeftArmorPlating 180-->
-				<key>LeftArmorPlating</key>
-				<label>left armor plating</label>
-				<health>60</health>
-				<depth>External</depth>
-				<hitWeight>5</hitWeight>		
-				<armor>
-					<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
-					<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
-				</armor>			
-				<hitbox><side>Left</side></hitbox>
-			</li>
-			<li><!-- RightArmorPlating 180-->
-				<key>RightArmorPlating</key>
-				<label>right armor plating</label>
-				<health>60</health>
-				<depth>External</depth>
-				<hitWeight>5</hitWeight>	
-				<armor>
-					<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
-					<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
-				</armor>			
-				<hitbox><side>Right</side></hitbox>
-			</li>
-			<li><!-- RoofArmorPlating 150 -->
-				<key>RoofArmorPlating</key>
-				<label>roof armor plating</label>
-				<health>60</health>
-				<depth>External</depth>
-				<hitWeight>5</hitWeight>
-				<armor>
-					<ArmorRating_Blunt>1.0</ArmorRating_Blunt>
-					<ArmorRating_Sharp>0.85</ArmorRating_Sharp>
-				</armor>
-			</li>
-			<li><!-- BackArmorPlating 150-->
-				<key>BackArmorPlating</key>
-				<label>rear armor plating</label>
-				<health>50</health>
-				<depth>External</depth>
-				<hitWeight>5</hitWeight>
-				<hitbox>
-					<side>Back</side>
-				</hitbox>
 			</li>
 		</components>
 		<comps>
@@ -351,10 +291,10 @@
 				<fuelConsumptionWorldMultiplier>0.5</fuelConsumptionWorldMultiplier>
 				<fuelCapacity>85</fuelCapacity>
 			</li>
-			<li Class="Vehicles.CompProperties_VehicleTurrets">	<!-- 砲塔 -->
+			<li Class="Vehicles.CompProperties_VehicleTurrets">
 				<turrets>
 					<li>
-						<turretDef>DMS_turret_Kord</turretDef>					
+						<turretDef>DMS_LMG_Coaxial</turretDef>					
 						<renderProperties>
 							<north>(0, 0.2)</north>
 							<south>(0, 0.275)</south>
@@ -362,7 +302,7 @@
 							<west>(0.2, 0.2)</west>
 						</renderProperties>				
 						<gizmoLabel>Main Turret</gizmoLabel>
-						<aimPieOffset>(-0.1, 0)</aimPieOffset>	<!-- 預熱指示器的x,z偏移 -->
+						<aimPieOffset>(-0.1, 0)</aimPieOffset>
 						<drawLayer>1</drawLayer>						
 						<key>mainTurret</key>
 					</li>
@@ -370,4 +310,6 @@
 			</li>
 		</comps>
 	</Vehicles.VehicleDef>
+	-->
+
 </Defs>

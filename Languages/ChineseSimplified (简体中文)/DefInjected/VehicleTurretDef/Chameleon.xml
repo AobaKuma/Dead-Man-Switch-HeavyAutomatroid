@@ -2,13 +2,13 @@
 <LanguageData>
   
   <!-- EN: main turret -->
-  <Chameleon_Tank_Turret.label>主炮塔</Chameleon_Tank_Turret.label>
+  <DMS_Chameleon_Tank_Turret.label>主炮塔</DMS_Chameleon_Tank_Turret.label>
   <!-- EN: A highly automatic revolver cannon designed for anti heavy mech purposes. It can launch anti-tank tungsten core armor-piercing projectiles in a very short time and accurately destroy targets within the range. -->
-  <Chameleon_Tank_Turret.description>专为反重型机甲目的而设计的全自动转膛加农炮。可以在极短的时间内发射反坦克钨芯穿甲弹，精确摧毁射程内的装甲目标。</Chameleon_Tank_Turret.description>
+  <DMS_Chameleon_Tank_Turret.description>专为反重型机甲目的而设计的全自动转膛加农炮。可以在极短的时间内发射反坦克钨芯穿甲弹，精确摧毁射程内的装甲目标。</DMS_Chameleon_Tank_Turret.description>
   <!-- EN: Single Shot -->
-  <Chameleon_Tank_Turret.fireModes.0.label>单发</Chameleon_Tank_Turret.fireModes.0.label>
-  <Chameleon_Tank_Turret.fireModes.1.label>连发</Chameleon_Tank_Turret.fireModes.1.label>
+  <DMS_Chameleon_Tank_Turret.fireModes.0.label>单发</DMS_Chameleon_Tank_Turret.fireModes.0.label>
+  <DMS_Chameleon_Tank_Turret.fireModes.1.label>连发</DMS_Chameleon_Tank_Turret.fireModes.1.label>
   <!-- EN: Select Target.\n\nFire for effect -->
-  <Chameleon_Tank_Turret.gizmoDescription>瞄准目标</Chameleon_Tank_Turret.gizmoDescription>
+  <DMS_Chameleon_Tank_Turret.gizmoDescription>瞄准目标</DMS_Chameleon_Tank_Turret.gizmoDescription>
   
 </LanguageData>

@@ -341,6 +341,64 @@
 				<health>20</health>
 				<depth>Internal</depth>
 			</li>
+
+			<li><!-- FrontArmorPlating 200-->
+				<key>FrontArmorPlating</key>
+				<label>front armor Plating</label>
+				<health>10</health>
+				<depth>External</depth>
+				<hitWeight>8</hitWeight>	
+				<armor>
+					<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+				</armor>		
+				<hitbox><side>Front</side></hitbox>
+			</li>
+			<li><!-- LeftArmorPlating 180-->
+				<key>LeftArmorPlating</key>
+				<label>left armor plating</label>
+				<health>10</health>
+				<depth>External</depth>
+				<hitWeight>5</hitWeight>		
+				<armor>
+					<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+				</armor>			
+				<hitbox><side>Left</side></hitbox>
+			</li>
+			<li><!-- RightArmorPlating 180-->
+				<key>RightArmorPlating</key>
+				<label>right armor plating</label>
+				<health>10</health>
+				<depth>External</depth>
+				<hitWeight>5</hitWeight>	
+				<armor>
+					<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+				</armor>			
+				<hitbox><side>Right</side></hitbox>
+			</li>
+			<li><!-- RoofArmorPlating 150 -->
+				<key>RoofArmorPlating</key>
+				<label>roof armor plating</label>
+				<health>50</health>
+				<depth>External</depth>
+				<hitWeight>5</hitWeight>
+				<armor>
+					<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+				</armor>
+			</li>
+			<li><!-- BackArmorPlating 150-->
+				<key>BackArmorPlating</key>
+				<label>rear armor plating</label>
+				<health>10</health>
+				<depth>External</depth>
+				<hitWeight>5</hitWeight>
+				<hitbox>
+					<side>Back</side>
+				</hitbox>
+			</li>
 		</components>
 		<comps>
 			<li Class="Vehicles.CompProperties_FueledTravel">
@@ -350,6 +408,96 @@
 				<fuelConsumptionWorldMultiplier>0.5</fuelConsumptionWorldMultiplier>
 				<fuelCapacity>80</fuelCapacity>
 			</li>
+			<li Class="Vehicles.CompProperties_VehicleTurrets"/><!-- 默認無砲塔 -->
+			<li Class="Vehicles.CompProperties_UpgradeTree"> <!--开启改装系统-->
+				<def>DMS_Mule_UpgradeTree</def>
+			</li>
 		</comps>
 	</Vehicles.VehicleDef>
+
+	
+	<!-- 升級 -->
+	<Vehicles.UpgradeTreeDef>
+		<defName>DMS_Mule_UpgradeTree</defName>
+		<nodes>
+			<li>
+				<key>Mustang</key>
+				<label>Mustang</label>
+				<description>A lightweight autonomous combat platform that is used to coordinate infantry attacks. This type of fire control system that uses existing platform modifications and is controlled by algorithms is a common configuration of the first generation of automatroid.</description>
+				<icon>Things/Vehicles/Common/DMS_Okhotnik_Icon</icon>
+				<work>3000</work>
+				<gridCoordinate>(5,5)</gridCoordinate>
+				<upgrades>
+					<li Class="Vehicles.TurretUpgrade"><!--炮塔升级相关，直接从空炮塔升级为有炮塔不可行，需要空白comps，参见Trucks.xml-->
+						<turrets>
+							<li>
+								<turretDef>DMS_Okhotnik_Turret</turretDef>					
+								<renderProperties>
+									<north>(0, 0.2)</north>
+									<south>(0, 0.275)</south>
+									<east>(-0.2, 0.2)</east>
+									<west>(0.2, 0.2)</west>
+								</renderProperties>				
+								<gizmoLabel>Main Turret</gizmoLabel>
+								<aimPieOffset>(-0.1, 0)</aimPieOffset>	<!-- 預熱指示器的x,z偏移 -->
+								<drawLayer>1</drawLayer>						
+								<key>mainTurret</key>
+							</li>
+						</turrets>
+					</li>
+					<li Class = "Vehicles.VehicleUpgrade">
+						<retextureDef>DMS_Mustang</retextureDef>
+					 	<roles>
+						 	<li>
+							 	<key>driver</key> <!--修改乘员使其能操控炮塔-->
+								<label>driver</label>
+							 	<remove>true</remove> <!--移除乘员-->
+						 	</li>
+							<li>
+								<key>passenger_back</key>
+								<label>passenger</label>
+								<remove>true</remove> <!--移除乘员-->
+							</li>
+						 	<li>
+							 	<key>passenger</key>
+								<label>back passenger</label>
+							 	<remove>true</remove> <!--移除乘员-->
+						 	</li>
+						</roles>
+				 	</li>
+					<li Class = "Vehicles.StatUpgrade"> <!--基础属性修改，可用add/set，具体修改范围参考文档-->
+						<vehicleStats>
+							<li>
+								<def>MoveSpeed</def>
+								<value>-1</value>
+								<type>Add</type>
+							</li>
+							<li>
+								<def>CargoCapacity</def>
+								<value>-48</value>
+								<type>Add</type>
+							</li>
+						</vehicleStats>
+					</li>
+				</upgrades>
+				<researchPrerequisites>
+				  <li>DMS_EquipmentAdvanced</li>
+				</researchPrerequisites>
+				<ingredients> <!--改装成本-->
+					<Tungsteel>100</Tungsteel>
+					<ComponentStamped>7</ComponentStamped>
+				</ingredients>
+			</li>
+		</nodes>
+	</Vehicles.UpgradeTreeDef>
+
+	<Vehicles.RetextureDef>
+		<defName>DMS_Mustang</defName>
+		<graphicData>		
+			<texPath>Things/Vehicles/Mustang/vehicle</texPath>
+			<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>3.5</drawSize>
+		</graphicData>
+	</Vehicles.RetextureDef>
 </Defs>
