@@ -1,9 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
+  <!-- EN: GAU-4/M61 "Vulcan" -->
+  <DMS_Chelydridae_UpgradeTree.nodes.0.label>TODO</DMS_Chelydridae_UpgradeTree.nodes.0.label>
+  <!-- EN: replace weapon station on the turret with M61. The GAU-4/M61 "Vulcan" is a formidable vehicle-mounted, remote-controlled Gatling weapon system utilized by the army. It demonstrates exceptional combat effectiveness, excelling in air defense, ground suppression, and interception of low-speed, close-to-earth aircraft. Despite utilizing relatively easy-to-obtain steel core ammunition, it swiftly depletes its supply when fired. -->
+  <DMS_Chelydridae_UpgradeTree.nodes.0.description>TODO</DMS_Chelydridae_UpgradeTree.nodes.0.description>
   <!-- EN: M61 "Vulcan" -->
-  <DMS_Chelydridae_UpgradeTree.nodes.0.label>M61 "火神"</DMS_Chelydridae_UpgradeTree.nodes.0.label>
-  <!-- EN: M61 "Vulcan" -->
-  <DMS_Chelydridae_UpgradeTree.nodes.0.upgrades.0.turrets.0.gizmoLabel>M61 "火神"</DMS_Chelydridae_UpgradeTree.nodes.0.upgrades.0.turrets.0.gizmoLabel>
+  <DMS_Chelydridae_UpgradeTree.nodes.0.upgrades.0.turrets.0.gizmoLabel>TODO</DMS_Chelydridae_UpgradeTree.nodes.0.upgrades.0.turrets.0.gizmoLabel>
   
 </LanguageData>

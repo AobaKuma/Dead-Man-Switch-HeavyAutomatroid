@@ -36,17 +36,19 @@
   <!-- EN: right armor plating -->
   <DMS_Chelydridae_MainBattleTank.components.15.label>右側裝甲</DMS_Chelydridae_MainBattleTank.components.15.label>
   <!-- EN: left ERA plating -->
-  <DMS_Chelydridae_MainBattleTank.components.16.label>反應裝甲</DMS_Chelydridae_MainBattleTank.components.16.label>
+  <DMS_Chelydridae_MainBattleTank.components.16.label>左側反應裝甲</DMS_Chelydridae_MainBattleTank.components.16.label>
+  <!-- EN: right ERA plating -->
+  <DMS_Chelydridae_MainBattleTank.components.17.label>右側反應裝甲</DMS_Chelydridae_MainBattleTank.components.17.label>
   <!-- EN: roof armor plating -->
-  <DMS_Chelydridae_MainBattleTank.components.17.label>頂部裝甲</DMS_Chelydridae_MainBattleTank.components.17.label>
+  <DMS_Chelydridae_MainBattleTank.components.18.label>頂部裝甲</DMS_Chelydridae_MainBattleTank.components.18.label>
   <!-- EN: rear armor plating -->
-  <DMS_Chelydridae_MainBattleTank.components.18.label>後方裝甲</DMS_Chelydridae_MainBattleTank.components.18.label>
+  <DMS_Chelydridae_MainBattleTank.components.19.label>後方裝甲</DMS_Chelydridae_MainBattleTank.components.19.label>
   <!-- EN: Main Turret -->
-  <DMS_Chelydridae_MainBattleTank.components.19.label>主炮塔</DMS_Chelydridae_MainBattleTank.components.19.label>
+  <DMS_Chelydridae_MainBattleTank.components.20.label>主炮塔</DMS_Chelydridae_MainBattleTank.components.20.label>
   <!-- EN: front ERA Plating -->
-  <DMS_Chelydridae_MainBattleTank.components.20.label>正面反應裝甲</DMS_Chelydridae_MainBattleTank.components.20.label>
+  <DMS_Chelydridae_MainBattleTank.components.21.label>正面反應裝甲</DMS_Chelydridae_MainBattleTank.components.21.label>
   <!-- EN: turret ERA plating -->
-  <DMS_Chelydridae_MainBattleTank.components.21.label>炮塔反應裝甲</DMS_Chelydridae_MainBattleTank.components.21.label>
+  <DMS_Chelydridae_MainBattleTank.components.22.label>炮塔反應裝甲</DMS_Chelydridae_MainBattleTank.components.22.label>
   <!-- EN: Main Turret -->
   <DMS_Chelydridae_MainBattleTank.comps.CompVehicleTurrets.turrets.0.gizmoLabel>主炮塔</DMS_Chelydridae_MainBattleTank.comps.CompVehicleTurrets.turrets.0.gizmoLabel>
   <!-- EN: support MG -->

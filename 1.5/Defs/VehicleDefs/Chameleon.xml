@@ -24,9 +24,9 @@
 			<Neurocomputer>2</Neurocomputer>
 			<ComponentStamped>15</ComponentStamped>
 			<ComponentIndustrial>20</ComponentIndustrial>
-			<Tungsteel>125</Tungsteel>
 			<Polyester>200</Polyester>
 			<DMS_Ceramics>250</DMS_Ceramics>
+			<Tungsteel>300</Tungsteel>
 			<Steel>400</Steel>
 		</costList>
 		<thingToSpawn>DMS_Chameleon_TD</thingToSpawn>	<!-- 建造後生成的載具Kind,這是與建築唯一不一樣的-->
@@ -127,6 +127,7 @@
 				<key>Engine</key>
 				<label>main engine</label>
 				<health>100</health>
+				<efficiencyWeight>5</efficiencyWeight>
 				<categories><li>MoveSpeed</li></categories>
 				<depth>Internal</depth>				
 				<hitbox>
@@ -487,9 +488,9 @@
 		<nodes>
 			<li>
 				<key>ARES</key>
-				<label>Automatic Revolver Electromagnetic Slingshot</label>
+				<label>A.R.E.S.</label>
 				<!-- 一種輕量化的76毫米轉膛反坦克加農砲，具有獨立的火控系統並罕見的採用電磁軌道加速使砲彈能以接近跨音速的出膛速度發射，足以讓特製的鎢芯穿甲彈在敵人反應過來前便擊穿敵方裝甲載具。\n\n 有趣的是，該武器也是目前已知殖民艦隊少數進入量產階段並投入使用的非火藥武器系統。 -->
-				<description>A lightweight 76mm anti-tank revolver cannon with an independent fire control system. the use of electromagnetic acceleration makes projectile capable to penetrate any heavy armored vehicles. \n\n Interestingly, this weapon is also one of the few non-gunpowder weapon systems known to have entered the mass production stage and been put into use by the colonial fleet.</description>
+				<description>Automatic Revolver Electromagnetic Slingshot(A.R.E.S.) A lightweight 76mm anti-tank revolver cannon with an independent fire control system. the use of electromagnetic acceleration makes projectile capable to penetrate any heavy armored vehicles. \n\n Interestingly, this weapon is also one of the few non-gunpowder weapon systems known to have entered the mass production stage and been put into use by the colonial fleet.</description>
 				<icon>Things/Vehicles/Chameleon/mainTurret_gizmo</icon>
 				<work>7500</work>
 				<gridCoordinate>(5,5)</gridCoordinate>

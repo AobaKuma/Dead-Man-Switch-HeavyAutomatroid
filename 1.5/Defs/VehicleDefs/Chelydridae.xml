@@ -21,6 +21,7 @@
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
     <costList>
       <EngineTurbine MayRequireAnyOf="aoba.motorization.engine,rimthunder.core">1</EngineTurbine>
+      <ComponentFireControl>1</ComponentFireControl>
 			<Neurocomputer>2</Neurocomputer>
 			<ComponentStamped>15</ComponentStamped>
 			<ComponentIndustrial>25</ComponentIndustrial>
@@ -122,19 +123,11 @@
         <key>Engine</key>
         <label>turbine engine</label>
         <health>200</health>
-        <priorityStatEfficiency>true</priorityStatEfficiency>
+        <efficiencyWeight>5</efficiencyWeight>
         <categories>
           <li>MoveSpeed</li>
         </categories>
         <depth>Internal</depth>
-        <reactors>
-          <li Class="Vehicles.Reactor_Explosive">
-            <indicator>VF_Explosive</indicator>
-            <chance>0.05</chance>
-            <radius>3</radius>
-            <damageDef>Bomb</damageDef>
-          </li>
-        </reactors>
         <hitbox>
           <cells>
             <li>(0, -2)</li>
@@ -149,7 +142,6 @@
         <health>120</health>
         <depth>Internal</depth>
         <reactors>
-          <li Class="Vehicles.Reactor_FuelLeak" />
           <li Class="Vehicles.Reactor_Explosive">
             <indicator>VF_Explosive</indicator>
             <chance>0.05</chance>

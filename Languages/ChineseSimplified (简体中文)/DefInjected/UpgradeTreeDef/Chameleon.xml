@@ -2,9 +2,9 @@
 <LanguageData>
   
   <!-- EN: Automatic Revolver Electromagnetic Slingshot -->
-  <DMS_Chameleon_UpgradeTree.nodes.0.label>阿瑞斯</DMS_Chameleon_UpgradeTree.nodes.0.label>
+  <DMS_Chameleon_UpgradeTree.nodes.0.label>A.R.E.S.</DMS_Chameleon_UpgradeTree.nodes.0.label>
   <!-- EN:  -->
-  <DMS_Chameleon_UpgradeTree.nodes.0.description>一种轻量化的76毫米转膛反坦克加农炮，具有独立的火控系统并罕见的采用电磁轨道加速使炮弹能以接近跨音速的出膛速度发射，足以让特制的钨芯穿甲弹在敌人反应过来前便击穿敌方装甲载具。\n\n 有趣的是，该武器也是目前已知殖民舰队少数进入量产阶段并投入使用的非火药武器系统。</DMS_Chameleon_UpgradeTree.nodes.0.description>
+  <DMS_Chameleon_UpgradeTree.nodes.0.description>一种轻量化的76毫米转膛加农炮，具有独立的火控系统并罕见的采用电磁轨道加速使炮弹能达到最高5.5马赫的出膛速度，足以让特制的钨芯穿甲弹在敌人反应过来前便击穿敌方装甲载具。\n\n 有趣的是，该武器也是目前已知殖民舰队少数在地面部队中投入使用的非火药武器系统。</DMS_Chameleon_UpgradeTree.nodes.0.description>
   <!-- EN: Main Turret -->
   <DMS_Chameleon_UpgradeTree.nodes.0.upgrades.0.turrets.0.gizmoLabel>主炮塔</DMS_Chameleon_UpgradeTree.nodes.0.upgrades.0.turrets.0.gizmoLabel>
   <!-- EN: coaxial MG -->

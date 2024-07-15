@@ -229,7 +229,7 @@
             <li>Tungsteel</li>
           </thingDefs>
         </filter>
-        <count>125</count>
+        <count>300</count>
       </li>
       <li>
         <filter>
@@ -238,14 +238,6 @@
           </thingDefs>
         </filter>
         <count>400</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Chemfuel</li>
-          </thingDefs>
-        </filter>
-        <count>180</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
@@ -288,6 +280,14 @@
         <filter>
           <thingDefs>
             <li>EngineTurbine</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentFireControl</li>
           </thingDefs>
         </filter>
         <count>1</count>
@@ -352,6 +352,7 @@
     <fixedIngredientFilter>
       <thingDefs>
         <li>EngineTurbine</li>
+        <li>ComponentFireControl</li>
         <li>Neurocomputer</li>
         <li>ComponentStamped</li>
         <li>Polyester</li>

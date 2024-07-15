@@ -6,7 +6,7 @@
   <!-- EN: a light mobile platform used for ground handling and short-distance transportation,Production models of this type can be traced back to pre-space colonization times, but the exact name is unknown. -->
   <DMS_Mule_ATV.description>一种用於地勤与短途运输的轻型轮式机动平台，这种完全没有附加模块的生产型号据说可以追溯到前太空殖民时代，但确切的资讯并不充足。</DMS_Mule_ATV.description>
   <!-- EN: Engine -->
-  <DMS_Mule_ATV.components.0.label>引擎</DMS_Mule_ATV.components.0.label>
+  <DMS_Mule_ATV.components.0.label>发动机</DMS_Mule_ATV.components.0.label>
   <!-- EN: left front Suspension -->
   <DMS_Mule_ATV.components.1.label>左前悬挂</DMS_Mule_ATV.components.1.label>
   <!-- EN: right front suspension -->
