@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!-- Turret -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="Chelydridae_Tank_Turret"]/projectile</xpath>
+					<value>
+						<projectile>Bullet_120mmCannonShell_HE</projectile>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="Chelydridae_Tank_Turret"]/chargePerAmmoCount</xpath>
+					<value>
+						<chargePerAmmoCount>1</chargePerAmmoCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="Chelydridae_Tank_Turret"]/reloadTimer</xpath>
+					<value>
+						<reloadTimer>10</reloadTimer>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="Chelydridae_Tank_Turret"]/warmUpTimer</xpath>
+					<value>
+						<warmUpTimer>2</warmUpTimer>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="Chelydridae_Tank_Turret"]/magazineCapacity</xpath>
+					<value>
+						<magazineCapacity>7</magazineCapacity>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="Chelydridae_Tank_Turret"]/genericAmmo</xpath>
+					<value>
+						<genericAmmo>false</genericAmmo>
+					</value>
+				</li>
+
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="Chelydridae_Tank_Turret"]/projectileShifting</xpath>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="Chelydridae_Tank_Turret"]/maxRange</xpath>
+					<value>
+						<maxRange>84</maxRange>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="Chelydridae_Tank_Turret"]/ammunition/thingDefs</xpath>
+					<value>
+						<thingDefs>
+							<li>Bullet_120mmCannonShell_HEAT</li>
+							<li>Bullet_120mmCannonShell_HE</li>
+						</thingDefs>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="Chelydridae_Tank_Turret"]</xpath>
+					<value>
+						<li Class="Vehicles.CETurretDataDefModExtension">
+							<ammoSet>AmmoSet_120mmCannonShell</ammoSet>
+							<shotHeight>2</shotHeight>
+							<speed>229</speed>
+							<sway>1.33</sway>
+							<spread>0.01</spread>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="Chelydridae_Tank_Turret"]/fireModes</xpath>
+					<value>
+						<fireModes>
+							<li>
+								<shotsPerBurst>1</shotsPerBurst>
+								<ticksBetweenShots>1</ticksBetweenShots>
+								<ticksBetweenBursts>60</ticksBetweenBursts>
+								<label>Single</label>
+								<texPath>UI/Gizmos/FireRate_Single</texPath>
+							</li>
+							
+						</fireModes>
+					</value>
+				</li>
+			
+				<!-- Vehicle -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleDef[defName="DMS_Chelydridae_MainBattleTank"]/statBases/ArmorRating_Blunt</xpath>
+					<value>
+						<ArmorRating_Blunt>450</ArmorRating_Blunt>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleDef[defName="DMS_Chelydridae_MainBattleTank"]/statBases/ArmorRating_Sharp</xpath>
+					<value>
+						<ArmorRating_Sharp>20</ArmorRating_Sharp>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>
+						Defs/Vehicles.VehicleDef[defName="DMS_Chelydridae_MainBattleTank"]/vehicleStats/CargoCapacity</xpath>
+					<value>
+						<CargoCapacity>800</CargoCapacity>
+					</value>
+				</li>
+				
+				<!-- Vehicle Parts-->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleDef[defName="DMS_Chelydridae_MainBattleTank"]/components/li[
+						key="FuelTank"]/armor</xpath>
+					<value>
+						<armor>
+							<ArmorRating_Sharp>12</ArmorRating_Sharp>
+							<ArmorRating_Blunt>160</ArmorRating_Blunt>
+						</armor>
+					</value>
+				</li>
+				
+				<!-- External mobile Part -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleDef[defName="DMS_Chelydridae_MainBattleTank"]/components/li[
+						key="LeftTrack" or 
+						key="RightTrack" or 
+						key="LeftRoadWheels" or 
+						key="RightRoadWheels" or 
+						key="LeftDriveSprocket" or 
+						key="RightDriveSprocket" or 
+						key="LeftTensionerWheel" or 
+						key="RightTensionerWheel"]/armor</xpath>
+					<value>
+						<armor>
+							<ArmorRating_Sharp>10</ArmorRating_Sharp>
+							<ArmorRating_Blunt>100</ArmorRating_Blunt>
+						</armor>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleDef[defName="DMS_Chelydridae_MainBattleTank"]/components/li[
+						key="LeftTrack" or 
+						key="RightTrack"]/health</xpath>
+					<value>
+						<health>250</health>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleDef[defName="DMS_Chelydridae_MainBattleTank"]/components/li[
+						key="LeftRoadWheels" or 
+						key="RightRoadWheels"]/health</xpath>
+					<value>
+						<health>200</health>
+					</value>
+				</li>
+				<!-- Armor section -->
+				
+				<!-- FrontArmor -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleDef[defName="DMS_Chelydridae_MainBattleTank"]/components/li[
+						key="FrontArmorPlating"]/armor</xpath>
+					<value>
+						<armor>
+							<ArmorRating_Sharp>60</ArmorRating_Sharp>
+							<ArmorRating_Blunt>1200</ArmorRating_Blunt>
+						</armor>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleDef[defName="DMS_Chelydridae_MainBattleTank"]/components/li[
+						key="FrontArmorPlating"]/health</xpath>
+					<value>
+						<health>600</health>
+					</value>
+				</li>
+				
+				<!-- SideArmor -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleDef[defName="DMS_Chelydridae_MainBattleTank"]/components/li[
+						key="LeftArmorPlating" or key="RightArmorPlating"]/armor</xpath>
+					<value>
+						<armor>
+							<ArmorRating_Sharp>30</ArmorRating_Sharp>
+							<ArmorRating_Blunt>600</ArmorRating_Blunt>
+						</armor>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleDef[defName="DMS_Chelydridae_MainBattleTank"]/components/li[
+						key="LeftArmorPlating" or key="RightArmorPlating"]/health</xpath>
+					<value>
+						<health>350</health>
+					</value>
+				</li>
+				
+				<!-- Roof Armor -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleDef[defName="DMS_Chelydridae_MainBattleTank"]/components/li[
+						key="RoofArmorPlating"]/armor</xpath>
+					<value>
+						<armor>
+							<ArmorRating_Sharp>25</ArmorRating_Sharp>
+							<ArmorRating_Blunt>500</ArmorRating_Blunt>
+						</armor>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleDef[defName="DMS_Chelydridae_MainBattleTank"]/components/li[
+						key="RoofArmorPlating"]/health</xpath>
+					<value>
+						<health>500</health>
+					</value>
+				</li>
+				
+				<!-- Rear Armor -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleDef[defName="DMS_Chelydridae_MainBattleTank"]/components/li[
+						key="BackArmorPlating"]/health</xpath>
+					<value>
+						<health>300</health>
+					</value>
+				</li>
+				
+				<!-- TurretArmor -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleDef[defName="DMS_Chelydridae_MainBattleTank"]/components/li[
+						key="MainTurret"]/armor</xpath>
+					<value>
+						<armor>
+							<ArmorRating_Sharp>60</ArmorRating_Sharp>
+							<ArmorRating_Blunt>1200</ArmorRating_Blunt>
+						</armor>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleDef[defName="DMS_Chelydridae_MainBattleTank"]/components/li[
+						key="MainTurret"]/health</xpath>
+					<value>
+						<health>600</health>
+					</value>
+				</li>
+
+				<!-- ERA Section -->
+				
+				<!-- FrontERAPlating -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleDef[defName="DMS_Chelydridae_MainBattleTank"]/components/li[
+						key="FrontERAPlating"]/armor</xpath>
+					<value>
+						<armor>
+							<ArmorRating_Sharp>60</ArmorRating_Sharp>
+							<ArmorRating_Blunt>1800</ArmorRating_Blunt>
+						</armor>
+					</value>
+				</li>
+				
+				<!-- SideERAPlating --><!-- missing right ERA yet need aoba fix it first-->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleDef[defName="DMS_Chelydridae_MainBattleTank"]/components/li[
+						key="LeftERAPlating" or
+						key="RightERAPlating"
+						]/armor</xpath>
+					<value>
+						<armor>
+							<ArmorRating_Sharp>40</ArmorRating_Sharp>
+							<ArmorRating_Blunt>1200</ArmorRating_Blunt>
+						</armor>
+					</value>
+				</li>
+				
+				<!-- TurretERAPlating -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleDef[defName="DMS_Chelydridae_MainBattleTank"]/components/li[
+						key="TurretERAPlating"]/armor</xpath>
+					<value>
+						<armor>
+							<ArmorRating_Sharp>60</ArmorRating_Sharp>
+							<ArmorRating_Blunt>1800</ArmorRating_Blunt>
+						</armor>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

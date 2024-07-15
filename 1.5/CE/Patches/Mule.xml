@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!-- Vehicle -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleDef[defName="DMS_Mule_ATV"]/statBases/ArmorRating_Blunt</xpath>
+					<value>
+						<ArmorRating_Blunt>50</ArmorRating_Blunt>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleDef[defName="DMS_Mule_ATV"]/statBases/ArmorRating_Sharp</xpath>
+					<value>
+						<ArmorRating_Sharp>3</ArmorRating_Sharp>
+					</value>
+				</li>
+				
+				<!-- Armor section -->
+				
+				<!-- All Armor -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleDef[defName="DMS_Mule_ATV"]/components/li[key="FrontArmorPlating" or key="LeftArmorPlating" or key="RightArmorPlating" or key="RoofArmorPlating"]/armor</xpath>
+					<value>
+						<armor>
+							<ArmorRating_Sharp>6</ArmorRating_Sharp>
+							<ArmorRating_Blunt>72</ArmorRating_Blunt>
+						</armor>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleDef[defName="DMS_Mule_ATV"]/components/li[key="FrontArmorPlating" or key="LeftArmorPlating" or key="RightArmorPlating" or key="BackArmorPlating"]/health</xpath>
+					<value>
+						<health>80</health>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleDef[defName="DMS_Mule_ATV"]/components/li[key="RoofArmorPlating"]/health</xpath>
+					<value>
+						<health>120</health>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

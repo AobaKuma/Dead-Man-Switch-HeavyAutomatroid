@@ -22,8 +22,9 @@
   </modDependencies>
   <loadAfter>
     <li>SmashPhil.VehicleFramework</li>
+    <li>rimthunder.core</li>
     <li>Aoba.DeadManSwitch.Core</li>
-    <li>ceteam.combatextended</li>
+		<li>ceteam.combatextended</li>
   </loadAfter>
   <description>It's clear that even thousands of years after humans stepped into space, the wheel remains an irreplaceable invention.</description>
 </ModMetaData>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!-- Main Turret -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_Chameleon_Tank_Turret"]/projectile</xpath>
+					<value>
+						<projectile>Bullet_762x385mmRCannonShell_HE</projectile>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_Chameleon_Tank_Turret"]/chargePerAmmoCount</xpath>
+					<value>
+						<chargePerAmmoCount>1</chargePerAmmoCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_Chameleon_Tank_Turret"]/reloadTimer</xpath>
+					<value>
+						<reloadTimer>10</reloadTimer>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_Chameleon_Tank_Turret"]/warmUpTimer</xpath>
+					<value>
+						<warmUpTimer>2</warmUpTimer>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_Chameleon_Tank_Turret"]/magazineCapacity</xpath>
+					<value>
+						<magazineCapacity>6</magazineCapacity>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_Chameleon_Tank_Turret"]/genericAmmo</xpath>
+					<value>
+						<genericAmmo>false</genericAmmo>
+					</value>
+				</li>
+
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_Chameleon_Tank_Turret"]/projectileShifting</xpath>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_Chameleon_Tank_Turret"]/maxRange</xpath>
+					<value>
+						<maxRange>94</maxRange>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_Chameleon_Tank_Turret"]/ammunition/thingDefs</xpath>
+					<value>
+						<thingDefs>
+							<li>Bullet_762x385mmRCannonShell_HEAT</li>
+							<li>Bullet_762x385mmRCannonShell_AP</li>
+							<li>Bullet_762x385mmRCannonShell_HE</li>
+							<li>Bullet_762x385mmRCannonShell_APCR</li>
+							<li>Bullet_762x385mmRCannonShell_EMP</li>
+						</thingDefs>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_Chameleon_Tank_Turret"]</xpath>
+					<value>
+						<li Class="Vehicles.CETurretDataDefModExtension">
+							<ammoSet>AmmoSet_762x385mmRCannonShell</ammoSet>
+							<shotHeight>2</shotHeight>
+							<speed>500</speed>
+							<sway>1.46</sway>
+							<spread>0.01</spread>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_Chameleon_Tank_Turret"]/fireModes</xpath>
+					<value>
+						<fireModes>
+							<li>
+								<shotsPerBurst>1</shotsPerBurst>
+								<ticksBetweenShots>1</ticksBetweenShots>
+								<ticksBetweenBursts>60</ticksBetweenBursts>
+								<label>Single</label>
+								<texPath>UI/Gizmos/FireRate_Single</texPath>
+							</li>
+							
+							<li>
+								<shotsPerBurst>2</shotsPerBurst>
+								<ticksBetweenShots>120</ticksBetweenShots>
+								<ticksBetweenBursts>240</ticksBetweenBursts>
+								<label>Burst</label>
+								<texPath>UI/Gizmos/FireRate_Burst</texPath>
+							</li>
+						</fireModes>
+					</value>
+				</li>
+							
+				<!-- Vehicle -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleDef[defName="DMS_Chameleon_TD"]/statBases/ArmorRating_Blunt</xpath>
+					<value>
+						<ArmorRating_Blunt>450</ArmorRating_Blunt>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleDef[defName="DMS_Chameleon_TD"]/statBases/ArmorRating_Sharp</xpath>
+					<value>
+						<ArmorRating_Sharp>20</ArmorRating_Sharp>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>
+						Defs/Vehicles.VehicleDef[defName="DMS_Chameleon_TD"]/vehicleStats/CargoCapacity</xpath>
+					<value>
+						<CargoCapacity>800</CargoCapacity>
+					</value>
+				</li>
+				
+				<!-- Vehicle Parts-->
+				
+				<!--Mechianical Leg-->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleDef[defName="DMS_Chameleon_TD"]/components/li[key="LeftFrontWheel" or key="RightFrontWheel" or key="LeftRearWheel" or key="RightRearWheel"]/armor</xpath>
+					<value>
+						<armor>
+							<ArmorRating_Sharp>25</ArmorRating_Sharp>
+							<ArmorRating_Blunt>750</ArmorRating_Blunt>
+						</armor>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleDef[defName="DMS_Chameleon_TD"]/components/li[key="LeftFrontWheel" or key="RightFrontWheel" or key="LeftRearWheel" or key="RightRearWheel"]/health</xpath>
+					<value>
+						<health>120</health>
+					</value>
+				</li>
+				<!-- Armor section -->
+				
+				<!-- FrontArmor -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleDef[defName="DMS_Chameleon_TD"]/components/li[key="FrontArmorPlating"]/armor</xpath>
+					<value>
+						<armor>
+							<ArmorRating_Sharp>35</ArmorRating_Sharp>
+							<ArmorRating_Blunt>1050</ArmorRating_Blunt>
+						</armor>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleDef[defName="DMS_Chameleon_TD"]/components/li[key="FrontArmorPlating"]/health</xpath>
+					<value>
+						<health>340</health>
+					</value>
+				</li>
+				
+				<!-- SideArmor -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleDef[defName="DMS_Chameleon_TD"]/components/li[key="LeftArmorPlating" or key="RightArmorPlating"]/armor</xpath>
+					<value>
+						<armor>
+							<ArmorRating_Sharp>28</ArmorRating_Sharp>
+							<ArmorRating_Blunt>840</ArmorRating_Blunt>
+						</armor>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleDef[defName="DMS_Chameleon_TD"]/components/li[key="LeftArmorPlating" or key="RightArmorPlating"]/health</xpath>
+					<value>
+						<health>250</health>
+					</value>
+				</li>
+				
+				<!-- RoofArmor -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleDef[defName="DMS_Chameleon_TD"]/components/li[key="RoofArmorPlating"]/armor</xpath>
+					<value>
+						<armor>
+							<ArmorRating_Sharp>30</ArmorRating_Sharp>
+							<ArmorRating_Blunt>900</ArmorRating_Blunt>
+						</armor>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleDef[defName="DMS_Chameleon_TD"]/components/li[key="RoofArmorPlating"]/health</xpath>
+					<value>
+						<health>210</health>
+					</value>
+				</li>
+				
+				<!-- BackArmor -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleDef[defName="DMS_Chameleon_TD"]/components/li[key="BackArmorPlating"]/health</xpath>
+					<value>
+						<health>175</health>
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

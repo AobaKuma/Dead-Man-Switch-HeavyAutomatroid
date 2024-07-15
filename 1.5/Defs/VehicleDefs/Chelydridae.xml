@@ -422,7 +422,7 @@
         <!-- LeftERAPlating 100-->
         <key>LeftERAPlating</key>
         <label>left ERA plating</label>
-        <health>100</health>
+        <health>120</health>
         <depth>External</depth>
         <hitWeight>10</hitWeight>
         <armor>
@@ -433,17 +433,20 @@
           <side>Left</side>
         </hitbox>
       </li>
-      <li MayRequire="Mod.A,Mod.B">
+      <li>
         <!-- RightERAPlating 100-->
-        <key>RightSkirtPlating</key>
-        <label>ERA plating</label>
-        <health>200</health>
+        <key>RightERAPlating</key>
+        <label>right ERA plating</label>
+        <health>120</health>
         <depth>External</depth>
         <hitWeight>10</hitWeight>
         <armor>
           <ArmorRating_Blunt>1.45</ArmorRating_Blunt>
           <ArmorRating_Sharp>1.2</ArmorRating_Sharp>
         </armor>
+        <hitbox>
+          <side>Right</side>
+        </hitbox>
       </li>
       <li>
         <!-- RoofArmorPlating 150 -->

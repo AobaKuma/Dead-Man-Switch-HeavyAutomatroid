@@ -131,7 +131,7 @@
 		<!-- Internal mobile Part 內部驅動部件-->
 			<li><!--Engine 100-->
 				<key>Engine</key>
-				<label>Engine</label>
+				<label>engine</label>
 				<health>100</health>
 				<priorityStatEfficiency>true</priorityStatEfficiency>
 				<categories><li>MoveSpeed</li></categories>
