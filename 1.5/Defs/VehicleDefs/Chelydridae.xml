@@ -56,9 +56,9 @@
     </statBases>
     <vehicleStats>
       <Mass>2000</Mass>
-      <MoveSpeed>12</MoveSpeed>
+      <MoveSpeed>10</MoveSpeed>
       <CargoCapacity>400</CargoCapacity>
-      <RepairRate>0.5</RepairRate>
+      <RepairRate>0.8</RepairRate>
     </vehicleStats>
     <soundOneShotsOnEvent Inherit="false">
 			<li>
@@ -650,7 +650,7 @@
 				</graphicData>
         <recoil>
           <distanceTotal>0.5</distanceTotal>
-          <distancePerTick>0.05</distancePerTick>
+          <distancePerTick>0.025</distancePerTick>
           <speedMultiplierPostRecoil>0.1</speedMultiplierPostRecoil>
         </recoil>
 			</li>
@@ -671,7 +671,7 @@
     <maxRange>60.9</maxRange>
 		<rotationSpeed>10</rotationSpeed>
     <!-- 射擊相關 -->
-    <warmUpTimer>3</warmUpTimer>
+    <warmUpTimer>4</warmUpTimer>
     <shotSound>DMS_Shot_MBTCannonSound</shotSound>
     <reloadSound>DMS_Reload_MBTCannonSound</reloadSound>
     <projectileOffset>5</projectileOffset>

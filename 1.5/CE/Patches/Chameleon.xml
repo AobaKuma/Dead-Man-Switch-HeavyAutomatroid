@@ -193,8 +193,8 @@
 					<xpath>Defs/Vehicles.VehicleDef[defName="DMS_Chameleon_TD"]/components/li[key="RoofArmorPlating"]/armor</xpath>
 					<value>
 						<armor>
-							<ArmorRating_Sharp>30</ArmorRating_Sharp>
-							<ArmorRating_Blunt>900</ArmorRating_Blunt>
+							<ArmorRating_Sharp>20</ArmorRating_Sharp>
+							<ArmorRating_Blunt>300</ArmorRating_Blunt>
 						</armor>
 					</value>
 				</li>

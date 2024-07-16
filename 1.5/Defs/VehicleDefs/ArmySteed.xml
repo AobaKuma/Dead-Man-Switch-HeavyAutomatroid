@@ -57,7 +57,7 @@
 			<Mass>800</Mass>
 			<MoveSpeed>10</MoveSpeed>
 			<CargoCapacity>750</CargoCapacity>
-			<RepairRate>0.75</RepairRate>
+			<RepairRate>0.9</RepairRate>
 		</vehicleStats>
 		<soundOneShotsOnEvent Inherit = "False">
 			<li>
@@ -401,7 +401,7 @@
 									<west>(0.275, 0.875)</west>
 								</renderProperties>
 								<gizmoLabel>Main Turret</gizmoLabel>
-								<aimPieOffset>(0, 2.55)</aimPieOffset>
+								<aimPieOffset>(0, 0.6)</aimPieOffset>
 								<key>mainTurret_Okhotnik</key>
 							</li>
 						</turrets>

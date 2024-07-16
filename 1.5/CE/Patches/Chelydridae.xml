@@ -178,7 +178,7 @@
 						key="FrontArmorPlating"]/armor</xpath>
 					<value>
 						<armor>
-							<ArmorRating_Sharp>60</ArmorRating_Sharp>
+							<ArmorRating_Sharp>120</ArmorRating_Sharp>
 							<ArmorRating_Blunt>1200</ArmorRating_Blunt>
 						</armor>
 					</value>
@@ -197,7 +197,7 @@
 						key="LeftArmorPlating" or key="RightArmorPlating"]/armor</xpath>
 					<value>
 						<armor>
-							<ArmorRating_Sharp>30</ArmorRating_Sharp>
+							<ArmorRating_Sharp>60</ArmorRating_Sharp>
 							<ArmorRating_Blunt>600</ArmorRating_Blunt>
 						</armor>
 					</value>
@@ -216,7 +216,7 @@
 						key="RoofArmorPlating"]/armor</xpath>
 					<value>
 						<armor>
-							<ArmorRating_Sharp>25</ArmorRating_Sharp>
+							<ArmorRating_Sharp>50</ArmorRating_Sharp>
 							<ArmorRating_Blunt>500</ArmorRating_Blunt>
 						</armor>
 					</value>
@@ -244,7 +244,7 @@
 						key="MainTurret"]/armor</xpath>
 					<value>
 						<armor>
-							<ArmorRating_Sharp>60</ArmorRating_Sharp>
+							<ArmorRating_Sharp>120</ArmorRating_Sharp>
 							<ArmorRating_Blunt>1200</ArmorRating_Blunt>
 						</armor>
 					</value>

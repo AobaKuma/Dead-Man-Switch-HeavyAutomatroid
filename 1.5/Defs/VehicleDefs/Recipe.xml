@@ -50,17 +50,9 @@
         <count>120</count>
       </li>
     </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>EngineLight</li>
-        <li>Chemfuel</li>
-        <li>ComponentIndustrial</li>
-        <li>Steel</li>
-      </thingDefs>
-    </fixedIngredientFilter>
     <modExtensions>
       <li Class="Motorization.ModExt_RTCVehicleRecipe">
-        <thing>DMS_Mule_ATV</thing>
+        <thing>DMS_Mule_ATV_Blueprint</thing>
       </li>
     </modExtensions>
   </RecipeDef>
@@ -133,42 +125,30 @@
       <li>
         <filter>
           <thingDefs>
-            <li>Steel</li>
-          </thingDefs>
-        </filter>
-        <count>250</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
             <li>Chemfuel</li>
           </thingDefs>
         </filter>
         <count>180</count>
       </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>250</count>
+      </li>
     </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>EngineMedium</li>
-        <li>Chemfuel</li>        
-        <li>Neurocomputer</li>
-        <li>ComponentStamped</li>
-        <li>DMS_Ceramics</li>
-        <li>Tungsteel</li>
-        <li>ComponentIndustrial</li>
-        <li>Steel</li>
-      </thingDefs>
-    </fixedIngredientFilter>
     <modExtensions>
       <li Class="Motorization.ModExt_RTCVehicleRecipe">
-        <thing>DMS_ArmySteed_APC</thing>
+        <thing>DMS_ArmySteed_APC_Blueprint</thing>
       </li>
     </modExtensions>
   </RecipeDef>
 
   <RecipeDef MayRequire="rimthunder.core">
     <defName>DMS_Make_Chameleon_TD_Blueprint</defName>
-    <label>chameleon TD</label>		
+    <label>chameleon</label>		
     <description>assemble a vehicle.</description>
 		<jobString>vehicle assembling.</jobString>
 		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -240,21 +220,9 @@
         <count>400</count>
       </li>
     </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>EngineMedium</li>
-        <li>Chemfuel</li>        
-        <li>Neurocomputer</li>
-        <li>ComponentStamped</li>
-        <li>DMS_Ceramics</li>
-        <li>Tungsteel</li>
-        <li>ComponentIndustrial</li>
-        <li>Steel</li>
-      </thingDefs>
-    </fixedIngredientFilter>
     <modExtensions>
       <li Class="Motorization.ModExt_RTCVehicleRecipe">
-        <thing>DMS_Chameleon_TD</thing>
+        <thing>DMS_Chameleon_TD_Blueprint</thing>
       </li>
     </modExtensions>
   </RecipeDef>
@@ -349,19 +317,6 @@
         <count>750</count>
       </li>
     </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>EngineTurbine</li>
-        <li>ComponentFireControl</li>
-        <li>Neurocomputer</li>
-        <li>ComponentStamped</li>
-        <li>Polyester</li>
-        <li>ComponentIndustrial</li>
-        <li>Steel</li>
-        <li>DMS_Ceramics</li>
-        <li>Tungsteel</li>
-      </thingDefs>
-    </fixedIngredientFilter>
     <modExtensions>
       <li Class="Motorization.ModExt_RTCVehicleRecipe">
         <thing>DMS_Chelydridae_MainBattleTank_Blueprint</thing>

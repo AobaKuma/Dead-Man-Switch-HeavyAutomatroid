@@ -356,7 +356,7 @@
     <reloadTimer>10</reloadTimer>
     <autoRefuelProportion>1</autoRefuelProportion>
     <warmUpTimer>0</warmUpTimer>
-    <magazineCapacity>3</magazineCapacity>
+    <magazineCapacity>6</magazineCapacity>
     <chargePerAmmoCount>15</chargePerAmmoCount>
     <genericAmmo>true</genericAmmo>
     <hitFlags>IntendedTarget</hitFlags>
