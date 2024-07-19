@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
   <!-- EN: main turret -->
@@ -6,11 +6,11 @@
   <!-- EN: Single Shot -->
   <Chelydridae_Tank_Turret.fireModes.0.label>单发</Chelydridae_Tank_Turret.fireModes.0.label>
   <!-- EN: Select Target.\n\nFire for effect -->
-  <Chelydridae_Tank_Turret.gizmoDescription>瞄准射击</Chelydridae_Tank_Turret.gizmoDescription>
+  <Chelydridae_Tank_Turret.gizmoDescription>选择目标。\n\n效力射\n\n&lt;color=#b0e0e6&gt;CE弹药类型:&lt;/color&gt; 120 mm 加农炮弹</Chelydridae_Tank_Turret.gizmoDescription>
   
   <!-- EN: heavy machinegun turret -->
-  <DMS_Chelydridae_Kord.label>重机枪炮塔</DMS_Chelydridae_Kord.label>
+  <DMS_Chelydridae_Kord.label>重机枪砲塔</DMS_Chelydridae_Kord.label>
   <!-- EN: Select Target.\n\nFire for effect -->
-  <DMS_Chelydridae_Kord.gizmoDescription>瞄准射击</DMS_Chelydridae_Kord.gizmoDescription>
+  <DMS_Chelydridae_Kord.gizmoDescription>选择目标。\n\n效力射\n\n&lt;color=#b0e0e6&gt;CE弹药类型:&lt;/color&gt; 76.2x385mmR 加农炮弹</DMS_Chelydridae_Kord.gizmoDescription>
   
 </LanguageData>

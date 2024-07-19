@@ -4,7 +4,7 @@
   <!-- EN: army steed APC -->
   <DMS_ArmySteed_APC.label>軍馬</DMS_ArmySteed_APC.label>
   <!-- EN: An unmanned armored personnel carrier for armed transport, it's operated by an on-board computer and has the capability to carry more than 6 personal and cargos. -->
-  <DMS_ArmySteed_APC.description>一種無人駕駛的輪式裝甲運輸車，被殖民艦隊的機械化機兵營與殖民地的武裝押運隊廣泛使用於各種環境中，由車載的濕件計算核心進行駕駛與武器控制，可以乘載6名乘員與攜帶貨物。</DMS_ArmySteed_APC.description>
+  <DMS_ArmySteed_APC.description>一種無人駕駛的輪式裝甲運輸車，被殖民艦隊的機械化機兵營與殖民地的武裝押運隊廣泛使用於各種環境中，由車載的濕件計算核心進行駕駛與武器控制，可以乘載6名乘員並攜帶貨物。</DMS_ArmySteed_APC.description>
   <!-- EN: Engine -->
   <DMS_ArmySteed_APC.components.0.label>引擎</DMS_ArmySteed_APC.components.0.label>
   <!-- EN: fuel tank -->
@@ -44,6 +44,6 @@
   <!-- EN: army steed APC -->
   <DMS_ArmySteed_APC_Blueprint.label>軍馬</DMS_ArmySteed_APC_Blueprint.label>
   <!-- EN: An unmanned armored personnel carrier for armed transport, it's operated by an on-board computer and has the capability to carry more than 6 personal and cargos. -->
-  <DMS_ArmySteed_APC_Blueprint.description>一種無人駕駛的輪式裝甲運輸車，被殖民艦隊的機械化機兵營與殖民地的武裝押運隊廣泛使用於各種環境中，由車載的濕件計算核心進行駕駛與武器控制，可以乘載6名乘員與攜帶貨物。</DMS_ArmySteed_APC_Blueprint.description>
+  <DMS_ArmySteed_APC_Blueprint.description>一種無人駕駛的輪式裝甲運輸車，被殖民艦隊的機械化機兵營與殖民地的武裝押運隊廣泛使用於各種環境中，由車載的濕件計算核心進行駕駛與武器控制，可以乘載6名乘員並攜帶貨物。</DMS_ArmySteed_APC_Blueprint.description>
   
 </LanguageData>

@@ -3,7 +3,7 @@
 
   <Vehicles.VehicleBuildDef ParentName="DMS_BaseVehicleBuild"><!-- 建築型態的載具，基本上與BuildingDef相同-->
 		<defName>DMS_ArmySteed_APC_Blueprint</defName>
-		<label>army steed APC</label>
+		<label>army steed</label>
 		<description>An unmanned armored personnel carrier for armed transport, it's operated by an on-board computer and has the capability to carry more than 6 personal and cargos.</description>
 		<graphicData>
 			<texPath>Things/Vehicles/ArmySteed/vehicle</texPath>
@@ -36,7 +36,7 @@
 	<!-- 載具本體 -->
 	<Vehicles.VehicleDef ParentName="DMS_BaseVehicle">
 		<defName>DMS_ArmySteed_APC</defName>
-		<label>army steed APC</label>
+		<label>army steed</label>
 		<description>An unmanned armored personnel carrier for armed transport, it's operated by an on-board computer and has the capability to carry more than 6 personal and cargos.</description>
 		<buildDef>DMS_ArmySteed_APC_Blueprint</buildDef>
 		<graphicData>

@@ -3,7 +3,7 @@
 <Defs>
 	<Vehicles.VehicleBuildDef ParentName="DMS_BaseVehicleBuild"><!-- 建築型態的載具，基本上與BuildingDef相同-->
 		<defName>DMS_Mule_ATV_Blueprint</defName>
-		<label>Mule ATV</label>
+		<label>Mule</label>
 		<description>a light mobile platform used for ground handling and short-distance transportation,Production models of this type can be traced back to pre-space colonization times, but the exact name is unknown.</description>
 		<graphicData>
 			<texPath>Things/Vehicles/Mule/vehicle</texPath>
@@ -30,7 +30,7 @@
 
 	<Vehicles.VehicleDef ParentName="DMS_BaseVehicle">
 		<defName>DMS_Mule_ATV</defName>
-		<label>Mule ATV</label>
+		<label>Mule</label>
 		<description>a light mobile platform used for ground handling and short-distance transportation,Production models of this type can be traced back to pre-space colonization times, but the exact name is unknown.</description>
 		<buildDef>DMS_Mule_ATV_Blueprint</buildDef>		
 		<graphicData>

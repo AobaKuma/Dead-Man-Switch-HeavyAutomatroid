@@ -4,7 +4,8 @@
   <Vehicles.VehicleTurretDef ParentName="DMS_BaseTurret">
     <defName>DMS_Okhotnik_Coaxial</defName>
     <label>coaxial machinegun</label>
-    <!-- 砲塔的渲染顯示 -->
+    <gizmoDescription>Select Target.\n\nFire for effect\n\n&lt;color=#b0e0e6&gt;CE Ammo:&lt;/color&gt; 12.7x108mm Soviet</gizmoDescription>
+		<!-- 砲塔的渲染顯示 -->
     <gizmoIconTexPath>Things/Vehicles/Common/DMS_Okhotnik_Coaxial_Icon</gizmoIconTexPath>
     <graphicData>
       <texPath>Things/Vehicles/Common/DMS_Okhotnik_Coaxial</texPath>
@@ -72,6 +73,7 @@
   <Vehicles.VehicleTurretDef ParentName="DMS_BaseTurret" Name="DMS_BaseKord">
     <defName>DMS_Okhotnik_Turret</defName>
     <label>heavy machinegun turret</label>
+    <gizmoDescription>Select Target.\n\nFire for effect\n\n&lt;color=#b0e0e6&gt;CE Ammo:&lt;/color&gt; 12.7x108mm Soviet</gizmoDescription>
     <!-- 砲塔的渲染顯示 -->
     <gizmoIconTexPath>Things/Vehicles/Common/DMS_Okhotnik_Icon</gizmoIconTexPath>
     <graphicData>
@@ -142,6 +144,7 @@
     <defName>DMS_GAU4_Turret</defName>
     <label>M61 "Vulcan"</label>
     <description>a rapid-firing multiple-barrel firearm chambered in autocannon rounds.</description>
+    <gizmoDescription>Select Target.\n\nFire for effect\n\n&lt;color=#b0e0e6&gt;CE Ammo:&lt;/color&gt; 20x102mm NATO</gizmoDescription>
     <!-- 砲塔的渲染顯示 -->
     <gizmoIconTexPath>Things/Vehicles/Common/DMS_GAU4_Icon</gizmoIconTexPath>
     <graphicData>
@@ -213,6 +216,7 @@
   <Vehicles.VehicleTurretDef ParentName="DMS_BaseTurret">
     <defName>DMS_LMG_Coaxial</defName>
     <label>coaxial light machinegun</label>
+    <gizmoDescription>Select Target.\n\nFire for effect\n\n&lt;color=#b0e0e6&gt;CE Ammo:&lt;/color&gt; .338 Lapua Magnum</gizmoDescription>
     <!-- 砲塔的渲染顯示 -->
     <gizmoIconTexPath>Things/Vehicles/Common/DMS_LMG_Coaxial_Icon</gizmoIconTexPath>
     <graphicData>
@@ -281,6 +285,7 @@
   <Vehicles.VehicleTurretDef ParentName="DMS_BaseTurret">
     <defName>DMS_GAU19A_Coaxial</defName>
     <label>GAU-19/A</label>
+    <gizmoDescription>Select Target.\n\nFire for effect\n\n&lt;color=#b0e0e6&gt;CE Ammo:&lt;/color&gt; .50 BMG</gizmoDescription>
     <!-- 砲塔的渲染顯示 -->
     <gizmoIconTexPath>Things/Vehicles/Common/DMS_GAU19_Coaxial_Icon</gizmoIconTexPath>
     <graphicData>
@@ -350,6 +355,7 @@
   <Vehicles.VehicleTurretDef ParentName="VehicleTurretBase" Name="DMS_BaseLauncher">
     <defName>DMS_GrenadeLauncher</defName>
     <label>Smoke grenade launcher</label>
+    <gizmoDescription>Select Target.\n\nFire for effect\n\n&lt;color=#b0e0e6&gt;CE Ammo:&lt;/color&gt; 40x46mm grenade (Smoke)</gizmoDescription>
     <turretType>Static</turretType>
     <shotSound>Shot_IncendiaryLauncher</shotSound>
     <projectile>Bullet_SmokeLauncher</projectile>

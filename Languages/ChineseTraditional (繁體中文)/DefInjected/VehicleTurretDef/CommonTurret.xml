@@ -4,33 +4,34 @@
   <!-- EN: GAU-19/A -->
   <DMS_GAU19A_Coaxial.label>GAU-19/A</DMS_GAU19A_Coaxial.label>
   <!-- EN: Select Target.\n\nFire for effect -->
-  <DMS_GAU19A_Coaxial.gizmoDescription>瞄準射擊</DMS_GAU19A_Coaxial.gizmoDescription>
+  <DMS_GAU19A_Coaxial.gizmoDescription>選擇目標。\n\n效力射\n\n&lt;color=#b0e0e6&gt;CE彈藥類型:&lt;/color&gt; .50 BMG</DMS_GAU19A_Coaxial.gizmoDescription>
   
   <!-- EN: M134 turret -->
   <DMS_GAU4_Turret.label>GAU-4/M61"火神"</DMS_GAU4_Turret.label>
   <!-- EN: a rapid-firing multiple-barrel firearm chambered in autocannon rounds. -->
   <DMS_GAU4_Turret.description>一種使用大口徑機砲彈的多管機砲</DMS_GAU4_Turret.description>
   <!-- EN: Select Target.\n\nFire for effect -->
-  <DMS_GAU4_Turret.gizmoDescription>瞄準射擊</DMS_GAU4_Turret.gizmoDescription>
+  <DMS_GAU4_Turret.gizmoDescription>選擇目標。\n\n效力射\n\n&lt;color=#b0e0e6&gt;CE彈藥類型:&lt;/color&gt; 20x102mm NATO</DMS_GAU4_Turret.gizmoDescription>
   
   <!-- EN: Smoke grenade launcher -->
   <DMS_GrenadeLauncher.label>煙霧發射器</DMS_GrenadeLauncher.label>
   <!-- EN: Select Target.\n\nFire for effect -->
-  <DMS_GrenadeLauncher.gizmoDescription>瞄準射擊</DMS_GrenadeLauncher.gizmoDescription>
+  <DMS_GrenadeLauncher.gizmoDescription>選擇目標。\n\n效力射\n\n&lt;color=#b0e0e6&gt;CE彈藥類型:&lt;/color&gt; 40x46mm 煙霧彈</DMS_GrenadeLauncher.gizmoDescription>
+  
   
   <!-- EN: coaxial light machinegun -->
   <DMS_LMG_Coaxial.label>同軸輕機槍</DMS_LMG_Coaxial.label>
   <!-- EN: Select Target.\n\nFire for effect -->
-  <DMS_LMG_Coaxial.gizmoDescription>瞄準射擊</DMS_LMG_Coaxial.gizmoDescription>
+  <DMS_LMG_Coaxial.gizmoDescription>選擇目標。\n\n效力射\n\n&lt;color=#b0e0e6&gt;CE彈藥類型:&lt;/color&gt; .338 Lapua馬格南子彈</DMS_LMG_Coaxial.gizmoDescription>
   
   <!-- EN: coaxial machinegun -->
-  <DMS_Okhotnik_Coaxial.label>同軸機槍</DMS_Okhotnik_Coaxial.label>
+  <DMS_Okhotnik_Coaxial.label>同軸重機槍</DMS_Okhotnik_Coaxial.label>
   <!-- EN: Select Target.\n\nFire for effect -->
-  <DMS_Okhotnik_Coaxial.gizmoDescription>瞄準射擊</DMS_Okhotnik_Coaxial.gizmoDescription>
+  <DMS_Okhotnik_Coaxial.gizmoDescription>選擇目標。\n\n效力射\n\n&lt;color=#b0e0e6&gt;CE彈藥類型:&lt;/color&gt; 12.7x108mm Soviet</DMS_Okhotnik_Coaxial.gizmoDescription>
   
   <!-- EN: heavy machinegun turret -->
   <DMS_Okhotnik_Turret.label>重機槍砲塔</DMS_Okhotnik_Turret.label>
   <!-- EN: Select Target.\n\nFire for effect -->
-  <DMS_Okhotnik_Turret.gizmoDescription>瞄準射擊</DMS_Okhotnik_Turret.gizmoDescription>
+  <DMS_Okhotnik_Turret.gizmoDescription>選擇目標。\n\n效力射\n\n&lt;color=#b0e0e6&gt;CE彈藥類型:&lt;/color&gt; 12.7x108mm Soviet</DMS_Okhotnik_Turret.gizmoDescription>
   
 </LanguageData>

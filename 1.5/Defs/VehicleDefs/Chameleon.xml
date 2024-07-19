@@ -319,12 +319,12 @@
 			<li><!-- RoofArmorPlating 150 -->
 				<key>RoofArmorPlating</key>
 				<label>roof armor plating</label>
-				<health>135</health>
+				<health>80</health>
 				<depth>External</depth>
 				<hitWeight>5</hitWeight>
 				<armor>
-					<ArmorRating_Blunt>1.0</ArmorRating_Blunt>
-					<ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
 				</armor>
 			</li>
 			<li><!-- BackArmorPlating 150-->
@@ -388,9 +388,10 @@
 	<Vehicles.VehicleTurretDef ParentName="DMS_BaseTurret">
 		<defName>DMS_Chameleon_Tank_Turret</defName>
 		<label>revolver cannon</label>
-		<description>A highly automatic revolver cannon designed for anti heavy mech purposes. It can launch anti-tank tungsten core armor-piercing projectiles in a very short time and accurately destroy targets within the range.</description>
-		<gizmoIconTexPath>Things/Vehicles/Chameleon/mainTurret_gizmo</gizmoIconTexPath>
+		<description>A highly automatic revolver cannon designed for anti heavy mech purposes. It can launch anti-tank tungsten core armor-piercing projectiles in a very short time and accurately destroy targets within the range.</description>		
+		<gizmoDescription>Select Target.\n\nFire for effect\n\n&lt;color=#b0e0e6&gt;CE Ammo:&lt;/color&gt; 76.2x385mmR Cannon shell</gizmoDescription>
 		<!-- 砲塔的渲染顯示 -->
+		<gizmoIconTexPath>Things/Vehicles/Chameleon/mainTurret_gizmo</gizmoIconTexPath>
 		<graphicData>
 		  <texPath>Things/Vehicles/Chameleon/vehicle_turretTop_top</texPath>
 		  <drawSize>6</drawSize>

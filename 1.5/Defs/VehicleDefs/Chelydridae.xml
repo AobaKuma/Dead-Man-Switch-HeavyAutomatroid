@@ -3,7 +3,7 @@
   <Vehicles.VehicleBuildDef ParentName="DMS_BaseVehicleBuild">
     <!-- 建築型態的載具，基本上與BuildingDef相同-->
     <defName>DMS_Chelydridae_MainBattleTank_Blueprint</defName>
-    <label>Chelydridae</label>
+    <label>alligator snapper</label>
     <description>The automated main battle vehicles currently in service in the colonial fleet are designed to theoretically conduct fully automatic combat. However, due to concerns about the battlefield communication environment, a space for two crew members was designed in the tail compartment.</description>
     <graphicData>
       <texPath>Things/Vehicles/Chelydridae/vehicle</texPath>
@@ -36,7 +36,7 @@
   <!-- 載具本體 -->
   <Vehicles.VehicleDef ParentName="DMS_BaseVehicle">
     <defName>DMS_Chelydridae_MainBattleTank</defName>
-    <label>Chelydridae</label>
+    <label>alligator snapper</label>
     <description>The automated main battle vehicles currently in service in the colonial fleet are designed to theoretically conduct fully automatic combat. However, due to concerns about the battlefield communication environment, a space for two crew members was designed in the tail compartment.</description>
     <buildDef>DMS_Chelydridae_MainBattleTank_Blueprint</buildDef>
 		<vehicleMovementPermissions>NoDriverNeeded</vehicleMovementPermissions>
@@ -544,10 +544,10 @@
           <li>
             <turretDef>Chelydridae_Tank_Turret</turretDef>
             <renderProperties>
-              <north>(0, -0.2)</north>
-              <south>(0, 0.65)</south>
-              <east>(-0.65,0.5)</east>
-              <west>(0.65,0.5)</west>
+              <north>(0, 0.4)</north>
+              <south>(0, 0)</south>
+              <east>(0.3,0.5)</east>
+              <west>(-0.3,0.5)</west>
             </renderProperties>
             <gizmoLabel>Main Turret</gizmoLabel>
             <aimPieOffset>(0, 3.35)</aimPieOffset>
@@ -635,6 +635,7 @@
     <defName>Chelydridae_Tank_Turret</defName>
     <label>main turret</label>
     <gizmoIconTexPath>Things/Vehicles/Chelydridae/mainTurret_gizmo</gizmoIconTexPath>
+    <gizmoDescription>Select Target.\n\nFire for effect\n\n&lt;color=#b0e0e6&gt;CE Ammo:&lt;/color&gt; 120mm Cannon Shell</gizmoDescription>
     <!-- 砲塔的渲染顯示 -->
     <graphicData>
       <texPath>Things/Vehicles/Chelydridae/vehicle_turretTop</texPath>
@@ -684,7 +685,7 @@
       <li>
         <shotsPerBurst>1</shotsPerBurst>
         <ticksBetweenBursts>1</ticksBetweenBursts>
-        <spreadRadius>4</spreadRadius>
+        <spreadRadius>2</spreadRadius>
         <label>Single Shot</label>
         <texPath>UI/Gizmos/FireRate_Single</texPath>
       </li>
