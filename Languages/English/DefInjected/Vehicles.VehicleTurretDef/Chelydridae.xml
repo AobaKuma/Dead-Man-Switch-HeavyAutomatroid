@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: main turret -->
+  <Chelydridae_Tank_Turret.label>Main Turret</Chelydridae_Tank_Turret.label>
+  <!-- EN: Select Target.\n\nFire for effect\n\n<color=#b0e0e6>CE Ammo:</color> 120mm Cannon Shell -->
+  <Chelydridae_Tank_Turret.gizmoDescription>Select Target.
+
+Fire for effect
+
+&lt;color=#b0e0e6>CE Ammo:&lt;/color> 120mm cannon shell</Chelydridae_Tank_Turret.gizmoDescription>
+  
+  <!-- EN: heavy machinegun turret -->
+  <DMS_Chelydridae_Kord.label>Heavy machinegun turret</DMS_Chelydridae_Kord.label>
+  <!-- EN: Select Target.\n\nFire for effect\n\n<color=#b0e0e6>CE Ammo:</color> 12.7x108mm Soviet -->
+  <DMS_Chelydridae_Kord.gizmoDescription>Select Target.
+
+Fire for effect
+
+&lt;color=#b0e0e6>CE Ammo:&lt;/color> 12.7x108mm Soviet</DMS_Chelydridae_Kord.gizmoDescription>
+  
+</LanguageData>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Mule -->
+  <DMS_Mule_ATV.label>Mule</DMS_Mule_ATV.label>
+  <!-- EN: a light mobile platform used for ground handling and short-distance transportation,Production models of this type can be traced back to pre-space colonization times, but the exact name is unknown. -->
+  <DMS_Mule_ATV.description>A light mobile platform used for cross-country handling and short-distance transportation, production models of this type can be traced back to pre-space colonization times, but the exact name remains unknown.</DMS_Mule_ATV.description>
+  <!-- EN: left front Suspension -->
+  <DMS_Mule_ATV.components.1.label>Left front Suspension</DMS_Mule_ATV.components.1.label>
+  <!-- EN: right front suspension -->
+  <DMS_Mule_ATV.components.2.label>Right front suspension</DMS_Mule_ATV.components.2.label>
+  <!-- EN: left rear suspension -->
+  <DMS_Mule_ATV.components.3.label>Left rear suspension</DMS_Mule_ATV.components.3.label>
+  <!-- EN: right rear suspension -->
+  <DMS_Mule_ATV.components.4.label>Right rear suspension</DMS_Mule_ATV.components.4.label>
+  <!-- EN: gear box -->
+  <DMS_Mule_ATV.components.5.label>Gear box</DMS_Mule_ATV.components.5.label>
+  <!-- EN: fuel tank -->
+  <DMS_Mule_ATV.components.6.label>Fuel tank</DMS_Mule_ATV.components.6.label>
+  <!-- EN: left front Wheel -->
+  <DMS_Mule_ATV.components.7.label>Left front wheel</DMS_Mule_ATV.components.7.label>
+  <!-- EN: right front Wheel -->
+  <DMS_Mule_ATV.components.8.label>Right front Wheel</DMS_Mule_ATV.components.8.label>
+  <!-- EN: left rear wheel -->
+  <DMS_Mule_ATV.components.9.label>Left rear wheel</DMS_Mule_ATV.components.9.label>
+  <!-- EN: right rear Wheel -->
+  <DMS_Mule_ATV.components.10.label>Right rear wheel</DMS_Mule_ATV.components.10.label>
+  <!-- EN: steering wheel -->
+  <DMS_Mule_ATV.components.12.label>Steering wheel</DMS_Mule_ATV.components.12.label>
+  <!-- EN: front armor Plating -->
+  <DMS_Mule_ATV.components.13.label>Front armor plating</DMS_Mule_ATV.components.13.label>
+  <!-- EN: left armor plating -->
+  <DMS_Mule_ATV.components.14.label>Left armor plating</DMS_Mule_ATV.components.14.label>
+  <!-- EN: right armor plating -->
+  <DMS_Mule_ATV.components.15.label>Right armor plating</DMS_Mule_ATV.components.15.label>
+  <!-- EN: roof armor plating -->
+  <DMS_Mule_ATV.components.16.label>Roof armor plating</DMS_Mule_ATV.components.16.label>
+  <!-- EN: rear armor plating -->
+  <DMS_Mule_ATV.components.17.label>Rear armor plating</DMS_Mule_ATV.components.17.label>
+  <!-- EN: back passenger -->
+  <DMS_Mule_ATV.properties.roles.2.label>Rear passenger seating</DMS_Mule_ATV.properties.roles.2.label>
+  
+  <!-- EN: Mule -->
+  <DMS_Mule_ATV_Blueprint.label>Mule</DMS_Mule_ATV_Blueprint.label>
+  <!-- EN: a light mobile platform used for ground handling and short-distance transportation,Production models of this type can be traced back to pre-space colonization times, but the exact name is unknown. -->
+  <DMS_Mule_ATV_Blueprint.description>A light mobile platform used for cross-country handling and short-distance transportation, production models of this type can be traced back to pre-space colonization times, but the exact name remains unknown.</DMS_Mule_ATV_Blueprint.description>
+  
+</LanguageData>

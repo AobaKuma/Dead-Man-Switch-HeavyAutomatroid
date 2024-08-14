@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: revolver cannon -->
+  <DMS_Chameleon_Tank_Turret.label>Revolver Cannon</DMS_Chameleon_Tank_Turret.label>
+  <!-- EN: A highly automatic revolver cannon designed for anti heavy mech purposes. It can launch anti-tank tungsten core armor-piercing projectiles in a very short time and accurately destroy targets within the range. -->
+  <DMS_Chameleon_Tank_Turret.description>A highly automatic revolver cannon designed for anti heavy mech purposes. It can launch several anti-tank tungsten core armor-piercing projectiles in a very short time and accurately destroy targets within range.</DMS_Chameleon_Tank_Turret.description>
+  <!-- EN: Select Target.\n\nFire for effect\n\n<color=#b0e0e6>CE Ammo:</color> 76.2x385mmR Cannon shell -->
+  <DMS_Chameleon_Tank_Turret.gizmoDescription>Select Target.
+
+Fire for effect
+
+&lt;color=#b0e0e6>CE Ammo:&lt;/color> 76.2x385mmR Cannon shell</DMS_Chameleon_Tank_Turret.gizmoDescription>
+  
+</LanguageData>

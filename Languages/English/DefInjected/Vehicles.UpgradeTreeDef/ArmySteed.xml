@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: "Okhotnik" is a vehicle-mounted remote-controlled heavy machine gun weapon system that fires large-caliber machine gun bullets. It has greater power, accuracy and range than anti-aircraft machine guns, but the ammunition it consumes is more expensive. -->
+  <DMS_ArmySteed_UpgradeTree.nodes.0.description>The "Okhotnik" is a vehicle-mounted remote-controlled heavy machine gun weapon system that fires large-caliber machine gun bullets. It has greater power, accuracy and range than comparable anti-aircraft machine guns, but the ammunition it consumes is more expensive.</DMS_ArmySteed_UpgradeTree.nodes.0.description>
+  <!-- EN: Main Turret -->
+  <DMS_ArmySteed_UpgradeTree.nodes.0.upgrades.0.turrets.0.gizmoLabel>Main Turret</DMS_ArmySteed_UpgradeTree.nodes.0.upgrades.0.turrets.0.gizmoLabel>
+  <!-- EN: GAU-4/M61 "Vulcan" -->
+  <DMS_ArmySteed_UpgradeTree.nodes.1.label>GAU-4/M61 "Vulcan"</DMS_ArmySteed_UpgradeTree.nodes.1.label>
+  <!-- EN: The GAU-4/M61 "Vulcan" is a formidable vehicle-mounted, remote-controlled Gatling weapon system utilized by the army. It demonstrates exceptional combat effectiveness, excelling in air defense, ground suppression, and interception of low-speed, close-to-earth aircraft. Despite utilizing relatively easy-to-obtain steel core ammunition, it swiftly depletes its supply when fired. -->
+  <DMS_ArmySteed_UpgradeTree.nodes.1.description>The GAU-4/M61 "Vulcan" is a formidable vehicle-mounted, remote-controlled Gatling weapon system utilized by the army. It demonstrates exceptional combat effectiveness, excelling in air defense, ground suppression, and interception of low-speed, close-to-earth aircraft. Despite utilizing relatively easy-to-obtain steel core ammunition, it swiftly depletes its internal supply when fired.</DMS_ArmySteed_UpgradeTree.nodes.1.description>
+  <!-- EN: Main Turret -->
+  <DMS_ArmySteed_UpgradeTree.nodes.1.upgrades.0.turrets.0.gizmoLabel>Main Turret</DMS_ArmySteed_UpgradeTree.nodes.1.upgrades.0.turrets.0.gizmoLabel>
+  
+</LanguageData>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Automatic Revolver Electromagnetic Slingshot(A.R.E.S.) A lightweight 76mm anti-tank revolver cannon with an independent fire control system. the use of electromagnetic acceleration makes projectile capable to penetrate any heavy armored vehicles. \n\n Interestingly, this weapon is also one of the few non-gunpowder weapon systems known to have entered the mass production stage and been put into use by the colonial fleet. -->
+  <DMS_Chameleon_UpgradeTree.nodes.0.description>Automatic Revolver Electromagnetic Slingshot(A.R.E.S.) - A lightweight 76mm anti-tank revolver cannon with an independent fire control system. The use of electromagnetic acceleration makes projectile capable of penetration to any heavy armored vehicles. 
+
+ Interestingly, this weapon is also one of the few non-gunpowder weapon systems known to have entered the mass production stage and been put into use by the Colonial Fleet.</DMS_Chameleon_UpgradeTree.nodes.0.description>
+  <!-- EN: Main Turret -->
+  <DMS_Chameleon_UpgradeTree.nodes.0.upgrades.0.turrets.0.gizmoLabel>Main Turret</DMS_Chameleon_UpgradeTree.nodes.0.upgrades.0.turrets.0.gizmoLabel>
+  <!-- EN: coaxial MG -->
+  <DMS_Chameleon_UpgradeTree.nodes.0.upgrades.0.turrets.1.gizmoLabel>Coaxial MG</DMS_Chameleon_UpgradeTree.nodes.0.upgrades.0.turrets.1.gizmoLabel>
+  <!-- EN: Left Grenade Launcher -->
+  <DMS_Chameleon_UpgradeTree.nodes.0.upgrades.0.turrets.2.gizmoLabel>Left Grenade Launcher</DMS_Chameleon_UpgradeTree.nodes.0.upgrades.0.turrets.2.gizmoLabel>
+  <!-- EN: Right Grenade Launcher -->
+  <DMS_Chameleon_UpgradeTree.nodes.0.upgrades.0.turrets.3.gizmoLabel>Right Grenade Launcher</DMS_Chameleon_UpgradeTree.nodes.0.upgrades.0.turrets.3.gizmoLabel>
+  <!-- EN: Kord HMG -->
+  <DMS_Chameleon_UpgradeTree.nodes.1.label>Kord HMG</DMS_Chameleon_UpgradeTree.nodes.1.label>
+  <!-- EN: Replace the light machine gun under chassis with Kord heavy machine gun -->
+  <DMS_Chameleon_UpgradeTree.nodes.1.description>Replace the default light machine gun with a Kord heavy machine gun</DMS_Chameleon_UpgradeTree.nodes.1.description>
+  <!-- EN: coaxial MG -->
+  <DMS_Chameleon_UpgradeTree.nodes.1.upgrades.0.turrets.0.gizmoLabel>Coaxial MG</DMS_Chameleon_UpgradeTree.nodes.1.upgrades.0.turrets.0.gizmoLabel>
+  <!-- EN: Replace the light machine gun under chassis with GAU-19/A multi-barreled heavy machine gun -->
+  <DMS_Chameleon_UpgradeTree.nodes.2.description>Replace the default light machine gun with the GAU-19/A multi-barreled heavy machine gun</DMS_Chameleon_UpgradeTree.nodes.2.description>
+  <!-- EN: coaxial MG -->
+  <DMS_Chameleon_UpgradeTree.nodes.2.upgrades.0.turrets.0.gizmoLabel>Coaxial MG</DMS_Chameleon_UpgradeTree.nodes.2.upgrades.0.turrets.0.gizmoLabel>
+  
+</LanguageData>

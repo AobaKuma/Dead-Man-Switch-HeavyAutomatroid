@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: alligator snapper -->
+  <DMS_Chelydridae_MainBattleTank.label>Alligator Snapper</DMS_Chelydridae_MainBattleTank.label>
+  <!-- EN: The automated main battle vehicles currently in service in the colonial fleet are designed to theoretically conduct fully automatic combat. However, due to concerns about the battlefield communication environment, a space for two crew members was designed in the tail compartment. -->
+  <DMS_Chelydridae_MainBattleTank.description>The automated main battle vehicle currently in service in the Colonial Fleet is designed to theoretically conduct fully lethal autonomous combat. However, due to concerns about the vehicle's reliability in performing in a hostile battlefield communication environment, a designated space for two crew members was designed in the tail compartment.</DMS_Chelydridae_MainBattleTank.description>
+  <!-- EN: turbine engine -->
+  <DMS_Chelydridae_MainBattleTank.components.0.label>Turbine engine</DMS_Chelydridae_MainBattleTank.components.0.label>
+  <!-- EN: armoured fuel tank -->
+  <DMS_Chelydridae_MainBattleTank.components.1.label>Armoured fuel tank</DMS_Chelydridae_MainBattleTank.components.1.label>
+  <!-- EN: ammo rack -->
+  <DMS_Chelydridae_MainBattleTank.components.3.label>Ammo rack</DMS_Chelydridae_MainBattleTank.components.3.label>
+  <!-- EN: transmission shaft -->
+  <DMS_Chelydridae_MainBattleTank.components.4.label>Transmission shaft</DMS_Chelydridae_MainBattleTank.components.4.label>
+  <!-- EN: left track -->
+  <DMS_Chelydridae_MainBattleTank.components.5.label>Left track</DMS_Chelydridae_MainBattleTank.components.5.label>
+  <!-- EN: right track -->
+  <DMS_Chelydridae_MainBattleTank.components.6.label>Right track</DMS_Chelydridae_MainBattleTank.components.6.label>
+  <!-- EN: left road wheels -->
+  <DMS_Chelydridae_MainBattleTank.components.7.label>Left road wheels</DMS_Chelydridae_MainBattleTank.components.7.label>
+  <!-- EN: right road wheels -->
+  <DMS_Chelydridae_MainBattleTank.components.8.label>Right road wheels</DMS_Chelydridae_MainBattleTank.components.8.label>
+  <!-- EN: left drive sprocket -->
+  <DMS_Chelydridae_MainBattleTank.components.9.label>Left drive sprocket</DMS_Chelydridae_MainBattleTank.components.9.label>
+  <!-- EN: right drive sprocket -->
+  <DMS_Chelydridae_MainBattleTank.components.10.label>Right drive sprocket</DMS_Chelydridae_MainBattleTank.components.10.label>
+  <!-- EN: left tensioner wheel -->
+  <DMS_Chelydridae_MainBattleTank.components.11.label>Left tensioner wheel</DMS_Chelydridae_MainBattleTank.components.11.label>
+  <!-- EN: right tensioner wheel -->
+  <DMS_Chelydridae_MainBattleTank.components.12.label>Right tensioner wheel</DMS_Chelydridae_MainBattleTank.components.12.label>
+  <!-- EN: front armor Plating -->
+  <DMS_Chelydridae_MainBattleTank.components.13.label>Front armor plating</DMS_Chelydridae_MainBattleTank.components.13.label>
+  <!-- EN: left armor plating -->
+  <DMS_Chelydridae_MainBattleTank.components.14.label>Left armor plating</DMS_Chelydridae_MainBattleTank.components.14.label>
+  <!-- EN: right armor plating -->
+  <DMS_Chelydridae_MainBattleTank.components.15.label>Right armor plating</DMS_Chelydridae_MainBattleTank.components.15.label>
+  <!-- EN: left ERA plating -->
+  <DMS_Chelydridae_MainBattleTank.components.16.label>Left ERA plating</DMS_Chelydridae_MainBattleTank.components.16.label>
+  <!-- EN: right ERA plating -->
+  <DMS_Chelydridae_MainBattleTank.components.17.label>Right ERA plating</DMS_Chelydridae_MainBattleTank.components.17.label>
+  <!-- EN: roof armor plating -->
+  <DMS_Chelydridae_MainBattleTank.components.18.label>Roof armor plating</DMS_Chelydridae_MainBattleTank.components.18.label>
+  <!-- EN: rear armor plating -->
+  <DMS_Chelydridae_MainBattleTank.components.19.label>Rear armor plating</DMS_Chelydridae_MainBattleTank.components.19.label>
+  <!-- EN: Main Turret -->
+  <DMS_Chelydridae_MainBattleTank.components.20.label>Main Turret</DMS_Chelydridae_MainBattleTank.components.20.label>
+  <!-- EN: front ERA Plating -->
+  <DMS_Chelydridae_MainBattleTank.components.21.label>Front ERA plating</DMS_Chelydridae_MainBattleTank.components.21.label>
+  <!-- EN: turret ERA plating -->
+  <DMS_Chelydridae_MainBattleTank.components.22.label>Turret ERA plating</DMS_Chelydridae_MainBattleTank.components.22.label>
+  <!-- EN: Main Turret -->
+  <DMS_Chelydridae_MainBattleTank.comps.CompVehicleTurrets.turrets.0.gizmoLabel>Main Turret</DMS_Chelydridae_MainBattleTank.comps.CompVehicleTurrets.turrets.0.gizmoLabel>
+  <!-- EN: support MG -->
+  <DMS_Chelydridae_MainBattleTank.comps.CompVehicleTurrets.turrets.3.gizmoLabel>Support MG</DMS_Chelydridae_MainBattleTank.comps.CompVehicleTurrets.turrets.3.gizmoLabel>
+  
+  <!-- EN: alligator snapper -->
+  <DMS_Chelydridae_MainBattleTank_Blueprint.label>Alligator Snapper</DMS_Chelydridae_MainBattleTank_Blueprint.label>
+  <!-- EN: The automated main battle vehicles currently in service in the colonial fleet are designed to theoretically conduct fully automatic combat. However, due to concerns about the battlefield communication environment, a space for two crew members was designed in the tail compartment. -->
+  <DMS_Chelydridae_MainBattleTank_Blueprint.description>The automated main battle vehicle currently in service in the Colonial Fleet is designed to theoretically conduct fully lethal autonomous combat. However, due to concerns about the vehicle's reliability in performing in a hostile battlefield communication environment, a designated space for two crew members was designed in the tail compartment.</DMS_Chelydridae_MainBattleTank_Blueprint.description>
+  
+</LanguageData>

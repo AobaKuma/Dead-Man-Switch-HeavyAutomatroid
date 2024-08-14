@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: GAU-19/A -->
+  <DMS_GAU19A_Coaxial.label>GAU-19/A</DMS_GAU19A_Coaxial.label>
+  <!-- EN: Select Target.\n\nFire for effect\n\n<color=#b0e0e6>CE Ammo:</color> .50 BMG -->
+  <DMS_GAU19A_Coaxial.gizmoDescription>Select Target.
+
+Fire for effect
+
+&lt;color=#b0e0e6>CE Ammo:&lt;/color> .50 BMG</DMS_GAU19A_Coaxial.gizmoDescription>
+  
+  <!-- EN: M61 "Vulcan" -->
+  <DMS_GAU4_Turret.label>M61 "Vulcan"</DMS_GAU4_Turret.label>
+  <!-- EN: a rapid-firing multiple-barrel firearm chambered in autocannon rounds. -->
+  <DMS_GAU4_Turret.description>A rapid-firing multi-barrel firearm chambered in autocannon rounds.</DMS_GAU4_Turret.description>
+  <!-- EN: Select Target.\n\nFire for effect\n\n<color=#b0e0e6>CE Ammo:</color> 20x102mm NATO -->
+  <DMS_GAU4_Turret.gizmoDescription>Select Target.
+
+Fire for effect
+
+&lt;color=#b0e0e6>CE Ammo:&lt;/color> 20x102mm NATO</DMS_GAU4_Turret.gizmoDescription>
+  
+  <!-- EN: Smoke grenade launcher -->
+  <DMS_GrenadeLauncher.label>Smoke grenade launcher</DMS_GrenadeLauncher.label>
+  <!-- EN: Select Target.\n\nFire for effect\n\n<color=#b0e0e6>CE Ammo:</color> 40x46mm grenade (Smoke) -->
+  <DMS_GrenadeLauncher.gizmoDescription>Select Target.
+
+Fire for effect
+
+&lt;color=#b0e0e6>CE Ammo:&lt;/color> 40x46mm grenade (Smoke)</DMS_GrenadeLauncher.gizmoDescription>
+  
+  <!-- EN: coaxial light machinegun -->
+  <DMS_LMG_Coaxial.label>Coaxial light machinegun</DMS_LMG_Coaxial.label>
+  <!-- EN: Select Target.\n\nFire for effect\n\n<color=#b0e0e6>CE Ammo:</color> .338 Lapua Magnum -->
+  <DMS_LMG_Coaxial.gizmoDescription>Select Target.
+
+Fire for effect
+
+&lt;color=#b0e0e6>CE Ammo:&lt;/color> .338 Lapua Magnum</DMS_LMG_Coaxial.gizmoDescription>
+  
+  <!-- EN: coaxial machinegun -->
+  <DMS_Okhotnik_Coaxial.label>Coaxial machinegun</DMS_Okhotnik_Coaxial.label>
+  <!-- EN: Select Target.\n\nFire for effect\n\n<color=#b0e0e6>CE Ammo:</color> 12.7x108mm Soviet -->
+  <DMS_Okhotnik_Coaxial.gizmoDescription>Select Target.
+
+Fire for effect
+
+&lt;color=#b0e0e6>CE Ammo:&lt;/color> 12.7x108mm Soviet</DMS_Okhotnik_Coaxial.gizmoDescription>
+  
+  <!-- EN: heavy machinegun turret -->
+  <DMS_Okhotnik_Turret.label>Heavy machinegun turret</DMS_Okhotnik_Turret.label>
+  <!-- EN: Select Target.\n\nFire for effect\n\n<color=#b0e0e6>CE Ammo:</color> 12.7x108mm Soviet -->
+  <DMS_Okhotnik_Turret.gizmoDescription>Select Target.
+
+Fire for effect
+
+&lt;color=#b0e0e6>CE Ammo:&lt;/color> 12.7x108mm Soviet</DMS_Okhotnik_Turret.gizmoDescription>
+  
+</LanguageData>
