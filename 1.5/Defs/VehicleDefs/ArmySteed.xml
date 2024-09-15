@@ -109,11 +109,11 @@
 			<customBiomeCosts>
 				<li>
 					<key>Ocean</key>
-					<value>4</value>
+					<value>2</value>
 				</li>
 				<li>
 					<key>Lake</key>
-					<value>4</value>
+					<value>2</value>
 				</li>
 			</customBiomeCosts>
 			<vehicleJobLimitations>
@@ -393,12 +393,12 @@
 					<li Class="Vehicles.TurretUpgrade"><!--炮塔升级相关，直接从空炮塔升级为有炮塔不可行，需要空白comps，参见Trucks.xml-->
 						<turrets>
 							<li> 
-								<turretDef>DMS_Okhotnik_Turret</turretDef> <!--调用的炮塔def,嫌麻烦就不要在两个改装炮塔之间来回切，直接remove回到原始状态-->					
+								<turretDef>DMS_Okhotnik_Turret</turretDef> <!--调用的炮塔def,嫌麻烦就不要在两个改装炮塔之间来回切，直接remove回到原始状态-->
 								<renderProperties>
-									<north>(0.425, -0.2)</north>
-									<south>(-0.425, 0.275)</south>
-									<east>(-0.25, 0.175)</east>
-									<west>(0.275, 0.875)</west>
+									<north>(0.325, -0.2)</north>
+									<south>(-0.325, 0.2)</south>
+									<east>(0.15, 0.1)</east>
+									<west>(-0.15, 0.8)</west>
 								</renderProperties>
 								<gizmoLabel>Main Turret</gizmoLabel>
 								<aimPieOffset>(0, 0.6)</aimPieOffset>
@@ -444,10 +444,10 @@
 							<li>
 								<turretDef>DMS_GAU4_Turret</turretDef>
 								<renderProperties>
-									<north>(0.425, -0.2)</north>
-									<south>(-0.425, 0.275)</south>
-									<east>(-0.25, 0.175)</east>
-									<west>(0.275, 0.875)</west>
+									<north>(0.325, -0.2)</north>
+									<south>(-0.325, 0.2)</south>
+									<east>(0.15, 0.1)</east>
+									<west>(-0.15, 0.8)</west>
 								</renderProperties>
 								<gizmoLabel>Main Turret</gizmoLabel>
 								<aimPieOffset>(0, 1)</aimPieOffset>
