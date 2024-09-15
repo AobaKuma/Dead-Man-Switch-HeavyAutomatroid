@@ -41,7 +41,7 @@
 		<buildDef>DMS_ArmySteed_APC_Blueprint</buildDef>
 		<graphicData>
 			<texPath>Things/Vehicles/ArmySteed/vehicle</texPath>
-			<drawSize>5.5</drawSize>
+			<drawSize>6</drawSize>
 		</graphicData>
 		<size>(3,5)</size>
 		<fillPercent>0.9</fillPercent>
@@ -395,8 +395,8 @@
 							<li> 
 								<turretDef>DMS_Okhotnik_Turret</turretDef> <!--调用的炮塔def,嫌麻烦就不要在两个改装炮塔之间来回切，直接remove回到原始状态-->
 								<renderProperties>
-									<north>(0.325, -0.2)</north>
-									<south>(-0.325, 0.2)</south>
+									<north>(0.4, -0.05)</north>
+									<south>(-0.325, 0.05)</south>
 									<east>(0.15, 0.1)</east>
 									<west>(-0.15, 0.8)</west>
 								</renderProperties>
@@ -444,8 +444,8 @@
 							<li>
 								<turretDef>DMS_GAU4_Turret</turretDef>
 								<renderProperties>
-									<north>(0.325, -0.2)</north>
-									<south>(-0.325, 0.2)</south>
+									<north>(0.4, -0.05)</north>
+									<south>(-0.325, 0.05)</south>
 									<east>(0.15, 0.1)</east>
 									<west>(-0.15, 0.8)</west>
 								</renderProperties>
