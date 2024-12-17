@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- EN: Automatic Revolver Electromagnetic Slingshot -->
+  <DMS_Chameleon_UpgradeTree.nodes.0.label>A.R.E.S.</DMS_Chameleon_UpgradeTree.nodes.0.label>
+  <!-- EN: Automatic Revolver Electromagnetic Slingshot(A.R.E.S.) A lightweight 76mm anti-tank revolver cannon with an independent fire control system. the use of electromagnetic acceleration makes projectile capable to penetrate any heavy armored vehicles. \n\n Interestingly, this weapon is also one of the few non-gunpowder weapon systems known to have entered the mass production stage and been put into use by the colonial fleet. -->
+  <DMS_Chameleon_UpgradeTree.nodes.0.description>自動轉輪電磁彈弓(A.R.E.S.)一種輕型76mm反坦克轉輪炮，具有獨立的火控系統。利用電磁加速使射彈能夠擊穿任何重型裝甲車輛。\n\n有趣的是，這種武器也是為數不多的已進入大規模生產階段並被殖民艦隊投入使用的非火藥武器系統之一。</DMS_Chameleon_UpgradeTree.nodes.0.description>
+  <!-- EN: Main Turret -->
+  <DMS_Chameleon_UpgradeTree.nodes.0.upgrades.0.turrets.0.gizmoLabel>A.R.E.S.</DMS_Chameleon_UpgradeTree.nodes.0.upgrades.0.turrets.0.gizmoLabel>
+  <!-- EN: coaxial MG -->
+  <DMS_Chameleon_UpgradeTree.nodes.0.upgrades.0.turrets.1.gizmoLabel>同軸輕機槍</DMS_Chameleon_UpgradeTree.nodes.0.upgrades.0.turrets.1.gizmoLabel>
+  <!-- EN: Left Grenade Launcher -->
+  <DMS_Chameleon_UpgradeTree.nodes.0.upgrades.0.turrets.2.gizmoLabel>左側煙霧發射器</DMS_Chameleon_UpgradeTree.nodes.0.upgrades.0.turrets.2.gizmoLabel>
+  <!-- EN: Right Grenade Launcher -->
+  <DMS_Chameleon_UpgradeTree.nodes.0.upgrades.0.turrets.3.gizmoLabel>右側煙霧發射器</DMS_Chameleon_UpgradeTree.nodes.0.upgrades.0.turrets.3.gizmoLabel>
+  <!-- EN: Kord HMG -->
+  <DMS_Chameleon_UpgradeTree.nodes.1.label>Kord重機槍</DMS_Chameleon_UpgradeTree.nodes.1.label>
+  <!-- EN: Replace the light machine gun under chassis with Kord heavy machine gun -->
+  <DMS_Chameleon_UpgradeTree.nodes.1.description>將底盤下的輕機槍更換為Kord重機槍</DMS_Chameleon_UpgradeTree.nodes.1.description>
+  <!-- EN: coaxial MG -->
+  <DMS_Chameleon_UpgradeTree.nodes.1.upgrades.0.turrets.0.gizmoLabel>Kord重機槍</DMS_Chameleon_UpgradeTree.nodes.1.upgrades.0.turrets.0.gizmoLabel>
+  <!-- EN: Replace the light machine gun under chassis with GAU-19/A multi-barreled heavy machine gun -->
+  <DMS_Chameleon_UpgradeTree.nodes.2.description>將底盤下的輕機槍更換為GAU-19/A多管重機槍</DMS_Chameleon_UpgradeTree.nodes.2.description>
+  <!-- EN: coaxial MG -->
+  <DMS_Chameleon_UpgradeTree.nodes.2.upgrades.0.turrets.0.gizmoLabel>GAU-19/A</DMS_Chameleon_UpgradeTree.nodes.2.upgrades.0.turrets.0.gizmoLabel>
+  
+</LanguageData>

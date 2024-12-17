@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <DMS_ArmySteed_UpgradeTree.nodes.0.label>猎手</DMS_ArmySteed_UpgradeTree.nodes.0.label>
+  <!-- EN: "Okhotnik" is a vehicle-mounted remote-controlled heavy machine gun weapon system that fires large-caliber machine gun bullets. It has greater power, accuracy and range than anti-aircraft machine guns, but the ammunition it consumes is more expensive. -->
+  <DMS_ArmySteed_UpgradeTree.nodes.0.description>"猎手"是一种车载遥控重机枪武器系统，可以发射大口径机枪子弹。它比高射机枪具有更大的威力、精度和射程，但它消耗的弹药更昂贵。</DMS_ArmySteed_UpgradeTree.nodes.0.description>
+  <!-- EN: Main Turret -->
+  <DMS_ArmySteed_UpgradeTree.nodes.0.upgrades.0.turrets.0.gizmoLabel>重机枪砲塔</DMS_ArmySteed_UpgradeTree.nodes.0.upgrades.0.turrets.0.gizmoLabel>
+  <!-- EN: GAU-4/M61 "Vulcan" -->
+  <DMS_ArmySteed_UpgradeTree.nodes.1.label>GAU-4/M61 "火神"</DMS_ArmySteed_UpgradeTree.nodes.1.label>
+  <!-- EN: The GAU-4/M61 "Vulcan" is a formidable vehicle-mounted, remote-controlled Gatling weapon system utilized by the army. It demonstrates exceptional combat effectiveness, excelling in air defense, ground suppression, and interception of low-speed, close-to-earth aircraft. Despite utilizing relatively easy-to-obtain steel core ammunition, it swiftly depletes its supply when fired. -->
+  <DMS_ArmySteed_UpgradeTree.nodes.1.description>GAU-4/M61"火神"是陆军使用的一种强大的车载遥控加特林武器系统。它表现出卓越的战斗力，在防空、地面压制和拦截低速近地飞行器方面表现出色。尽管使用了相对容易获得的钢芯弹药，但它在发射时会迅速耗尽其库存。</DMS_ArmySteed_UpgradeTree.nodes.1.description>
+  <!-- EN: Main Turret -->
+  <DMS_ArmySteed_UpgradeTree.nodes.1.upgrades.0.turrets.0.gizmoLabel>GAU-4/M61</DMS_ArmySteed_UpgradeTree.nodes.1.upgrades.0.turrets.0.gizmoLabel>
+  
+</LanguageData>

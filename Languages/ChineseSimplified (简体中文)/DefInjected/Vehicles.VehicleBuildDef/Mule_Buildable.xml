@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- EN: Mule ATV -->
+  <DMS_Mule_ATV_Blueprint.label>骡马</DMS_Mule_ATV_Blueprint.label>
+  <!-- EN: a light mobile platform used for ground handling and short-distance transportation,Production models of this type can be traced back to pre-space colonization times, but the exact name is unknown. -->
+  <DMS_Mule_ATV_Blueprint.description>一种用于地勤与短途运输的轻型轮式机动平台，这种完全没有附加模块的生产型号据说可以追溯到前太空殖民时代，但确切的资讯并不充足。</DMS_Mule_ATV_Blueprint.description>
+  
+</LanguageData>
