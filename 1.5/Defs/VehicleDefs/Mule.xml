@@ -415,7 +415,6 @@
 		</comps>
 	</Vehicles.VehicleDef>
 
-	
 	<!-- 升級 -->
 	<Vehicles.UpgradeTreeDef>
 		<defName>DMS_Mule_UpgradeTree</defName>
@@ -427,6 +426,7 @@
 				<icon>Things/Vehicles/Common/DMS_Okhotnik_Icon</icon>
 				<work>3000</work>
 				<gridCoordinate>(5,5)</gridCoordinate>
+				<disableIfUpgradeNodesEnabled/>
 				<upgrades>
 					<li Class="Vehicles.TurretUpgrade"><!--炮塔升级相关，直接从空炮塔升级为有炮塔不可行，需要空白comps，参见Trucks.xml-->
 						<turrets>

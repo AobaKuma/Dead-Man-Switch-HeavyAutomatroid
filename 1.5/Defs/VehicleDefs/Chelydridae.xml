@@ -4,7 +4,7 @@
     <!-- 建築型態的載具，基本上與BuildingDef相同-->
     <defName>DMS_Chelydridae_MainBattleTank_Blueprint</defName>
     <label>alligator snapper</label>
-    <description>The automated main battle vehicles currently in service in the colonial fleet are designed to theoretically conduct fully automatic combat. However, due to concerns about the battlefield communication environment, a space for two crew members was designed in the tail compartment.</description>
+    <description>An automated main battle vehicle model currently in service in the colonial fleet are designed to theoretically conduct fully automatic combat. However, due to concerns about the battlefield communication environment, a space for two crew members was designed in the rear compartment.</description>
     <graphicData>
       <texPath>Things/Vehicles/Chelydridae/vehicle</texPath>
       <drawSize>7</drawSize>
@@ -22,13 +22,13 @@
     <costList>
       <EngineTurbine MayRequireAnyOf="aoba.motorization.engine,rimthunder.core">1</EngineTurbine>
       <ComponentFireControl>1</ComponentFireControl>
-			<Neurocomputer>2</Neurocomputer>
-			<ComponentStamped>15</ComponentStamped>
-			<ComponentIndustrial>25</ComponentIndustrial>
-			<Polyester>150</Polyester>
-			<DMS_Ceramics>300</DMS_Ceramics>
-			<Tungsteel>425</Tungsteel>
-			<Steel>750</Steel>
+      <Neurocomputer>2</Neurocomputer>
+      <ComponentStamped>15</ComponentStamped>
+      <ComponentIndustrial>25</ComponentIndustrial>
+      <Polyester>150</Polyester>
+      <DMS_Ceramics>300</DMS_Ceramics>
+      <Tungsteel>425</Tungsteel>
+      <Steel>750</Steel>
     </costList>
     <thingToSpawn>DMS_Chelydridae_MainBattleTank</thingToSpawn>
     <!-- 建造後生成的載具Kind,這是與建築唯一不一樣的-->
@@ -37,16 +37,16 @@
   <Vehicles.VehicleDef ParentName="DMS_BaseVehicle">
     <defName>DMS_Chelydridae_MainBattleTank</defName>
     <label>alligator snapper</label>
-    <description>The automated main battle vehicles currently in service in the colonial fleet are designed to theoretically conduct fully automatic combat. However, due to concerns about the battlefield communication environment, a space for two crew members was designed in the tail compartment.</description>
+    <description>An automated main battle vehicle model currently in service in the colonial fleet are designed to theoretically conduct fully automatic combat. However, due to concerns about the battlefield communication environment, a space for two crew members was designed in the rear compartment.</description>
     <buildDef>DMS_Chelydridae_MainBattleTank_Blueprint</buildDef>
-		<vehicleMovementPermissions>NoDriverNeeded</vehicleMovementPermissions>
+    <vehicleMovementPermissions>NoDriverNeeded</vehicleMovementPermissions>
     <graphicData>
       <texPath>Things/Vehicles/Chelydridae/vehicle</texPath>
       <drawSize>7</drawSize>
     </graphicData>
     <size>(3,6)</size>
     <fillPercent>1</fillPercent>
-		<wipesPlants>true</wipesPlants>
+    <wipesPlants>true</wipesPlants>
     <vehicleCategory>Combat</vehicleCategory>
     <statBases>
       <ArmorRating_Blunt>1.0</ArmorRating_Blunt>
@@ -61,14 +61,14 @@
       <RepairRate>0.8</RepairRate>
     </vehicleStats>
     <soundOneShotsOnEvent Inherit="false">
-			<li>
-				<key>PawnEntered</key>
-				<value>DMS_VehicleEnter</value>
-			</li>
-			<li>
-				<key>PawnExited</key>
-				<value>DMS_VehicleEnter</value>
-			</li>
+      <li>
+        <key>PawnEntered</key>
+        <value>DMS_VehicleEnter</value>
+      </li>
+      <li>
+        <key>PawnExited</key>
+        <value>DMS_VehicleEnter</value>
+      </li>
       <li>
         <key>IgnitionOn</key>
         <value>DMS_MBTVehicleStart</value>
@@ -98,9 +98,9 @@
         <LargeHills>0.8</LargeHills>
         <Mountainous>1.5</Mountainous>
       </customHillinessCosts>
-			<restrictToFactions>
-				<li>DMS_Army</li>
-			</restrictToFactions>
+      <restrictToFactions>
+        <li>DMS_Army</li>
+      </restrictToFactions>
       <vehicleJobLimitations>
         <li>(RepairVehicle, 4)</li>
       </vehicleJobLimitations>
@@ -117,9 +117,10 @@
         </li>
       </roles>
     </properties>
-    <components>     
+    <components>
       <li><!-- Internal mobile Part 內部驅動部件-->
-        <!--Engine 100-->
+        <!--Engine
+        100-->
         <key>Engine</key>
         <label>turbine engine</label>
         <health>200</health>
@@ -602,31 +603,31 @@
               <west>(2.6,0.65)</west>
             </renderProperties>
             <gizmoLabel>support MG</gizmoLabel>
-						<defaultAngleRotated>180</defaultAngleRotated>
+            <defaultAngleRotated>180</defaultAngleRotated>
             <aimPieOffset>(0, 0)</aimPieOffset>
             <key>MG</key>
             <drawLayer>1</drawLayer>
           </li>
-          
-					<li>
-						<turretDef>DMS_GrenadeLauncher</turretDef>
-						<gizmoLabel>Left Grenade Launcher</gizmoLabel>
-						<renderProperties>
-							<north>(0.7, 0.2)</north>
-							<south>(-0.7, -0.2)</south>
-							<east>(0.2, -0.7)</east>
-							<west>(-0.2, 0.7)</west>
-						</renderProperties>
-						<aimPieOffset>(0, 0)</aimPieOffset>
-						<drawLayer>2</drawLayer>
-						<key>leftSmoke</key>
-						<parentKey>mainTurret</parentKey>
-					</li>
+
+          <li>
+            <turretDef>DMS_GrenadeLauncher</turretDef>
+            <gizmoLabel>Left Grenade Launcher</gizmoLabel>
+            <renderProperties>
+              <north>(0.7, 0.2)</north>
+              <south>(-0.7, -0.2)</south>
+              <east>(0.2, -0.7)</east>
+              <west>(-0.2, 0.7)</west>
+            </renderProperties>
+            <aimPieOffset>(0, 0)</aimPieOffset>
+            <drawLayer>2</drawLayer>
+            <key>leftSmoke</key>
+            <parentKey>mainTurret</parentKey>
+          </li>
         </turrets>
       </li>
-			<li Class="Vehicles.CompProperties_UpgradeTree"> <!--开启改装系统-->
-				<def>DMS_Chelydridae_UpgradeTree</def>
-			</li>
+      <li Class="Vehicles.CompProperties_UpgradeTree"> <!--开启改装系统-->
+        <def>DMS_Chelydridae_UpgradeTree</def>
+      </li>
     </comps>
   </Vehicles.VehicleDef>
 
@@ -642,19 +643,19 @@
       <drawSize>9</drawSize>
     </graphicData>
     <graphics>
-			<li>
-				<graphicData>
+      <li>
+        <graphicData>
           <texPath>Things/Vehicles/Chelydridae/vehicle_turretTop_barrel</texPath>
           <drawSize>9</drawSize>
-					<graphicClass>Vehicles.Graphic_Turret</graphicClass>
-					<shaderType>CutoutComplexPattern</shaderType>
-				</graphicData>
+          <graphicClass>Vehicles.Graphic_Turret</graphicClass>
+          <shaderType>CutoutComplexPattern</shaderType>
+        </graphicData>
         <recoil>
           <distanceTotal>0.5</distanceTotal>
           <distancePerTick>0.025</distancePerTick>
           <speedMultiplierPostRecoil>0.1</speedMultiplierPostRecoil>
         </recoil>
-			</li>
+      </li>
     </graphics>
     <!-- 彈藥與裝填容量相關 -->
     <reloadTimer>6.5</reloadTimer>
@@ -670,7 +671,7 @@
     <!-- 射程與射界相關 -->
     <minRange>2</minRange>
     <maxRange>60.9</maxRange>
-		<rotationSpeed>10</rotationSpeed>
+    <rotationSpeed>10</rotationSpeed>
     <!-- 射擊相關 -->
     <warmUpTimer>4</warmUpTimer>
     <shotSound>DMS_Shot_MBTCannonSound</shotSound>
@@ -712,21 +713,22 @@
   </Vehicles.VehicleTurretDef>
 
   <Vehicles.UpgradeTreeDef>
-		<defName>DMS_Chelydridae_UpgradeTree</defName>
-		<nodes>
-			<li>
-				<key>Vulcan</key>
-				<label>GAU-4/M61 "Vulcan"</label>
-				<description>replace weapon station on the turret with M61. The GAU-4/M61 "Vulcan" is a formidable vehicle-mounted, remote-controlled Gatling weapon system utilized by the army. It demonstrates exceptional combat effectiveness, excelling in air defense, ground suppression, and interception of low-speed, close-to-earth aircraft. Despite utilizing relatively easy-to-obtain steel core ammunition, it swiftly depletes its supply when fired.</description>
-				<icon>Things/Vehicles/Common/DMS_GAU4_Icon</icon>
-				<work>2500</work>
-				<gridCoordinate>(5,5)</gridCoordinate>
-				<upgrades>
-					<li Class="Vehicles.TurretUpgrade">
-						<turrets>			
-							<li>
-							  <!--車體機槍-->
-							  <turretDef>DMS_GAU4_Turret</turretDef>
+    <defName>DMS_Chelydridae_UpgradeTree</defName>
+    <nodes>
+      <li>
+        <key>Vulcan</key>
+        <label>GAU-4/M61 "Vulcan"</label>
+        <description>replace weapon station on the turret with M61. The GAU-4/M61 "Vulcan" is a formidable vehicle-mounted, remote-controlled Gatling weapon system utilized by the army. It demonstrates exceptional combat effectiveness, excelling in air defense, ground suppression, and interception of low-speed, close-to-earth aircraft. Despite utilizing relatively easy-to-obtain steel core ammunition, it swiftly depletes its supply when fired.</description>
+        <icon>Things/Vehicles/Common/DMS_GAU4_Icon</icon>
+        <work>2500</work>
+        <gridCoordinate>(5,5)</gridCoordinate>
+        <disableIfUpgradeNodesEnabled />
+        <upgrades>
+          <li Class="Vehicles.TurretUpgrade">
+            <turrets>
+              <li>
+                <!--車體機槍-->
+                <turretDef>DMS_GAU4_Turret</turretDef>
                 <renderProperties>
                   <!--這裡的坐標系是無視旋轉的,所以x就是恆定左右偏移-->
                   <north>(0.75,-0.7)</north>
@@ -739,34 +741,35 @@
                 <key>topMG_Vulcan</key>
                 <drawLayer>3</drawLayer>
                 <parentKey>mainTurret</parentKey>
-							</li>
-						</turrets>
-						<removeTurrets>
-							<li>topMG</li>
-						</removeTurrets>
-					</li>
-					<li Class = "Vehicles.StatUpgrade"> <!--基础属性修改，可用add/set，具体修改范围参考文档-->
-						<vehicleStats>
-							<li>
-								<def>MoveSpeed</def>
-								<value>-1</value>
-								<type>Add</type>
-							</li>
-							<li>
-								<def>CargoCapacity</def>
-								<value>-75</value>
-								<type>Add</type>
-							</li>
-						</vehicleStats>
-					</li>
-				</upgrades>
-				<researchPrerequisites><li>MultibarrelWeapons</li></researchPrerequisites>
-				<ingredients>
+              </li>
+            </turrets>
+            <removeTurrets>
+              <li>topMG</li>
+            </removeTurrets>
+          </li>
+          <li Class="Vehicles.StatUpgrade"> <!--基础属性修改，可用add/set，具体修改范围参考文档-->
+            <vehicleStats>
+              <li>
+                <def>MoveSpeed</def>
+                <value>-1</value>
+                <type>Add</type>
+              </li>
+              <li>
+                <def>CargoCapacity</def>
+                <value>-75</value>
+                <type>Add</type>
+              </li>
+            </vehicleStats>
+          </li>
+        </upgrades>
+        <researchPrerequisites>
+          <li>MultibarrelWeapons</li>
+        </researchPrerequisites>
+        <ingredients>
           <Tungsteel>225</Tungsteel>
           <ComponentStamped>10</ComponentStamped>
-				</ingredients>
-			</li>
-		</nodes>
-	</Vehicles.UpgradeTreeDef>
-
+        </ingredients>
+      </li>
+    </nodes>
+  </Vehicles.UpgradeTreeDef>
 </Defs>
