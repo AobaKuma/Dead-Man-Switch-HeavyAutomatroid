@@ -212,6 +212,21 @@
 						<health>175</health>
 					</value>
 				</li>
+
+				<!--AmmoSet DescriptionHyperlinks-->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="DMS_Chameleon_TD"]</xpath>
+					<value>
+						<descriptionHyperlinks>
+							<CombatExtended.AmmoSetDef>AmmoSet_762x385mmRCannonShell</CombatExtended.AmmoSetDef>
+							<CombatExtended.AmmoSetDef>AmmoSet_20x102mmNATO</CombatExtended.AmmoSetDef>
+							<CombatExtended.AmmoSetDef>AmmoSet_338Lapua</CombatExtended.AmmoSetDef>
+							<CombatExtended.AmmoSetDef>AmmoSet_50BMG</CombatExtended.AmmoSetDef>
+							<CombatExtended.AmmoSetDef>AmmoSet_127x108mm</CombatExtended.AmmoSetDef>
+							<CombatExtended.AmmoSetDef>AmmoSet_40x46mmGrenade</CombatExtended.AmmoSetDef>
+						</descriptionHyperlinks>
+					</value>
+				</li>
 				
 			</operations>
 		</match>

@@ -297,6 +297,20 @@
 					</value>
 				</li>
 
+				<!--AmmoSet DescriptionHyperlinks-->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="DMS_Chelydridae_MainBattleTank"]</xpath>
+					<value>
+						<descriptionHyperlinks>
+							<CombatExtended.AmmoSetDef>AmmoSet_120mmCannonShell</CombatExtended.AmmoSetDef>
+							<CombatExtended.AmmoSetDef>AmmoSet_20x102mmNATO</CombatExtended.AmmoSetDef>
+							<CombatExtended.AmmoSetDef>AmmoSet_338Lapua</CombatExtended.AmmoSetDef>
+							<CombatExtended.AmmoSetDef>AmmoSet_127x108mm</CombatExtended.AmmoSetDef>
+							<CombatExtended.AmmoSetDef>AmmoSet_40x46mmGrenade</CombatExtended.AmmoSetDef>
+						</descriptionHyperlinks>
+					</value>
+				</li>
+
 			</operations>
 		</match>
 	</Operation>

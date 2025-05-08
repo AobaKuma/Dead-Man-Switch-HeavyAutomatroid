@@ -108,6 +108,18 @@
 						<health>270</health>
 					</value>
 				</li>
+
+				<!--AmmoSet DescriptionHyperlinks-->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="DMS_ArmySteed_APC"]</xpath>
+					<value>
+						<descriptionHyperlinks>
+							<CombatExtended.AmmoSetDef>AmmoSet_20x102mmNATO</CombatExtended.AmmoSetDef>
+							<CombatExtended.AmmoSetDef>AmmoSet_127x108mm</CombatExtended.AmmoSetDef>
+						</descriptionHyperlinks>
+					</value>
+				</li>
+				
 			</operations>
 		</match>
 	</Operation>

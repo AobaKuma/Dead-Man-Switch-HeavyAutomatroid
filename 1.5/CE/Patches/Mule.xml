@@ -47,6 +47,17 @@
 						<health>120</health>
 					</value>
 				</li>
+
+				<!--AmmoSet DescriptionHyperlinks-->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="DMS_Mule_ATV"]</xpath>
+					<value>
+						<descriptionHyperlinks>
+							<CombatExtended.AmmoSetDef>AmmoSet_127x108mm</CombatExtended.AmmoSetDef>
+						</descriptionHyperlinks>
+					</value>
+				</li>
+				
 			</operations>
 		</match>
 	</Operation>
