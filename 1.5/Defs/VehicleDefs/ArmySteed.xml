@@ -374,6 +374,9 @@
 			<li Class="Vehicles.CompProperties_UpgradeTree"> <!--开启改装系统-->
 				<def>DMS_ArmySteed_UpgradeTree</def>
 			</li>
+            <li Class="DMS.CompProperties_SubRelay">
+                <relayRange>10</relayRange>
+            </li>
 		</comps>
 	</Vehicles.VehicleDef>
 
@@ -388,7 +391,9 @@
 				<icon>Things/Vehicles/Common/DMS_Okhotnik_Icon</icon>
 				<work>3000</work>
 				<gridCoordinate>(5,5)</gridCoordinate>
-				<disableIfUpgradeNodeEnabled>GAU4</disableIfUpgradeNodeEnabled>
+				<disableIfUpgradeNodesEnabled>
+					<li>GAU4</li>
+				</disableIfUpgradeNodesEnabled>
 				<upgrades>
 					<li Class="Vehicles.TurretUpgrade"><!--炮塔升级相关，直接从空炮塔升级为有炮塔不可行，需要空白comps，参见Trucks.xml-->
 						<turrets>
@@ -437,7 +442,9 @@
 				<icon>Things/Vehicles/Common/DMS_GAU4_Icon</icon>
 				<work>5000</work>
 				<gridCoordinate>(5,10)</gridCoordinate>
-				<disableIfUpgradeNodeEnabled>Okhotnik</disableIfUpgradeNodeEnabled>
+				<disableIfUpgradeNodesEnabled>
+					<li>Okhotnik</li>
+				</disableIfUpgradeNodesEnabled>
 				<upgrades>
 					<li Class="Vehicles.TurretUpgrade">
 						<turrets>
