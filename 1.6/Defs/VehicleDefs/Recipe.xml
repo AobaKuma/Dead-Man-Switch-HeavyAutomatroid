@@ -2,8 +2,8 @@
 <Defs>
   <RecipeDef MayRequire="rimthunder.core">
     <defName>DMS_Make_Mule_ATV_Blueprint</defName>
-    <label>mule ATV</label>		
-    <description>assemble a vehicle.</description>
+    <label>assemble mule ATV</label>		
+    <description>Assemble mule ATV, a simple and reliable service transport vehicle.</description>
 		<jobString>vehicle assembling.</jobString>
 		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<effectWorking>Repair</effectWorking>
@@ -59,8 +59,8 @@
 
   <RecipeDef MayRequire="rimthunder.core">
     <defName>DMS_Make_ArmySteed_APC_Blueprint</defName>
-    <label>army steed APC</label>		
-    <description>assemble a vehicle.</description>
+    <label>assemble army steed APC</label>		
+    <description>assemble army steed, An unmanned armored personnel carrier for armed transport.</description>
 		<jobString>vehicle assembling.</jobString>
 		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<effectWorking>Repair</effectWorking>
@@ -148,8 +148,8 @@
 
   <RecipeDef MayRequire="rimthunder.core">
     <defName>DMS_Make_Chameleon_TD_Blueprint</defName>
-    <label>chameleon</label>		
-    <description>assemble a vehicle.</description>
+    <label>assemble hameleon AWG</label>		
+    <description>assemble Chameleon assault walker gun, A four-legged heavy automatroid used for anti-tank ambush.</description>
 		<jobString>vehicle assembling.</jobString>
 		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<effectWorking>Repair</effectWorking>
@@ -229,8 +229,8 @@
 
   <RecipeDef MayRequire="rimthunder.core">
     <defName>DMS_Make_Chelydridae_MBT_Blueprint</defName>
-    <label>Chelydridae</label>		
-    <description>assemble a vehicle.</description>
+    <label>assemble Alligator snapper MBT</label>		
+    <description>assemble an Alligator snapper. An automated main battle tank for fully automatic warfare.</description>
 		<jobString>vehicle assembling.</jobString>
 		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<effectWorking>Repair</effectWorking>

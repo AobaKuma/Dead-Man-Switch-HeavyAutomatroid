@@ -375,7 +375,7 @@
 					  <gizmoLabel>coaxial MG</gizmoLabel>
 					  <angleRestricted>(300,60)</angleRestricted>
 					  <aimPieOffset>(0, 0)</aimPieOffset>
-					  <key>chassicMG</key>
+					  <key>chassisMG</key>
 					  <drawLayer>-1</drawLayer>
 					</li>
 				</turrets>
@@ -389,7 +389,7 @@
 	<Vehicles.VehicleTurretDef ParentName="DMS_BaseTurret">
 		<defName>DMS_Chameleon_Tank_Turret</defName>
 		<label>revolver cannon</label>
-		<description>A highly automatic revolver cannon designed for anti heavy mech purposes. It can launch anti-tank tungsten core armor-piercing projectiles in a very short time and accurately destroy targets within the range.</description>		
+		<description>A highly automatic revolver cannon designed for anti-heavy mech purposes. It can launch anti-tank tungsten core armor-piercing projectiles in a very short time and accurately destroy targets within the range.</description>		
 		<gizmoDescription>Select Target.\n\nFire for effect\n\n&lt;color=#b0e0e6&gt;CE Ammo:&lt;/color&gt; 76.2x385mmR Cannon shell</gizmoDescription>
 		<!-- 砲塔的渲染顯示 -->
 		<gizmoIconTexPath>Things/Vehicles/Chameleon/mainTurret_gizmo</gizmoIconTexPath>
@@ -608,12 +608,12 @@
 							  <gizmoLabel>coaxial MG</gizmoLabel>
 							  <angleRestricted>(300,60)</angleRestricted>
 							  <aimPieOffset>(0, 1.1)</aimPieOffset>
-							  <key>chassicMG_Kord</key>
+							  <key>chassisMG_Kord</key>
 							  <drawLayer>-1</drawLayer>
 							</li>
 						</turrets>
 						<removeTurrets>
-							<li>chassicMG</li>
+							<li>chassisMG</li>
 						</removeTurrets>
 					</li>
 					<li Class = "Vehicles.StatUpgrade"> <!--基础属性修改，可用add/set，具体修改范围参考文档-->
@@ -661,12 +661,12 @@
 							  <gizmoLabel>coaxial MG</gizmoLabel>
 							  <angleRestricted>(300,60)</angleRestricted>
 							  <aimPieOffset>(0, 1)</aimPieOffset>
-							  <key>chassicMG_GAU19A</key>
+							  <key>chassisMG_GAU19A</key>
 							  <drawLayer>-1</drawLayer>
 							</li>
 						</turrets>
 						<removeTurrets>
-							<li>chassicMG</li>
+							<li>chassisMG</li>
 						</removeTurrets>
 					</li>
 				</upgrades>
