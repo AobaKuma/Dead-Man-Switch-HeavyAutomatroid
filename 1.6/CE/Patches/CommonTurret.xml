@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!-- Kord/Okhotnik -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_Okhotnik_Coaxial" or defName="DMS_Okhotnik_Turret"]/projectile</xpath>
+					<value>
+						<projectile>Bullet_127x108mm_FMJ</projectile>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_Okhotnik_Coaxial" or defName="DMS_Okhotnik_Turret"]/chargePerAmmoCount</xpath>
+					<value>
+						<chargePerAmmoCount>1</chargePerAmmoCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_Okhotnik_Coaxial" or defName="DMS_Okhotnik_Turret"]/reloadTimer</xpath>
+					<value>
+						<reloadTimer>13</reloadTimer>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_Okhotnik_Coaxial" or defName="DMS_Okhotnik_Turret"]/warmUpTimer</xpath>
+					<value>
+						<warmUpTimer>1.4</warmUpTimer>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_Okhotnik_Coaxial" or defName="DMS_Okhotnik_Turret"]/magazineCapacity</xpath>
+					<value>
+						<magazineCapacity>240</magazineCapacity>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_Okhotnik_Coaxial" or defName="DMS_Okhotnik_Turret"]/genericAmmo</xpath>
+					<value>
+						<genericAmmo>false</genericAmmo>
+					</value>
+				</li>
+
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_Okhotnik_Coaxial" or defName="DMS_Okhotnik_Turret"]/projectileShifting</xpath>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_Okhotnik_Coaxial" or defName="DMS_Okhotnik_Turret"]/maxRange</xpath>
+					<value>
+						<maxRange>75</maxRange>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_Okhotnik_Coaxial" or defName="DMS_Okhotnik_Turret"]/ammunition/thingDefs</xpath>
+					<value>
+						<thingDefs>
+							<li>Bullet_127x108mm_FMJ</li>
+							<li>Bullet_127x108mm_AP</li>
+							<li>Bullet_127x108mm_Incendiary</li>
+							<li>Bullet_127x108mm_HE</li>
+							<li>Bullet_127x108mm_Sabot</li>
+						</thingDefs>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_Okhotnik_Coaxial" or defName="DMS_Okhotnik_Turret"]</xpath>
+					<value>
+						<li Class="Vehicles.CETurretDataDefModExtension">
+							<ammoSet>AmmoSet_127x108mm</ammoSet>
+							<shotHeight>2</shotHeight>
+							<speed>159</speed>
+							<sway>1.66</sway>
+							<spread>0.06</spread>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_Okhotnik_Coaxial" or defName="DMS_Okhotnik_Turret"]/fireModes</xpath>
+					<value>
+						<fireModes>
+							<li>
+								<shotsPerBurst>12</shotsPerBurst>
+								<ticksBetweenShots>6</ticksBetweenShots>
+								<ticksBetweenBursts>120</ticksBetweenBursts>
+								<label>Auto</label>
+								<texPath>UI/Gizmos/FireRate_Auto</texPath>
+							</li>
+							<li>
+								<shotsPerBurst>6</shotsPerBurst>
+								<ticksBetweenShots>6</ticksBetweenShots>
+								<ticksBetweenBursts>60</ticksBetweenBursts>
+								<label>Burst</label>
+								<texPath>UI/Gizmos/FireRate_Burst</texPath>
+							</li>
+						</fireModes>
+					</value>
+				</li>
+				
+				<!-- M61 Vulcan (GAU-4) -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_GAU4_Turret"]/projectile</xpath>
+					<value>
+						<projectile>Bullet_20x102mmNATO_AP</projectile>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_GAU4_Turret"]/chargePerAmmoCount</xpath>
+					<value>
+						<chargePerAmmoCount>1</chargePerAmmoCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_GAU4_Turret"]/reloadTimer</xpath>
+					<value>
+						<reloadTimer>12</reloadTimer>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_GAU4_Turret"]/warmUpTimer</xpath>
+					<value>
+						<warmUpTimer>0.8</warmUpTimer>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_GAU4_Turret"]/magazineCapacity</xpath>
+					<value>
+						<magazineCapacity>200</magazineCapacity>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_GAU4_Turret"]/genericAmmo</xpath>
+					<value>
+						<genericAmmo>false</genericAmmo>
+					</value>
+				</li>
+
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_GAU4_Turret"]/projectileShifting</xpath>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_GAU4_Turret"]/maxRange</xpath>
+					<value>
+						<maxRange>62</maxRange>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_GAU4_Turret"]/ammunition/thingDefs</xpath>
+					<value>
+						<thingDefs>
+							<li>Bullet_20x102mmNATO_AP</li>
+							<li>Bullet_20x102mmNATO_Incendiary</li>
+							<li>Bullet_20x102mmNATO_HE</li>
+							<li>Bullet_20x102mmNATO_Sabot</li>
+						</thingDefs>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_GAU4_Turret"]</xpath>
+					<value>
+						<li Class="Vehicles.CETurretDataDefModExtension">
+							<ammoSet>AmmoSet_20x102mmNATO</ammoSet>
+							<shotHeight>2</shotHeight>
+							<speed>206</speed>
+							<sway>1.68</sway>
+							<spread>0.05</spread>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_GAU4_Turret"]/fireModes</xpath>
+					<value>
+						<fireModes>
+							<li>
+								<shotsPerBurst>20</shotsPerBurst>
+								<ticksBetweenShots>3</ticksBetweenShots>
+								<ticksBetweenBursts>240</ticksBetweenBursts>
+								<label>Auto</label>
+								<texPath>UI/Gizmos/FireRate_Auto</texPath>
+							</li>
+							
+							<li>
+								<shotsPerBurst>10</shotsPerBurst>
+								<ticksBetweenShots>3</ticksBetweenShots>
+								<ticksBetweenBursts>180</ticksBetweenBursts>
+								<label>Burst</label>
+								<texPath>UI/Gizmos/FireRate_Burst</texPath>
+							</li>
+							
+						</fireModes>
+					</value>
+				</li>
+				
+				<!-- Coaxial .338 -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_LMG_Coaxial"]/projectile</xpath>
+					<value>
+						<projectile>Bullet_338Lapua_FMJ</projectile>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_LMG_Coaxial"]/chargePerAmmoCount</xpath>
+					<value>
+						<chargePerAmmoCount>1</chargePerAmmoCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_LMG_Coaxial"]/reloadTimer</xpath>
+					<value>
+						<reloadTimer>10</reloadTimer>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_LMG_Coaxial"]/warmUpTimer</xpath>
+					<value>
+						<warmUpTimer>1.3</warmUpTimer>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_LMG_Coaxial"]/magazineCapacity</xpath>
+					<value>
+						<magazineCapacity>300</magazineCapacity>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_LMG_Coaxial"]/genericAmmo</xpath>
+					<value>
+						<genericAmmo>false</genericAmmo>
+					</value>
+				</li>
+
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_LMG_Coaxial"]/projectileShifting</xpath>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_LMG_Coaxial"]/maxRange</xpath>
+					<value>
+						<maxRange>75</maxRange>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_LMG_Coaxial"]/ammunition/thingDefs</xpath>
+					<value>
+						<thingDefs>
+							<li>Bullet_338Lapua_FMJ</li>
+							<li>Bullet_338Lapua_AP</li>
+							<li>Bullet_338Lapua_Incendiary</li>
+							<li>Bullet_338Lapua_HE</li>
+							<li>Bullet_338Lapua_Sabot</li>
+						</thingDefs>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_LMG_Coaxial"]</xpath>
+					<value>
+						<li Class="Vehicles.CETurretDataDefModExtension">
+							<ammoSet>AmmoSet_338Lapua</ammoSet>
+							<shotHeight>2</shotHeight>
+							<speed></speed>
+							<sway>1.28</sway>
+							<spread>0.05</spread>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_LMG_Coaxial"]/fireModes</xpath>
+					<value>
+						<fireModes>
+							<li>
+								<shotsPerBurst>15</shotsPerBurst>
+								<ticksBetweenShots>5</ticksBetweenShots>
+								<ticksBetweenBursts>120</ticksBetweenBursts>
+								<label>Auto</label>
+								<texPath>UI/Gizmos/FireRate_Auto</texPath>
+							</li>
+							
+						</fireModes>
+					</value>
+				</li>
+				
+				<!-- Coaxial GAU-19A -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_GAU19A_Coaxial"]/projectile</xpath>
+					<value>
+						<projectile>Bullet_50BMG_FMJ</projectile>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_GAU19A_Coaxial"]/chargePerAmmoCount</xpath>
+					<value>
+						<chargePerAmmoCount>1</chargePerAmmoCount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_GAU19A_Coaxial"]/reloadTimer</xpath>
+					<value>
+						<reloadTimer>8</reloadTimer>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_GAU19A_Coaxial"]/warmUpTimer</xpath>
+					<value>
+						<warmUpTimer>1</warmUpTimer>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_GAU19A_Coaxial"]/magazineCapacity</xpath>
+					<value>
+						<magazineCapacity>300</magazineCapacity>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_GAU19A_Coaxial"]/genericAmmo</xpath>
+					<value>
+						<genericAmmo>false</genericAmmo>
+					</value>
+				</li>
+
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_GAU19A_Coaxial"]/projectileShifting</xpath>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_GAU19A_Coaxial"]/maxRange</xpath>
+					<value>
+						<maxRange>75</maxRange>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_GAU19A_Coaxial"]/ammunition/thingDefs</xpath>
+					<value>
+						<thingDefs>
+							<li>Bullet_50BMG_FMJ</li>
+							<li>Bullet_50BMG_AP</li>
+							<li>Bullet_50BMG_Incendiary</li>
+							<li>Bullet_50BMG_HE</li>
+							<li>Bullet_50BMG_Sabot</li>
+						</thingDefs>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_GAU19A_Coaxial"]</xpath>
+					<value>
+						<li Class="Vehicles.CETurretDataDefModExtension">
+							<ammoSet>AmmoSet_50BMG</ammoSet>
+							<shotHeight>2</shotHeight>
+							<speed>178</speed>
+							<sway>1.62</sway>
+							<spread>0.05</spread>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_GAU19A_Coaxial"]/fireModes</xpath>
+					<value>
+						<fireModes>
+							<li>
+								<shotsPerBurst>8</shotsPerBurst>
+								<ticksBetweenShots>4</ticksBetweenShots>
+								<ticksBetweenBursts>120</ticksBetweenBursts>
+								<label>Auto</label>
+								<texPath>UI/Gizmos/FireRate_Auto</texPath>
+							</li>
+							
+							<li>
+								<shotsPerBurst>4</shotsPerBurst>
+								<ticksBetweenShots>4</ticksBetweenShots>
+								<ticksBetweenBursts>90</ticksBetweenBursts>
+								<label>Burst</label>
+								<texPath>UI/Gizmos/FireRate_Burst</texPath>
+							</li>
+							
+						</fireModes>
+					</value>
+				</li>
+				
+				<!-- Smoke Launcher -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_GrenadeLauncher"]/projectile</xpath>
+					<value>
+						<projectile>Bullet_40x46mmGrenade_Smoke</projectile>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_GrenadeLauncher"]/chargePerAmmoCount</xpath>
+					<value>
+						<chargePerAmmoCount>5</chargePerAmmoCount>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_GrenadeLauncher"]/genericAmmo</xpath>
+					<value>
+						<genericAmmo>false</genericAmmo>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_GrenadeLauncher"]/ammunition/thingDefs</xpath>
+					<value>
+						<thingDefs>
+							<li>Bullet_40x46mmGrenade_Smoke</li>
+						</thingDefs>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_GrenadeLauncher"]</xpath>
+					<value>
+						<li Class="Vehicles.CETurretDataDefModExtension">
+							<ammoSet>AmmoSet_40x46mmGrenade</ammoSet>
+							<shotHeight>2</shotHeight>
+							<speed>20</speed>
+							<sway>1</sway>
+							<spread>0.5</spread>
+						</li>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

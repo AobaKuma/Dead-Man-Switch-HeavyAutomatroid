@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>RimThunder - Core</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="DMS_GrenadeLauncher"]/projectile</xpath>
+					<value>
+						<projectile>Bullet_RTCSmoke</projectile>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>
