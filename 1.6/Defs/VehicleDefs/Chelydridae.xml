@@ -629,6 +629,9 @@
       <li Class="Vehicles.CompProperties_UpgradeTree"> <!--开启改装系统-->
         <def>DMS_Chelydridae_UpgradeTree</def>
       </li>
+			<li Class="Fortified.CompProperties_SubRelay">
+				<relayRange>15</relayRange>
+			</li>
     </comps>
   </Vehicles.VehicleDef>
 

@@ -374,9 +374,9 @@
 			<li Class="Vehicles.CompProperties_UpgradeTree"> <!--开启改装系统-->
 				<def>DMS_ArmySteed_UpgradeTree</def>
 			</li>
-            <li Class="DMS.CompProperties_SubRelay">
-                <relayRange>10</relayRange>
-            </li>
+			<li Class="DMS.CompProperties_SubRelay">
+				<relayRange>10</relayRange>
+			</li>
 		</comps>
 	</Vehicles.VehicleDef>
 
