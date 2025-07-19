@@ -44,7 +44,7 @@
     <fireModes>
       <li>
         <shotsPerBurst>6</shotsPerBurst>
-        <ticksBetweenShots>10~12</ticksBetweenShots>
+        <ticksBetweenShots>12</ticksBetweenShots>
         <ticksBetweenBursts>80</ticksBetweenBursts>
         <accuracyTouch>0.55</accuracyTouch>
         <accuracyShort>0.75</accuracyShort>
@@ -55,8 +55,8 @@
       </li>
       <li>
         <shotsPerBurst>3</shotsPerBurst>
-        <ticksBetweenShots>10~12</ticksBetweenShots>
-        <ticksBetweenBursts>80</ticksBetweenBursts>
+        <ticksBetweenShots>12</ticksBetweenShots>
+        <ticksBetweenBursts>60~80</ticksBetweenBursts>
         <accuracyTouch>0.65</accuracyTouch>
         <accuracyShort>0.85</accuracyShort>
         <accuracyMedium>0.95</accuracyMedium>
@@ -66,8 +66,8 @@
       </li>
       <li>
         <shotsPerBurst>1</shotsPerBurst>
-        <ticksBetweenShots>10~12</ticksBetweenShots>
-        <ticksBetweenBursts>80</ticksBetweenBursts>
+        <ticksBetweenShots>12</ticksBetweenShots>
+        <ticksBetweenBursts>40~80</ticksBetweenBursts>
         <accuracyTouch>0.65</accuracyTouch>
         <accuracyShort>0.85</accuracyShort>
         <accuracyMedium>0.95</accuracyMedium>
@@ -123,7 +123,7 @@
     <fireModes>
       <li>
         <shotsPerBurst>6</shotsPerBurst>
-        <ticksBetweenShots>10~12</ticksBetweenShots>
+        <ticksBetweenShots>12</ticksBetweenShots>
         <ticksBetweenBursts>80</ticksBetweenBursts>
         <accuracyTouch>0.55</accuracyTouch>
         <accuracyShort>0.75</accuracyShort>
@@ -134,8 +134,8 @@
       </li>
       <li>
         <shotsPerBurst>3</shotsPerBurst>
-        <ticksBetweenShots>10~12</ticksBetweenShots>
-        <ticksBetweenBursts>80</ticksBetweenBursts>
+        <ticksBetweenShots>12</ticksBetweenShots>
+        <ticksBetweenBursts>60~80</ticksBetweenBursts>
         <accuracyTouch>0.65</accuracyTouch>
         <accuracyShort>0.85</accuracyShort>
         <accuracyMedium>0.95</accuracyMedium>
@@ -145,8 +145,8 @@
       </li>
       <li>
         <shotsPerBurst>1</shotsPerBurst>
-        <ticksBetweenShots>10~12</ticksBetweenShots>
-        <ticksBetweenBursts>80</ticksBetweenBursts>
+        <ticksBetweenShots>12</ticksBetweenShots>
+        <ticksBetweenBursts>40~80</ticksBetweenBursts>
         <accuracyTouch>0.65</accuracyTouch>
         <accuracyShort>0.85</accuracyShort>
         <accuracyMedium>0.95</accuracyMedium>
