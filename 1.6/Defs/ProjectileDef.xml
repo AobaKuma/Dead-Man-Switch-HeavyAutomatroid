@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <FleckDef ParentName="FleckBase_Thrown" Name="DMSM_BaseDiscardingShell">
+        <defName>DMSM_Fleck_DiscardingShell_A</defName>
+        <graphicData>
+            <texPath>Things/Mote/DMS_discardingShell_A</texPath>
+            <shaderType>Transparent</shaderType>
+            <color>(1, 1, 1, 1)</color>
+        </graphicData>
+        <altitudeLayer>MoteOverheadLow</altitudeLayer>
+        <fadeInTime>0.05</fadeInTime>
+        <solidTime>0.45</solidTime>
+        <fadeOutTime>0.5</fadeOutTime>
+        <collide>true</collide>
+        <speedPerTime>-2~-1</speedPerTime>
+        <landSound>BulletImpact_Metal</landSound>
+        <rotateTowardsMoveDirection>true</rotateTowardsMoveDirection>
+        <acceleration>(0, 0, -2.7326)</acceleration>
+        <archDuration>0.5</archDuration>
+    </FleckDef>
+
+    <FleckDef ParentName="DMSM_BaseDiscardingShell">
+        <defName>DMSM_Fleck_DiscardingShell_B</defName>
+        <graphicData>
+            <texPath>Things/Mote/DMS_discardingShell_B</texPath>
+        </graphicData>
+    </FleckDef>
+
+    <FleckDef ParentName="DMSM_BaseDiscardingShell">
+        <defName>DMSM_Fleck_DiscardingShell_C</defName>
+        <graphicData>
+            <texPath>Things/Mote/DMS_discardingShell_C</texPath>
+        </graphicData>
+    </FleckDef>
+
+    <FleckDef ParentName="FleckBase_Thrown">
+        <defName>DMS_Fleck_DiscardingStock</defName>
+        <graphicData>
+            <texPath>Things/Mote/DMS_discardingStock</texPath>
+            <shaderType>Transparent</shaderType>
+            <color>(1, 1, 1,0.9)</color>
+        </graphicData>
+        <altitudeLayer>MoteOverheadLow</altitudeLayer>
+        <altitudeLayerIncOffset>-0.1</altitudeLayerIncOffset>
+        <fadeInTime>0.1</fadeInTime>
+        <solidTime>0</solidTime>
+        <fadeOutTime>0.9</fadeOutTime>
+        <rotateTowardsMoveDirection>true</rotateTowardsMoveDirection>
+        <collide>true</collide>
+        <acceleration>(0, 0, -1)</acceleration>
+    </FleckDef>
+
+    <EffecterDef>
+        <defName>DMSM_SabotShell</defName>
+        <children>
+            <li>
+                <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+                <fleckDef>DMSM_Fleck_DiscardingShell_B</fleckDef>
+                <burstCount>1</burstCount>
+                <speed>18~24</speed>
+                <scale>1.15</scale>
+                <angle>-6~-3</angle>
+                <rotationRate>-15~-10</rotationRate>
+                <useTargetAInitialRotation>true</useTargetAInitialRotation>
+                <airTime>0~2</airTime>
+                <fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity>
+                <positionLerpFactor>0.95</positionLerpFactor>
+                <absoluteAngle>false</absoluteAngle>
+            </li>
+            <li>
+                <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+                <fleckDef>DMSM_Fleck_DiscardingShell_C</fleckDef>
+                <burstCount>1</burstCount>
+                <speed>18~24</speed>
+                <scale>1.15</scale>
+                <angle>3~6</angle>
+                <rotationRate>10~15</rotationRate>
+                <useTargetAInitialRotation>true</useTargetAInitialRotation>
+                <airTime>0~2</airTime>
+                <fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity>
+                <positionLerpFactor>0.95</positionLerpFactor>
+                <absoluteAngle>false</absoluteAngle>
+            </li>
+            <li>
+                <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+                <fleckDef>DMS_Fleck_DiscardingStock</fleckDef>
+                <burstCount>1</burstCount>
+                <speed>28~40</speed>
+                <scale>1.15</scale>
+                <angle>0</angle>
+                <airTime>1.2~2.2</airTime>
+                <fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity>
+                <positionLerpFactor>0.98</positionLerpFactor>
+                <absoluteAngle>false</absoluteAngle>
+            </li>
+            <li>
+                <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+                <fleckDef>DMSM_Fleck_DiscardingShell_A</fleckDef>
+                <burstCount>1</burstCount>
+                <speed>18~24</speed>
+                <scale>1.15</scale>
+                <angle>0</angle>
+                <rotationRate>-30~30</rotationRate>
+                <useTargetAInitialRotation>true</useTargetAInitialRotation>
+                <airTime>0~2</airTime>
+                <fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity>
+                <positionLerpFactor>0.95</positionLerpFactor>
+                <absoluteAngle>false</absoluteAngle>
+            </li>
+        </children>
+    </EffecterDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>DMSM_Bullet_JusticeGavel</defName>
+		<label>armor piercing sabot</label>
+		<thingClass>Fortified.Projectile_ConeExplosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectiles/Ammo_3BM59</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.4</drawSize>
+		</graphicData>
+		<projectile>
+			<flyOverhead>true</flyOverhead>
+			<explosionDelay>1</explosionDelay>
+			<soundExplode>Explosion_Rocket</soundExplode>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>225</damageAmountBase>
+			<armorPenetrationBase>1.5</armorPenetrationBase>
+			<stoppingPower>10</stoppingPower>
+			<speed>110</speed>
+			<arcHeightFactor>0.1</arcHeightFactor>
+			<shadowSize>0.6</shadowSize>
+		</projectile>
+		<modExtensions>
+			<li Class="Fortified.ExplosiveExtension">
+				<damage>Bullet</damage>
+				<damageAmount>98</damageAmount>
+				<armorPen>1.1</armorPen>
+				<preExplosionOffset>4</preExplosionOffset>
+				<range>19</range>
+				<swayAngle>8</swayAngle>
+				<doVisualEffects>false</doVisualEffects>
+				<effecterDef>DMS_ConeExplosion</effecterDef>
+			</li>
+		</modExtensions>
+		<comps>
+			<li Class="CompProperties_ProjectileEffecter">
+				<effecterDef>DMS_LaunchDust</effecterDef>
+			</li>
+			<li Class="CompProperties_ProjectileEffecter">
+				<effecterDef>DMSM_SabotShell</effecterDef>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>1.1</explosiveRadius>
+				<explosiveDamageType>Bullet</explosiveDamageType>
+				<armorPenetrationBase>0.4</armorPenetrationBase>
+				<damageAmountBase>150</damageAmountBase>
+				<explodeOnDestroyed>true</explodeOnDestroyed>
+				<explodeOnKilled>true</explodeOnKilled>
+				<doSoundEffects>false</doSoundEffects>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

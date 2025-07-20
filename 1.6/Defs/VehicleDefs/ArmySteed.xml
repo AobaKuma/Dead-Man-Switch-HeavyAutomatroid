@@ -392,6 +392,7 @@
 				<icon>Things/Vehicles/Common/DMS_Okhotnik_Icon</icon>
 				<work>3000</work>
 				<gridCoordinate>(5,5)</gridCoordinate>
+        		<drawSize>120</drawSize>
 				<disableIfUpgradeNodesEnabled>
 					<li>GAU4</li>
 				</disableIfUpgradeNodesEnabled>
@@ -442,7 +443,8 @@
 				<description>The GAU-4/M61 "Vulcan" is a formidable vehicle-mounted, remote-controlled Gatling weapon system utilized by the army. It demonstrates exceptional combat effectiveness, excelling in air defense, ground suppression, and interception of low-speed, close-to-earth aircraft. Despite utilizing relatively easy-to-obtain steel core ammunition, it swiftly depletes its supply when fired.</description>
 				<icon>Things/Vehicles/Common/DMS_GAU4_Icon</icon>
 				<work>5000</work>
-				<gridCoordinate>(5,10)</gridCoordinate>
+				<gridCoordinate>(5,15)</gridCoordinate>
+        		<drawSize>120</drawSize>
 				<disableIfUpgradeNodesEnabled>
 					<li>Okhotnik</li>
 				</disableIfUpgradeNodesEnabled>

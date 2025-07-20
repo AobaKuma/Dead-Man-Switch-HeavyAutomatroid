@@ -636,8 +636,7 @@
     <defName>Chelydridae_Tank_Turret</defName>
     <label>main turret</label>
     <gizmoIconTexPath>Things/Vehicles/Chelydridae/mainTurret_gizmo</gizmoIconTexPath>
-    <gizmoDescription>Select Target.\n\nFire for effect\n\n&lt;color=#b0e0e6&gt;CE
-      Ammo:&lt;/color&gt; 120mm Cannon Shell</gizmoDescription>
+    <gizmoDescription>Select Target.\n\nFire for effect\n\n&lt;color=#b0e0e6&gt;CE Ammo:&lt;/color&gt; 120mm Cannon Shell</gizmoDescription>
     <!-- 砲塔的渲染顯示 -->
     <graphicData>
       <texPath>Things/Vehicles/Chelydridae/vehicle_turretTop</texPath>
@@ -648,6 +647,7 @@
         <graphicData>
           <texPath>Things/Vehicles/Chelydridae/vehicle_turretTop_barrel</texPath>
           <drawSize>9</drawSize>
+          <drawOffset>(0,0.01,0)</drawOffset>
           <graphicClass>Vehicles.Graphic_Turret</graphicClass>
           <shaderType>CutoutComplexPattern</shaderType>
         </graphicData>
@@ -702,7 +702,7 @@
     </motes>
   </Vehicles.VehicleTurretDef>
 
-  <Vehicles.VehicleTurretDef ParentName="DMS_BaseTurret">
+<Vehicles.VehicleTurretDef ParentName="DMS_BaseTurret">
     <defName>Chelydridae_Tank_Turret_B</defName>
     <label>main turret</label>
     <gizmoIconTexPath>Things/Vehicles/Chelydridae/125mm/mainTurret_gizmo</gizmoIconTexPath>
@@ -717,23 +717,24 @@
         <graphicData>
           <texPath>Things/Vehicles/Chelydridae/125mm/vehicle_turretTop_barrel</texPath>
           <drawSize>4.5</drawSize>
-          <drawOffset>(2.5,0.75,0)</drawOffset>
+          <drawOffset>(0,0,2.5)</drawOffset>
           <graphicClass>Vehicles.Graphic_Turret</graphicClass>
           <shaderType>CutoutComplexPattern</shaderType>
+          <layer>1</layer>
         </graphicData>
         <recoil>
-          <distanceTotal>0.75</distanceTotal>
-          <distancePerTick>0.025</distancePerTick>
-          <speedMultiplierPostRecoil>0.5</speedMultiplierPostRecoil>
+          <distanceTotal>0.8</distanceTotal>
+          <distancePerTick>0.1</distancePerTick>
+          <speedMultiplierPostRecoil>0.05</speedMultiplierPostRecoil>
         </recoil>
       </li>
     </graphics>
     <!-- 彈藥與裝填容量相關 -->
-    <reloadTimer>3.5</reloadTimer>
-    <magazineCapacity>7</magazineCapacity>
+    <reloadTimer>6.5</reloadTimer>
+    <magazineCapacity>5</magazineCapacity>
     <chargePerAmmoCount>25</chargePerAmmoCount>
     <genericAmmo>true</genericAmmo>
-    <projectile>DMS_Bullet_ChelydridaeShell</projectile>
+    <projectile>DMSM_Bullet_JusticeGavel</projectile>
     <ammunition>
       <thingDefs>
         <li>Steel</li>
@@ -742,7 +743,7 @@
     <!-- 射程與射界相關 -->
     <minRange>2</minRange>
     <maxRange>60.9</maxRange>
-    <rotationSpeed>0.9</rotationSpeed>
+    <rotationSpeed>10</rotationSpeed>
     <!-- 射擊相關 -->
     <warmUpTimer>4</warmUpTimer>
     <shotSound>DMS_Shot_MBTCannonSound</shotSound>
@@ -757,7 +758,7 @@
       <li>
         <shotsPerBurst>1</shotsPerBurst>
         <ticksBetweenBursts>1</ticksBetweenBursts>
-        <forcedMissRadius>1</forcedMissRadius>
+        <forcedMissRadius>2</forcedMissRadius>
         <label>Single Shot</label>
         <texPath>UI/Gizmos/FireRate_Single</texPath>
       </li>
@@ -787,87 +788,13 @@
     <defName>DMS_Chelydridae_UpgradeTree</defName>
     <nodes>
       <li>
-        <key>125mmMainGun</key>
-        <label>2A46 "Justice Gavel"</label>
-        <description>replace The main turret with a mass-produced turret model equipped with 125mm 2A46 "Justice Gavel" anti-tank cannon. This turret with a rotary autoloader and reactive armor is designed for combat with heavily armored enemies and has a faster firing rate and reload time.</description>
-        <icon>Things/Vehicles/Chelydridae/125mm/mainTurret_gizmo</icon>
-        <work>2500</work>
-        <gridCoordinate>(10,5)</gridCoordinate>
-        <disableIfUpgradeNodesEnabled>
-          <li>Vulcan</li>
-        </disableIfUpgradeNodesEnabled>
-        <upgrades>
-          <li Class="Vehicles.TurretUpgrade">
-            <turrets>
-              <li>
-                <!--主砲-->
-                <turretDef>Chelydridae_Tank_Turret_B</turretDef>
-                  <renderProperties>
-                    <north>(0, 0.4)</north>
-                    <south>(0, 0)</south>
-                    <east>(0.3,0.5)</east>
-                    <west>(-0.3,0.5)</west>
-                  </renderProperties>
-                  <gizmoLabel>Main Turret</gizmoLabel>
-                  <aimPieOffset>(0, 3.35)</aimPieOffset>
-                  <!-- 預熱指示器的x,z偏移 -->
-                  <drawLayer>2</drawLayer>
-                 <key>mainTurret_B</key>
-              </li>
-              <li>
-                <!--同軸機槍-->
-                <turretDef>DMS_LMG_Coaxial</turretDef>
-                <renderProperties>
-                  <east>(1.67,0.4)</east>
-                  <south>(0.4,-1.67)</south>
-                  <north>(-0.4,1.67)</north>
-                  <west>(-1.67,-0.4)</west>
-                </renderProperties>
-                <gizmoLabel>coaxial MG</gizmoLabel>
-                <angleRestricted>(345,15)</angleRestricted>
-                <aimPieOffset>(0, 0)</aimPieOffset>
-                <key>coaxialMG_B</key>
-                <drawLayer>3</drawLayer>
-                <parentKey>mainTurret_B</parentKey>
-              </li>
-            </turrets>
-            <removeTurrets>
-              <li>topMG</li>
-              <li>coaxialMG</li>
-              <li>mainTurret</li>
-            </removeTurrets>
-          </li>
-          <li Class="Vehicles.StatUpgrade"> <!--基础属性修改，可用add/set，具体修改范围参考文档-->
-            <vehicleStats>
-              <li>
-                <def>MoveSpeed</def>
-                <value>-0.25</value>
-                <type>Add</type>
-              </li>
-              <li>
-                <def>CargoCapacity</def>
-                <value>-100</value>
-                <type>Add</type>
-              </li>
-            </vehicleStats>
-          </li>
-        </upgrades>
-        <researchPrerequisites>
-          <li>DMS_EquipmentHeavy</li>
-        </researchPrerequisites>
-        <ingredients>
-          <Tungsteel>350</Tungsteel>
-          <ComponentStamped>10</ComponentStamped>
-          <ComponentFireControl>1</ComponentFireControl>
-        </ingredients>
-      </li>
-      <li>
         <key>Vulcan</key>
         <label>GAU-4/M61 "Vulcan"</label>
         <description>replace weapon station on the turret with M61. The GAU-4/M61 "Vulcan" is a formidable vehicle-mounted, remote-controlled Gatling weapon system utilized by the army. It demonstrates exceptional combat effectiveness, excelling in air defense, ground suppression, and interception of low-speed, close-to-earth aircraft. Despite utilizing relatively easy-to-obtain steel core ammunition, it swiftly depletes its supply when fired.</description>
         <icon>Things/Vehicles/Common/DMS_GAU4_Icon</icon>
         <work>2500</work>
         <gridCoordinate>(5,5)</gridCoordinate>
+        <drawSize>80</drawSize>
         <disableIfUpgradeNodesEnabled>
           <li>125mmMainGun</li>
         </disableIfUpgradeNodesEnabled>
@@ -916,6 +843,87 @@
         <ingredients>
           <Tungsteel>225</Tungsteel>
           <ComponentStamped>10</ComponentStamped>
+        </ingredients>
+      </li>
+      <li>
+        <key>125mmMainGun</key>
+        <label>2A46 "Justice Gavel"</label>
+        <description>replace The main turret with a mass-produced turret model equipped with 125mm 2A46 "Justice Gavel" anti-tank cannon. This turret with a rotary autoloader and reactive armor is designed for combat with heavily armored enemies and has a faster firing rate and reload time.</description>
+        <icon>Things/Vehicles/Chelydridae/125mm/mainTurret_gizmo</icon>
+        <work>2500</work>
+        <gridCoordinate>(35,5)</gridCoordinate>
+        <drawSize>120</drawSize>
+        <disableIfUpgradeNodesEnabled>
+          <li>Vulcan</li>
+        </disableIfUpgradeNodesEnabled>
+        <upgrades>
+          <li Class="Vehicles.TurretUpgrade">
+            <turrets>
+              <li>
+                <!--主砲-->
+                <turretDef>Chelydridae_Tank_Turret_B</turretDef>
+                  <renderProperties>
+                    <north>(0, 0.35)</north>
+                    <south>(0, -0.05)</south>
+                    <east>(0,0.5)</east>
+                    <west>(0,0.5)</west>
+                  </renderProperties>
+                  <gizmoLabel>Main Turret</gizmoLabel>
+                  <aimPieOffset>(0, 3.45)</aimPieOffset>
+                  <!-- 預熱指示器的x,z偏移 -->
+                  <drawLayer>2</drawLayer>
+                  <key>mainTurret_B</key>
+              </li>
+            </turrets>
+            <removeTurrets>
+              <li>topMG</li>
+              <li>coaxialMG</li>
+            </removeTurrets>
+          </li><li Class="Vehicles.TurretUpgrade">
+            <turrets>
+              <li>
+                <!--同軸機槍-->
+                <turretDef>DMS_Okhotnik_Coaxial</turretDef>
+                <renderProperties>
+                  <east>(1.4,-0.4)</east>
+                  <south>(-0.4,-1.4)</south>
+                  <north>(0.4,1.4)</north>
+                  <west>(-1.4,0.4)</west>
+                </renderProperties>
+                <gizmoLabel>coaxial HMG</gizmoLabel>
+                <angleRestricted>(345,15)</angleRestricted>
+                <aimPieOffset>(0, 0)</aimPieOffset>
+                <key>coaxialMG_B</key>
+                <drawLayer>3</drawLayer>
+                <parentKey>mainTurret_B</parentKey>
+              </li>
+            </turrets>
+            <removeTurrets>
+              <li>mainTurret</li>
+            </removeTurrets>
+          </li>
+          <li Class="Vehicles.StatUpgrade"> <!--基础属性修改，可用add/set，具体修改范围参考文档-->
+            <vehicleStats>
+              <li>
+                <def>MoveSpeed</def>
+                <value>-0.25</value>
+                <type>Add</type>
+              </li>
+              <li>
+                <def>CargoCapacity</def>
+                <value>-100</value>
+                <type>Add</type>
+              </li>
+            </vehicleStats>
+          </li>
+        </upgrades>
+        <researchPrerequisites>
+          <li>DMS_EquipmentHeavy</li>
+        </researchPrerequisites>
+        <ingredients>
+          <Tungsteel>350</Tungsteel>
+          <ComponentStamped>10</ComponentStamped>
+          <ComponentFireControl>1</ComponentFireControl>
         </ingredients>
       </li>
     </nodes>

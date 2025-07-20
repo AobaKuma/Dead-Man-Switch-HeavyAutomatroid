@@ -410,7 +410,7 @@
 					<drawSize>6</drawSize>
 					<graphicClass>Vehicles.Graphic_Turret</graphicClass>
 					<shaderType>CutoutComplexPattern</shaderType>
-					<layer>0</layer>
+					<layer>1</layer>
 				</graphicData>
 				<recoil>
 					<distanceTotal>0.7</distanceTotal>
@@ -424,7 +424,7 @@
 					<drawSize>6</drawSize>
 					<graphicClass>Vehicles.Graphic_Turret</graphicClass>
 					<shaderType>CutoutComplexPattern</shaderType>
-					<layer>-1</layer>
+					<layer>0</layer>
 				</graphicData>
 				<recoil>
 					<distanceTotal>0.2</distanceTotal>
@@ -496,7 +496,8 @@
 				<description>Automatic Revolver Electromagnetic Slingshot(A.R.E.S.) A lightweight 76mm anti-tank revolver cannon with an independent fire control system. the use of electromagnetic acceleration makes projectile capable to penetrate any heavy armored vehicles. \n\n Interestingly, this weapon is also one of the few non-gunpowder weapon systems known to have entered the mass production stage and been put into use by the colonial fleet.</description>
 				<icon>Things/Vehicles/Chameleon/mainTurret_gizmo</icon>
 				<work>7500</work>
-				<gridCoordinate>(5,5)</gridCoordinate>
+        		<drawSize>120</drawSize>
+       			<gridCoordinate>(35,5)</gridCoordinate>
 				<disableIfUpgradeNodesEnabled/>
 				<upgrades>
 					<li Class="Vehicles.TurretUpgrade">
@@ -517,10 +518,10 @@
 							<li><!--同軸機槍-->
 								<turretDef>DMS_LMG_Coaxial</turretDef>
 								<renderProperties>
-								<east>(1,0.35)</east>
-								<south>(0.35,-1)</south>
-								<north>(-0.35,1)</north>
-								<west>(-1,0.35)</west>
+								<east>(0.9,0.35)</east>
+								<south>(0.35,-0.9)</south>
+								<north>(-0.35,0.9)</north>
+								<west>(-0.9,0.35)</west>
 								</renderProperties>
 								<gizmoLabel>coaxial MG</gizmoLabel>
 								<angleRestricted>(340,20)</angleRestricted>
@@ -592,6 +593,7 @@
 				<icon>Things/Vehicles/Common/DMS_Okhotnik_Coaxial_Icon</icon>
 				<work>2500</work>
 				<gridCoordinate>(5,15)</gridCoordinate>
+        		<drawSize>80</drawSize>
 				<disableIfUpgradeNodeEnabled>GAU19A</disableIfUpgradeNodeEnabled>
 				<upgrades>
 					<li Class="Vehicles.TurretUpgrade">
@@ -645,6 +647,7 @@
 				<icon>Things/Vehicles/Common/DMS_GAU19_Coaxial_Icon</icon>
 				<work>5000</work>
 				<gridCoordinate>(10,15)</gridCoordinate>
+        		<drawSize>80</drawSize>
 				<disableIfUpgradeNodeEnabled>Kord</disableIfUpgradeNodeEnabled>
 				<upgrades>
 					<li Class="Vehicles.TurretUpgrade">
