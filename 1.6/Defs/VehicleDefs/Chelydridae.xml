@@ -609,9 +609,9 @@
             <drawLayer>1</drawLayer>
           </li>
 
-          <!--等載具框架更新加回去 <li>
+          <li>
             <turretDef>DMS_GrenadeLauncher</turretDef>
-            <gizmoLabel>Left Grenade Launcher</gizmoLabel>
+            <gizmoLabel>Grenade Launcher</gizmoLabel>
             <renderProperties>
               <north>(0.7, 0.2)</north>
               <south>(-0.7, -0.2)</south>
@@ -621,8 +621,7 @@
             <aimPieOffset>(0, 0)</aimPieOffset>
             <drawLayer>2</drawLayer>
             <key>leftSmoke</key>
-            <parentKey>mainTurret</parentKey>
-          </li> -->
+          </li>
         </turrets>
       </li>
       <li Class="Vehicles.CompProperties_UpgradeTree"> <!--开启改装系统-->
