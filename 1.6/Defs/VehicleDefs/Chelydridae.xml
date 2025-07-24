@@ -646,7 +646,7 @@
         <graphicData>
           <texPath>Things/Vehicles/Chelydridae/vehicle_turretTop_barrel</texPath>
           <drawSize>9</drawSize>
-          <drawOffset>(0,0.01,0)</drawOffset>
+          <drawOffset>(0,0,0)</drawOffset>
           <graphicClass>Vehicles.Graphic_Turret</graphicClass>
           <shaderType>CutoutComplexPattern</shaderType>
         </graphicData>
@@ -719,7 +719,7 @@
           <drawOffset>(0,0,2.5)</drawOffset>
           <graphicClass>Vehicles.Graphic_Turret</graphicClass>
           <shaderType>CutoutComplexPattern</shaderType>
-          <layer>1</layer>
+          <!-- <layer>1</layer> -->
         </graphicData>
         <recoil>
           <distanceTotal>0.8</distanceTotal>
@@ -873,13 +873,6 @@
                   <drawLayer>2</drawLayer>
                   <key>mainTurret_B</key>
               </li>
-            </turrets>
-            <removeTurrets>
-              <li>topMG</li>
-              <li>coaxialMG</li>
-            </removeTurrets>
-          </li><li Class="Vehicles.TurretUpgrade">
-            <turrets>
               <li>
                 <!--同軸機槍-->
                 <turretDef>DMS_Okhotnik_Coaxial</turretDef>
@@ -898,6 +891,8 @@
               </li>
             </turrets>
             <removeTurrets>
+              <li>topMG</li>
+              <li>coaxialMG</li>
               <li>mainTurret</li>
             </removeTurrets>
           </li>
